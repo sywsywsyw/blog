@@ -104,7 +104,7 @@ img标签和同级div之间的间隙处理
 
 img标签和同级div之间的间隙处理
 给img标签设置 vertical-ali">
-<meta property="og:updated_time" content="2016-10-25T06:13:02.606Z">
+<meta property="og:updated_time" content="2016-11-25T01:47:34.122Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="其他css问题">
 <meta name="twitter:description" content="清除所有a标签在点击时出现的特效
@@ -341,6 +341,9 @@ img标签和同级div之间的间隙处理
 <h3 id="ios在fixed布局下出现bug问题"><a href="#ios在fixed布局下出现bug问题" class="headerlink" title="ios在fixed布局下出现bug问题"></a>ios在fixed布局下出现bug问题</h3><p>软键盘唤起后，页面的fixed 元素将失效（即无法浮动，也可以理解为变成了absolute定位），所以当页面超过一屏且滚动时，失效的 fixed 元素就会跟随滚动了。<br>这便是 iOS 上 fixed 元素和输入框的 bug 。其中不仅限于 type=text 的输入框，凡是软键盘（比如时间日期选择、select 选择等等）被唤起，都会遇到同样地问题。<br>解决方法：<br>    将原 body 滚动的区域域移到 main 内部，而 header 和footer 的样式不变。<br>.main{<br>    position: absolute;<br>    top: 50px;<br>    bottom: 34px;<br>    overflow-y: scroll;<br>}<br>.main  .content {<br>    height: 2000px;<br>}</p>
 <p>这样布局可能会是的滚动失去原来的流畅，加以下代码，恢复之前丝滑般的滚动：<br>    -webkit-overflow-scrolling: touch;</p>
 <p>这样的布局在h5是行不通的，所以需要用JS来控制内部滚动元素的高度：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="number">1.</span> 内部滚动</div><div class="line"><span class="keyword">var</span> w = <span class="built_in">window</span>.innerWidth,</div><div class="line">        h = <span class="built_in">window</span>.innerHeight;  <span class="comment">//获取窗口的高度与宽度(不包含工具条与滚动条):</span></div><div class="line">    $(<span class="string">'#js_orderConWrap'</span>).height(h - $(<span class="string">'.cm-header-wrap'</span>).height());  <span class="comment">//内部元素的高度 = 窗口高度 - 头部或底部的高度(如果有)</span></div><div class="line"></div><div class="line"><span class="comment">//既然都在h5了，所以还要考虑APP环境，在APP环境下头部是不会用h5的，所以需要判断h5和APP环境；</span></div><div class="line"></div><div class="line"><span class="number">2.</span>弹层显示，禁止背景滚动</div><div class="line"><span class="comment">//关闭滚动条</span></div><div class="line">        $(<span class="built_in">document</span>).on(<span class="string">'touchmove'</span>,<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</div><div class="line">            <span class="keyword">if</span>($(<span class="string">'.app-popup-container'</span>).css(<span class="string">'display'</span>) === <span class="string">'block'</span>)&#123;</div><div class="line">                e.preventDefault();</div><div class="line">            &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
+<h3 id="自定义光标"><a href="#自定义光标" class="headerlink" title="自定义光标"></a>自定义光标</h3><blockquote>
+<p>cursor: url(/路径/cursor.cur),auto;        后缀似乎必须为cur</p>
+</blockquote>
 
       
     </div>
@@ -374,8 +377,8 @@ img标签和同级div之间的间隙处理
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/blog/2016/09/14/undefined/" rel="prev" title="undefined">
-                undefined <i class="fa fa-chevron-right"></i>
+              <a href="/blog/2016/09/14/关于表单/" rel="prev" title="关于表单">
+                关于表单 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -444,7 +447,7 @@ img标签和同级div之间的间隙处理
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/blog/archives">
-              <span class="site-state-item-count">18</span>
+              <span class="site-state-item-count">19</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -452,7 +455,7 @@ img标签和同级div之间的间隙处理
           
             <div class="site-state-item site-state-categories">
               <a href="/blog/categories">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -483,7 +486,7 @@ img标签和同级div之间的间隙处理
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#清除所有a标签在点击时出现的特效"><span class="nav-number">1.</span> <span class="nav-text">清除所有a标签在点击时出现的特效</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文字与图片不能垂直居中对齐"><span class="nav-number">2.</span> <span class="nav-text">文字与图片不能垂直居中对齐</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#img标签和同级div之间的间隙处理"><span class="nav-number">3.</span> <span class="nav-text">img标签和同级div之间的间隙处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文本超出后显示省略号"><span class="nav-number">4.</span> <span class="nav-text">文本超出后显示省略号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ios在fixed布局下出现bug问题"><span class="nav-number">5.</span> <span class="nav-text">ios在fixed布局下出现bug问题</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#清除所有a标签在点击时出现的特效"><span class="nav-number">1.</span> <span class="nav-text">清除所有a标签在点击时出现的特效</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文字与图片不能垂直居中对齐"><span class="nav-number">2.</span> <span class="nav-text">文字与图片不能垂直居中对齐</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#img标签和同级div之间的间隙处理"><span class="nav-number">3.</span> <span class="nav-text">img标签和同级div之间的间隙处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文本超出后显示省略号"><span class="nav-number">4.</span> <span class="nav-text">文本超出后显示省略号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ios在fixed布局下出现bug问题"><span class="nav-number">5.</span> <span class="nav-text">ios在fixed布局下出现bug问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义光标"><span class="nav-number">6.</span> <span class="nav-text">自定义光标</span></a></li></ol></div>
             
           </div>
         </section>
