@@ -84,16 +84,19 @@
 
 
 
-<meta name="description" content="cookie12345678910111213141516171819202122232425//设置cookie  //name是cookie中的名，value是对应的值，iTime是多久过期（单位为天）  function setCookie(name,value,iTime)&amp;#123;      var oDate = new Date();      //设置cookie过期时间">
+<meta name="description" content="$httpangular提供了$http服务来同服务端进行通信，$http服务队浏览器的XMLHttpRequest对象进行了封装，让我们可以以ajax的方式来从服务器请求数据。$http服务是一个接受一个参数的函数，参数的类型是对象，用来配置生成的http的请求，该函数返回一个promise对象（关于promise规范，可以看看这篇文章）
+12345var promise = $http(&amp;#1">
 <meta property="og:type" content="article">
-<meta property="og:title" content="cookie">
-<meta property="og:url" content="http://yoursite.com/2016/09/14/cookie/index.html">
+<meta property="og:title" content="angular中的请求">
+<meta property="og:url" content="http://yoursite.com/2016/11/28/angular中的请求/index.html">
 <meta property="og:site_name" content="Blog station">
-<meta property="og:description" content="cookie12345678910111213141516171819202122232425//设置cookie  //name是cookie中的名，value是对应的值，iTime是多久过期（单位为天）  function setCookie(name,value,iTime)&amp;#123;      var oDate = new Date();      //设置cookie过期时间">
-<meta property="og:updated_time" content="2016-09-18T01:36:48.962Z">
+<meta property="og:description" content="$httpangular提供了$http服务来同服务端进行通信，$http服务队浏览器的XMLHttpRequest对象进行了封装，让我们可以以ajax的方式来从服务器请求数据。$http服务是一个接受一个参数的函数，参数的类型是对象，用来配置生成的http的请求，该函数返回一个promise对象（关于promise规范，可以看看这篇文章）
+12345var promise = $http(&amp;#1">
+<meta property="og:updated_time" content="2016-11-28T07:16:08.622Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="cookie">
-<meta name="twitter:description" content="cookie12345678910111213141516171819202122232425//设置cookie  //name是cookie中的名，value是对应的值，iTime是多久过期（单位为天）  function setCookie(name,value,iTime)&amp;#123;      var oDate = new Date();      //设置cookie过期时间">
+<meta name="twitter:title" content="angular中的请求">
+<meta name="twitter:description" content="$httpangular提供了$http服务来同服务端进行通信，$http服务队浏览器的XMLHttpRequest对象进行了封装，让我们可以以ajax的方式来从服务器请求数据。$http服务是一个接受一个参数的函数，参数的类型是对象，用来配置生成的http的请求，该函数返回一个promise对象（关于promise规范，可以看看这篇文章）
+12345var promise = $http(&amp;#1">
 
 
 
@@ -114,9 +117,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/09/14/cookie/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/11/28/angular中的请求/"/>
 
-  <title> cookie | Blog station </title>
+  <title> angular中的请求 | Blog station </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -246,7 +249,7 @@
             
             
               
-                cookie
+                angular中的请求
               
             
           </h1>
@@ -258,8 +261,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-09-14T18:07:27+08:00" content="2016-09-14">
-              2016-09-14
+            <time itemprop="dateCreated" datetime="2016-11-28T15:14:32+08:00" content="2016-11-28">
+              2016-11-28
             </time>
           </span>
 
@@ -272,8 +275,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/blog/categories/JS/" itemprop="url" rel="index">
-                    <span itemprop="name">JS</span>
+                  <a href="/blog/categories/angular/" itemprop="url" rel="index">
+                    <span itemprop="name">angular</span>
                   </a>
                 </span>
 
@@ -305,7 +308,13 @@
       
 
       
-        <h3 id="cookie"><a href="#cookie" class="headerlink" title="cookie"></a>cookie</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//设置cookie  </span></div><div class="line"><span class="comment">//name是cookie中的名，value是对应的值，iTime是多久过期（单位为天）  </span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">setCookie</span>(<span class="params">name,value,iTime</span>)</span>&#123;  </div><div class="line">    <span class="keyword">var</span> oDate = <span class="keyword">new</span> <span class="built_in">Date</span>();  </div><div class="line">    <span class="comment">//设置cookie过期时间  </span></div><div class="line">    oDate.setDate(oDate.getDate()+iTime);  </div><div class="line">    <span class="built_in">document</span>.cookie = name+<span class="string">'='</span>+value+<span class="string">';expires='</span>+oDate.toGMTString();  </div><div class="line">&#125;  </div><div class="line"><span class="comment">//获取cookie  </span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">getCookie</span>(<span class="params">name</span>)</span>&#123;  </div><div class="line">    <span class="comment">//cookie中的数据都是以分号加空格区分开  </span></div><div class="line">    <span class="keyword">var</span> arr = <span class="built_in">document</span>.cookie.split(<span class="string">"; "</span>);  </div><div class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>; i&lt;arr.length; i++)&#123;  </div><div class="line">        <span class="keyword">if</span>(arr[i].split(<span class="string">"="</span>)[<span class="number">0</span>] == name)&#123;  </div><div class="line">            <span class="keyword">return</span> arr[i].split(<span class="string">"="</span>)[<span class="number">1</span>];  </div><div class="line">        &#125;  </div><div class="line">    &#125;  </div><div class="line">    <span class="comment">//未找到对应的cookie则返回空字符串  </span></div><div class="line">    <span class="keyword">return</span> <span class="string">''</span>;  </div><div class="line">&#125;  </div><div class="line"><span class="comment">//删除cookie  </span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">removeCookie</span>(<span class="params">name</span>)</span>&#123;  </div><div class="line">    <span class="comment">//调用setCookie方法，把时间设置为-1  </span></div><div class="line">    setCookie(name,<span class="number">1</span>,<span class="number">-1</span>);  </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+        <h2 id="http"><a href="#http" class="headerlink" title="$http"></a>$http</h2><p>angular提供了$http服务来同服务端进行通信，$http服务队浏览器的XMLHttpRequest对象进行了封装，让我们可以以ajax的方式来从服务器请求数据。<br>$http服务是一个接受一个参数的函数，参数的类型是对象，用来配置生成的http的请求，该函数返回一个promise对象（关于promise规范，可以看看这篇文章）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var promise = $http(&#123;</div><div class="line">  method:&apos;GET&apos;,</div><div class="line">  url:&apos;/api/user.json&apos;</div><div class="line">&#125;);</div><div class="line">promise.then(function(resp)&#123;&#125;, function(resp)&#123;&#125;)</div></pre></td></tr></table></figure>
+<p>$http请求的配置对象<br>$http()接受的配置对象可以包含以下属性:</p>
+<blockquote>
+<p>method:http请求方式，可以为GET,DELETE,HEAD,JSONP,POST,PUT<br>url:字符串，请求的目标<br>params:字符串或者对象，会被转换成为查询字符串追加的url后面<br>data:在发送post请求时使用，作为消息体发送到服务器<br>headers:一个列表，每个元素都是一个函数，返回http头<br>xsrfHeaderName(字符串)：保存XSFR令牌的http头的名称<br>xsrfCookieName:保存XSFR令牌的cookie名称<br>transformRequest:函数或者函数数组，用来对http请求的请求体和头信息进行转换，并返回转换后的结果。<br>transformResponse:函数或者函数数组，用来对http响应的响应体和头信息进行转换，并返回转换后的结果。<br>cache:布尔类型或者缓存对象，设置之后angular会缓存get请求。<br>timeout:数值，延迟请求<br>responseType：字符串，响应类型。可以为arraybuffer, blob,document,json, text, moz-blob, moz-chunked-text, moz-chunked-arraybuffer<br>$http请求的响应对象<br>angular传递给then方法的响应对象包括以下几个属性<br>data:转换之后的响应体<br>status:http响应状态码<br>headers:头信息<br>config:生成原始请求的设置对象<br>statusText:http响应状态的文本</p>
+</blockquote>
+
       
     </div>
 
@@ -330,17 +339,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/blog/2016/09/14/输出字符/" rel="next" title="输出字符">
-                <i class="fa fa-chevron-left"></i> 输出字符
+              <a href="/blog/2016/11/27/css3变量/" rel="next" title="css3变量">
+                <i class="fa fa-chevron-left"></i> css3变量
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/blog/2016/09/14/call()和apply()/" rel="prev" title="call()和apply()">
-                call()和apply() <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -447,7 +452,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#cookie"><span class="nav-number">1.</span> <span class="nav-text">cookie</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#http"><span class="nav-number">1.</span> <span class="nav-text">$http</span></a></li></ol></div>
             
           </div>
         </section>

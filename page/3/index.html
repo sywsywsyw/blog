@@ -84,16 +84,15 @@
 
 
 
-<meta name="description" content="cookie12345678910111213141516171819202122232425//设置cookie  //name是cookie中的名，value是对应的值，iTime是多久过期（单位为天）  function setCookie(name,value,iTime)&amp;#123;      var oDate = new Date();      //设置cookie过期时间">
-<meta property="og:type" content="article">
-<meta property="og:title" content="cookie">
-<meta property="og:url" content="http://yoursite.com/2016/09/14/cookie/index.html">
+<meta name="description" content="水滴石穿">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Blog station">
+<meta property="og:url" content="http://yoursite.com/page/3/index.html">
 <meta property="og:site_name" content="Blog station">
-<meta property="og:description" content="cookie12345678910111213141516171819202122232425//设置cookie  //name是cookie中的名，value是对应的值，iTime是多久过期（单位为天）  function setCookie(name,value,iTime)&amp;#123;      var oDate = new Date();      //设置cookie过期时间">
-<meta property="og:updated_time" content="2016-09-18T01:36:48.962Z">
+<meta property="og:description" content="水滴石穿">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="cookie">
-<meta name="twitter:description" content="cookie12345678910111213141516171819202122232425//设置cookie  //name是cookie中的名，value是对应的值，iTime是多久过期（单位为天）  function setCookie(name,value,iTime)&amp;#123;      var oDate = new Date();      //设置cookie过期时间">
+<meta name="twitter:title" content="Blog station">
+<meta name="twitter:description" content="水滴石穿">
 
 
 
@@ -114,9 +113,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/09/14/cookie/"/>
+  <link rel="canonical" href="http://yoursite.com/page/3/"/>
 
-  <title> cookie | Blog station </title>
+  <title> Blog station </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -137,7 +136,9 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left page-post-detail ">
+  <div class="container one-collumn sidebar-position-left 
+   page-home 
+ ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -224,9 +225,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-
-  <div id="posts" class="posts-expand">
+  <section id="posts" class="posts-expand">
     
+      
 
   
   
@@ -246,7 +247,10 @@
             
             
               
-                cookie
+                
+                <a class="post-title-link" href="/blog/2016/09/14/关于angular个人遇到的问题/" itemprop="url">
+                  关于angular个人遇到的问题
+                </a>
               
             
           </h1>
@@ -258,7 +262,7 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-09-14T18:07:27+08:00" content="2016-09-14">
+            <time itemprop="dateCreated" datetime="2016-09-14T15:50:50+08:00" content="2016-09-14">
               2016-09-14
             </time>
           </span>
@@ -272,8 +276,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/blog/categories/JS/" itemprop="url" rel="index">
-                    <span itemprop="name">JS</span>
+                  <a href="/blog/categories/angular/" itemprop="url" rel="index">
+                    <span itemprop="name">angular</span>
                   </a>
                 </span>
 
@@ -305,21 +309,26 @@
       
 
       
-        <h3 id="cookie"><a href="#cookie" class="headerlink" title="cookie"></a>cookie</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//设置cookie  </span></div><div class="line"><span class="comment">//name是cookie中的名，value是对应的值，iTime是多久过期（单位为天）  </span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">setCookie</span>(<span class="params">name,value,iTime</span>)</span>&#123;  </div><div class="line">    <span class="keyword">var</span> oDate = <span class="keyword">new</span> <span class="built_in">Date</span>();  </div><div class="line">    <span class="comment">//设置cookie过期时间  </span></div><div class="line">    oDate.setDate(oDate.getDate()+iTime);  </div><div class="line">    <span class="built_in">document</span>.cookie = name+<span class="string">'='</span>+value+<span class="string">';expires='</span>+oDate.toGMTString();  </div><div class="line">&#125;  </div><div class="line"><span class="comment">//获取cookie  </span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">getCookie</span>(<span class="params">name</span>)</span>&#123;  </div><div class="line">    <span class="comment">//cookie中的数据都是以分号加空格区分开  </span></div><div class="line">    <span class="keyword">var</span> arr = <span class="built_in">document</span>.cookie.split(<span class="string">"; "</span>);  </div><div class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>; i&lt;arr.length; i++)&#123;  </div><div class="line">        <span class="keyword">if</span>(arr[i].split(<span class="string">"="</span>)[<span class="number">0</span>] == name)&#123;  </div><div class="line">            <span class="keyword">return</span> arr[i].split(<span class="string">"="</span>)[<span class="number">1</span>];  </div><div class="line">        &#125;  </div><div class="line">    &#125;  </div><div class="line">    <span class="comment">//未找到对应的cookie则返回空字符串  </span></div><div class="line">    <span class="keyword">return</span> <span class="string">''</span>;  </div><div class="line">&#125;  </div><div class="line"><span class="comment">//删除cookie  </span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">removeCookie</span>(<span class="params">name</span>)</span>&#123;  </div><div class="line">    <span class="comment">//调用setCookie方法，把时间设置为-1  </span></div><div class="line">    setCookie(name,<span class="number">1</span>,<span class="number">-1</span>);  </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+        
+          
+          关于ng-if
+当一个元素需要隐藏和显示时，用ng-if的话，会出现其中包含的元素身上的方法无法正确
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/blog/2016/09/14/关于angular个人遇到的问题/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
       
     </div>
 
     <div>
       
-        
-
-      
     </div>
 
     <div>
-      
-        
-
       
     </div>
 
@@ -327,36 +336,23 @@
       
 
       
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/blog/2016/09/14/输出字符/" rel="next" title="输出字符">
-                <i class="fa fa-chevron-left"></i> 输出字符
-              </a>
-            
-          </div>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/blog/2016/09/14/call()和apply()/" rel="prev" title="call()和apply()">
-                call()和apply() <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
 
       
+      
+        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
+    
+  </section>
 
-    <div class="post-spread">
-      
-    </div>
-  </div>
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/blog/page/2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/blog/">1</a><a class="page-number" href="/blog/page/2/">2</a><span class="page-number current">3</span>
+  </nav>
+
 
 
           </div>
@@ -364,10 +360,6 @@
 
 
           
-  <div class="comments" id="comments">
-    
-  </div>
-
 
         </div>
         
@@ -387,17 +379,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview sidebar-panel ">
+      <section class="site-overview sidebar-panel  sidebar-panel-active ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/blog/images/avatar.png"
@@ -440,17 +423,6 @@
 
       </section>
 
-      
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-            
-              
-            
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#cookie"><span class="nav-number">1.</span> <span class="nav-text">cookie</span></a></li></ol></div>
-            
-          </div>
-        </section>
       
 
     </div>
@@ -547,10 +519,6 @@
   
 
   
-  <script type="text/javascript" src="/blog/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/blog/js/src/post-details.js?v=5.0.1"></script>
-
-
 
   
 
