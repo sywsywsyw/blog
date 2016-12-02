@@ -84,31 +84,16 @@
 
 
 
-<meta name="description" content="toLocaleUpperCase 方法返回一个字符串，其中所有的字母字符都被转换为大写，同时适应宿主环境的当前区域设置。
-
-stringVar.tolocaleUpperCase()
-
-必选的 stringVar 引用是一个 String 对象，值或文字。
-说明toLocaleUpperCase 方法转换字符串中的字符，同时适应宿主环境的当前区域设置。在大多数情况下，其结果与利用 toUpper">
+<meta name="description" content="有时候，在网页中点击了页面中的按钮或是刷新了页面后，页面滚动条又 会回到顶部，想看后面的记录就又要拖动滚动条，或者要按翻页键，非常不方便，想在提交页面或者在页面刷新的时候仍然保持滚动条的位置不变，最好的办法就是 在JS中用cookie记录下当前滚动条的位置，然后刷新时读取cookie就可以实现这个功能了。代码如下：123456789101112131415161718192021222324252">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JS字符串转换大小写">
-<meta property="og:url" content="http://yoursite.com/2016/11/30/JS字符串转换大小写/index.html">
+<meta property="og:title" content="JS控制滚动条刷新位置不变">
+<meta property="og:url" content="http://yoursite.com/2016/12/01/JS控制滚动条刷新位置不变/index.html">
 <meta property="og:site_name" content="Blog station">
-<meta property="og:description" content="toLocaleUpperCase 方法返回一个字符串，其中所有的字母字符都被转换为大写，同时适应宿主环境的当前区域设置。
-
-stringVar.tolocaleUpperCase()
-
-必选的 stringVar 引用是一个 String 对象，值或文字。
-说明toLocaleUpperCase 方法转换字符串中的字符，同时适应宿主环境的当前区域设置。在大多数情况下，其结果与利用 toUpper">
-<meta property="og:updated_time" content="2016-11-30T10:45:35.683Z">
+<meta property="og:description" content="有时候，在网页中点击了页面中的按钮或是刷新了页面后，页面滚动条又 会回到顶部，想看后面的记录就又要拖动滚动条，或者要按翻页键，非常不方便，想在提交页面或者在页面刷新的时候仍然保持滚动条的位置不变，最好的办法就是 在JS中用cookie记录下当前滚动条的位置，然后刷新时读取cookie就可以实现这个功能了。代码如下：123456789101112131415161718192021222324252">
+<meta property="og:updated_time" content="2016-12-01T02:42:14.067Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JS字符串转换大小写">
-<meta name="twitter:description" content="toLocaleUpperCase 方法返回一个字符串，其中所有的字母字符都被转换为大写，同时适应宿主环境的当前区域设置。
-
-stringVar.tolocaleUpperCase()
-
-必选的 stringVar 引用是一个 String 对象，值或文字。
-说明toLocaleUpperCase 方法转换字符串中的字符，同时适应宿主环境的当前区域设置。在大多数情况下，其结果与利用 toUpper">
+<meta name="twitter:title" content="JS控制滚动条刷新位置不变">
+<meta name="twitter:description" content="有时候，在网页中点击了页面中的按钮或是刷新了页面后，页面滚动条又 会回到顶部，想看后面的记录就又要拖动滚动条，或者要按翻页键，非常不方便，想在提交页面或者在页面刷新的时候仍然保持滚动条的位置不变，最好的办法就是 在JS中用cookie记录下当前滚动条的位置，然后刷新时读取cookie就可以实现这个功能了。代码如下：123456789101112131415161718192021222324252">
 
 
 
@@ -129,9 +114,9 @@ stringVar.tolocaleUpperCase()
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/11/30/JS字符串转换大小写/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/12/01/JS控制滚动条刷新位置不变/"/>
 
-  <title> JS字符串转换大小写 | Blog station </title>
+  <title> JS控制滚动条刷新位置不变 | Blog station </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -261,7 +246,7 @@ stringVar.tolocaleUpperCase()
             
             
               
-                JS字符串转换大小写
+                JS控制滚动条刷新位置不变
               
             
           </h1>
@@ -273,8 +258,8 @@ stringVar.tolocaleUpperCase()
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-30T18:27:25+08:00" content="2016-11-30">
-              2016-11-30
+            <time itemprop="dateCreated" datetime="2016-12-01T10:40:18+08:00" content="2016-12-01">
+              2016-12-01
             </time>
           </span>
 
@@ -320,39 +305,9 @@ stringVar.tolocaleUpperCase()
       
 
       
-        <p>toLocaleUpperCase 方法<br>返回一个字符串，其中所有的字母字符都被转换为大写，同时适应宿主环境的当前区域设置。</p>
-<blockquote>
-<p>stringVar.tolocaleUpperCase()</p>
-</blockquote>
-<p>必选的 stringVar 引用是一个 String 对象，值或文字。</p>
-<p>说明<br>toLocaleUpperCase 方法转换字符串中的字符，同时适应宿主环境的当前区域设置。在大多数情况下，其结果与利用 toUpperCase 方法所得到的结果是一样的。然而，如果语言规则与常规的 Unicode 大小写映射方式冲突，那么结果就会不同。</p>
-<p>toLocaleLowerCase 方法<br>返回一个字符串，其中所有的字母字符都被转换为小写，同时考虑到宿主环境的当前区域设置。</p>
-<blockquote>
-<p>stringVar.tolocaleLowerCase()</p>
-</blockquote>
-<p>必选的 stringVar 引用是一个 String 对象，值或文字。</p>
-<p>说明<br>toLocaleLowerCase 方法转换字符串中的字符，同时适应宿主环境的当前区域设置。在大多数情况下，其结果与利用 toLowerCase 方法所得到的结果是一样的。然而，如果语言规则与常规的 Unicode 大小写映射方式冲突，那么结果就会不同。</p>
-<p>//转换成小写<br>toLowerCase 方法<br>返回一个字符串，该字符串中的字母被转换为小写字母。</p>
-<blockquote>
-<p>strVariable.toLowerCase()<br>“String Literal”.toLowerCase()</p>
-</blockquote>
-<p>说明<br>toLowerCase 方法对非字母字符不会产生影响。</p>
-<p>下面的示例演示了 of the toLowerCase 方法的效果：</p>
-<blockquote>
-<p>var strVariable = “This is a STRING object”;<br>strVariable = strVariable.toLowerCase();<br>在执行上一条语句后 strVariable 的值为：</p>
-<p>this is a string object</p>
-</blockquote>
-<p>//转换成大写<br>toUpperCase 方法<br>返回一个字符串，该字符串中的所有字母都被转化为大写字母。</p>
-<blockquote>
-<p>strVariable.toUpperCase()<br>“String Literal”.toUpperCase()</p>
-</blockquote>
-<p>说明<br>toUpperCase 方法对非字母字符不会产生影响。</p>
-<p>示例<br>下面的示例演示了 toUpperCase 方法的效果：</p>
-<blockquote>
-<p>var strVariable = “This is a STRING object”;<br>strVariable = strVariable.toUpperCase();</p>
-<p>在执行上一条语句后 strVariable 的值为：</p>
-<p>THIS IS A STRING OBJECT</p>
-</blockquote>
+        <p>有时候，在网页中点击了页面中的按钮或是刷新了页面后，页面滚动条又 会回到顶部，想看后面的记录就又要拖动滚动条，或者要按翻页键，非常不方便，想在提交页面或者在页面刷新的时候仍然保持滚动条的位置不变，最好的办法就是 在JS中用cookie记录下当前滚动条的位置，然后刷新时读取cookie就可以实现这个功能了。<br>代码如下：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line">  &lt;script type=<span class="string">"text/javascript"</span>&gt;</div><div class="line">    <span class="function"><span class="keyword">function</span>  <span class="title">Trim</span>(<span class="params">strValue</span>)     </span></div><div class="line">    &#123;     </div><div class="line">      <span class="keyword">return</span>   strValue.replace(<span class="regexp">/^s*|s*$/g</span>,<span class="string">""</span>);     </div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">SetCookie</span>(<span class="params">sName,sValue</span>)     </span></div><div class="line">    &#123;     </div><div class="line">      <span class="built_in">document</span>.cookie = sName + <span class="string">"="</span> + <span class="built_in">escape</span>(sValue);     </div><div class="line">    &#125;   </div><div class="line">    </div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">GetCookie</span>(<span class="params">sName</span>)     </span></div><div class="line">    &#123;     </div><div class="line">     <span class="keyword">var</span> aCookie = <span class="built_in">document</span>.cookie.split(<span class="string">";"</span>);     </div><div class="line">     <span class="keyword">for</span>(<span class="keyword">var</span>　i=<span class="number">0</span>;　i　&lt; aCookie.length;　i++)     </div><div class="line">     &#123;     </div><div class="line">       <span class="keyword">var</span> aCrumb = aCookie[i].split(<span class="string">"="</span>);     </div><div class="line">       <span class="keyword">if</span>(sName　== Trim(aCrumb[<span class="number">0</span>]))     </div><div class="line">       &#123;     </div><div class="line">         <span class="keyword">return</span> <span class="built_in">unescape</span>(aCrumb[<span class="number">1</span>]);     </div><div class="line">       &#125;     </div><div class="line">     &#125;     </div><div class="line">     </div><div class="line">     　　<span class="keyword">return</span> <span class="literal">null</span>;     </div><div class="line">   &#125; </div><div class="line">   </div><div class="line">   <span class="function"><span class="keyword">function</span> <span class="title">scrollback</span>(<span class="params"></span>)     </span></div><div class="line">   &#123;     </div><div class="line">     <span class="keyword">if</span>(GetCookie(<span class="string">"scroll"</span>)!=<span class="literal">null</span>)&#123;<span class="built_in">document</span>.body.scrollTop=GetCookie(<span class="string">"scroll"</span>)&#125;     </div><div class="line">   &#125;     </div><div class="line">&lt;<span class="regexp">/script&gt;</span></div></pre></td></tr></table></figure></p>
+<p>然后在html页面中设置<body id="body" onscroll="SetCookie("scroll",body.scrollTop);" onload="scrollback();">就可以在刷新或提交后滚动条的位置保持不变了。</body></p>
+<p>上面的是通用的解决方法，在.net中还可以用<pages maintainscrollpositiononpostback="true">这个配置，更容易</pages></p>
 
       
     </div>
@@ -378,17 +333,13 @@ stringVar.tolocaleUpperCase()
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/blog/2016/11/28/angular中的请求/" rel="next" title="angular中的请求">
-                <i class="fa fa-chevron-left"></i> angular中的请求
+              <a href="/blog/2016/11/30/JS字符串转换大小写/" rel="next" title="JS字符串转换大小写">
+                <i class="fa fa-chevron-left"></i> JS字符串转换大小写
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/blog/2016/12/01/JS控制滚动条刷新位置不变/" rel="prev" title="JS控制滚动条刷新位置不变">
-                JS控制滚动条刷新位置不变 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
