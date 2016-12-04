@@ -96,7 +96,7 @@
 当一个元素需要隐藏和显示时，用ng-if的话，会出现其中包含的元素身上的方法无法正确调用的现象，所以，当元素中有方法时，最好使用 ng-show 和 ng-hide
 
 获取input焦点123456var myApp = angular.module(&apos;myApp&apos;,[]);myApp.directive(&apos;setFocus&apos;, function()&amp;#123;return fun">
-<meta property="og:updated_time" content="2016-12-03T07:12:22.039Z">
+<meta property="og:updated_time" content="2016-12-04T11:51:06.508Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于angular个人遇到的问题">
 <meta name="twitter:description" content="关于ng-if
@@ -334,6 +334,9 @@
 </blockquote>
 <p>###ng-bind-html=””<br>当想要呈现的后台文本中有HTML标签的时候，使用ng-bind-html来代替ng-bind，就能正常的使用想用的HTML标签了。但要注意文本中如果使用到符号的话，注意要转义符号。<br>但要注意文本中如果使用到符号的话,注意要转义符号<br>如: (1)  大于符号（&gt;）   —&gt; &gt;<br>      (2)  小于符号（&lt;）   —&gt; &lt;<br>否则系统报错<br>要使用：$sanitize服务<br>在angular.module中配置sanitize服务：var myApp = angular.module(‘myApp’, [‘ngSanitize’]);</p>
 <script src="../js/angular-sanitize.js"></script>
+
+<p>###angular自带遍历方法  angular.forEach<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> objs =[&#123;a:<span class="number">1</span>&#125;,&#123;a:<span class="number">2</span>&#125;];</div><div class="line">angular.forEach(objs, <span class="function"><span class="keyword">function</span>(<span class="params">data,index,array</span>)</span>&#123;</div><div class="line">        <span class="comment">//data等价于array[index]</span></div><div class="line">        <span class="built_in">console</span>.log(data.a+<span class="string">'='</span>+array[index].a);</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
+
       
     </div>
 
