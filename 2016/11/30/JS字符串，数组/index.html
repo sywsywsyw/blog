@@ -84,31 +84,31 @@
 
 
 
-<meta name="description" content="toLocaleUpperCase 方法返回一个字符串，其中所有的字母字符都被转换为大写，同时适应宿主环境的当前区域设置。
+<meta name="description" content="字符串大小写互转toLocaleUpperCase 方法返回一个字符串，其中所有的字母字符都被转换为大写，同时适应宿主环境的当前区域设置。
 
 stringVar.tolocaleUpperCase()
 
 必选的 stringVar 引用是一个 String 对象，值或文字。
-说明toLocaleUpperCase 方法转换字符串中的字符，同时适应宿主环境的当前区域设置。在大多数情况下，其结果与利用 toUpper">
+说明toLocaleUpperCase 方法转换字符串中的字符，同时适应宿主环境的当前区域设置。在大多数情况下，其结果与利用">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JS字符串转换大小写">
-<meta property="og:url" content="http://yoursite.com/2016/11/30/JS字符串转换大小写/index.html">
+<meta property="og:title" content="JS字符串控制">
+<meta property="og:url" content="http://yoursite.com/2016/11/30/JS字符串，数组/index.html">
 <meta property="og:site_name" content="Blog station">
-<meta property="og:description" content="toLocaleUpperCase 方法返回一个字符串，其中所有的字母字符都被转换为大写，同时适应宿主环境的当前区域设置。
+<meta property="og:description" content="字符串大小写互转toLocaleUpperCase 方法返回一个字符串，其中所有的字母字符都被转换为大写，同时适应宿主环境的当前区域设置。
 
 stringVar.tolocaleUpperCase()
 
 必选的 stringVar 引用是一个 String 对象，值或文字。
-说明toLocaleUpperCase 方法转换字符串中的字符，同时适应宿主环境的当前区域设置。在大多数情况下，其结果与利用 toUpper">
-<meta property="og:updated_time" content="2016-11-30T10:45:35.683Z">
+说明toLocaleUpperCase 方法转换字符串中的字符，同时适应宿主环境的当前区域设置。在大多数情况下，其结果与利用">
+<meta property="og:updated_time" content="2016-12-07T10:35:33.556Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JS字符串转换大小写">
-<meta name="twitter:description" content="toLocaleUpperCase 方法返回一个字符串，其中所有的字母字符都被转换为大写，同时适应宿主环境的当前区域设置。
+<meta name="twitter:title" content="JS字符串控制">
+<meta name="twitter:description" content="字符串大小写互转toLocaleUpperCase 方法返回一个字符串，其中所有的字母字符都被转换为大写，同时适应宿主环境的当前区域设置。
 
 stringVar.tolocaleUpperCase()
 
 必选的 stringVar 引用是一个 String 对象，值或文字。
-说明toLocaleUpperCase 方法转换字符串中的字符，同时适应宿主环境的当前区域设置。在大多数情况下，其结果与利用 toUpper">
+说明toLocaleUpperCase 方法转换字符串中的字符，同时适应宿主环境的当前区域设置。在大多数情况下，其结果与利用">
 
 
 
@@ -129,9 +129,9 @@ stringVar.tolocaleUpperCase()
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/11/30/JS字符串转换大小写/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/11/30/JS字符串，数组/"/>
 
-  <title> JS字符串转换大小写 | Blog station </title>
+  <title> JS字符串控制 | Blog station </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -261,7 +261,7 @@ stringVar.tolocaleUpperCase()
             
             
               
-                JS字符串转换大小写
+                JS字符串控制
               
             
           </h1>
@@ -320,7 +320,7 @@ stringVar.tolocaleUpperCase()
       
 
       
-        <p>toLocaleUpperCase 方法<br>返回一个字符串，其中所有的字母字符都被转换为大写，同时适应宿主环境的当前区域设置。</p>
+        <h3 id="字符串大小写互转"><a href="#字符串大小写互转" class="headerlink" title="字符串大小写互转"></a>字符串大小写互转</h3><p>toLocaleUpperCase 方法<br>返回一个字符串，其中所有的字母字符都被转换为大写，同时适应宿主环境的当前区域设置。</p>
 <blockquote>
 <p>stringVar.tolocaleUpperCase()</p>
 </blockquote>
@@ -352,6 +352,16 @@ stringVar.tolocaleUpperCase()
 <p>var strVariable = “This is a STRING object”;<br>strVariable = strVariable.toUpperCase();</p>
 <p>在执行上一条语句后 strVariable 的值为：</p>
 <p>THIS IS A STRING OBJECT</p>
+</blockquote>
+<h3 id="输出图形字符"><a href="#输出图形字符" class="headerlink" title="输出图形字符"></a>输出图形字符</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"> <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">1000</span>;i&lt;<span class="number">10000</span>;i++)</div><div class="line">&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="built_in">String</span>.fromCharCode(i))</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="split-方法"><a href="#split-方法" class="headerlink" title=".split()方法"></a>.split()方法</h3><blockquote>
+<p>stringObject.split(separator,howm)<br>separator: 必需，字符串或正则表达式，以这个字符对应要操作的字符串中的字符分割<br>howm: 可选，返回数组的最大长度</p>
+</blockquote>
+<h3 id="reverse-方法"><a href="#reverse-方法" class="headerlink" title=".reverse()方法"></a>.reverse()方法</h3><blockquote>
+<p>arrayPbject.reverse()<br>用于颠倒数组中元素顺序</p>
+</blockquote>
+<h3 id="join-方法"><a href="#join-方法" class="headerlink" title=".join()方法"></a>.join()方法</h3><blockquote>
+<p>arrayObject.join(separator)<br>参数用来指定要使用的分隔符，默认为逗号</p>
 </blockquote>
 
       
@@ -456,7 +466,7 @@ stringVar.tolocaleUpperCase()
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/blog/archives">
-              <span class="site-state-item-count">23</span>
+              <span class="site-state-item-count">22</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -495,7 +505,7 @@ stringVar.tolocaleUpperCase()
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#字符串大小写互转"><span class="nav-number">1.</span> <span class="nav-text">字符串大小写互转</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出图形字符"><span class="nav-number">2.</span> <span class="nav-text">输出图形字符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#split-方法"><span class="nav-number">3.</span> <span class="nav-text">.split()方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#reverse-方法"><span class="nav-number">4.</span> <span class="nav-text">.reverse()方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#join-方法"><span class="nav-number">5.</span> <span class="nav-text">.join()方法</span></a></li></ol></div>
             
           </div>
         </section>
