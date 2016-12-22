@@ -4,6 +4,24 @@
 
     
   <url>
+    <loc>http://gxhpersonal.github.io/blog/blog/2016/11/28/angular%E4%B8%AD%E7%9A%84%E8%AF%B7%E6%B1%82/</loc>
+    <lastmod>2016-12-22T01:30:57.186Z</lastmod>
+    <data>
+        <display>
+        <title>angular中的请求</title>
+        <pubTime>2016-11-28T07:14:32.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="angular" url="http://gxhpersonal.github.io/blog/blog/categories/angular/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://gxhpersonal.github.io/blog/blog/2016/09/14/%E5%85%B6%E4%BB%96css%E9%97%AE%E9%A2%98/</loc>
     <lastmod>2016-12-19T10:53:12.430Z</lastmod>
     <data>
@@ -87,24 +105,6 @@
            
              
               <breadCrumb title="js" url="http://gxhpersonal.github.io/blog/blog/categories/js/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://gxhpersonal.github.io/blog/blog/2016/11/28/angular%E4%B8%AD%E7%9A%84%E8%AF%B7%E6%B1%82/</loc>
-    <lastmod>2016-11-28T07:16:08.622Z</lastmod>
-    <data>
-        <display>
-        <title>angular中的请求</title>
-        <pubTime>2016-11-28T07:14:32.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="angular" url="http://gxhpersonal.github.io/blog/blog/categories/angular/"/>
           
         </display>
     </data>
