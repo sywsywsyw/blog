@@ -4,6 +4,24 @@
 
     
   <url>
+    <loc>http://gxhpersonal.github.io/blog/blog/2016/09/27/angular%E5%B8%B8%E7%94%A8%E8%BF%87%E6%BB%A4%E5%99%A8/</loc>
+    <lastmod>2016-12-23T06:48:38.969Z</lastmod>
+    <data>
+        <display>
+        <title>angular常用过滤器</title>
+        <pubTime>2016-09-27T03:30:40.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="angular" url="http://gxhpersonal.github.io/blog/blog/categories/angular/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://gxhpersonal.github.io/blog/blog/2016/11/28/angular%E4%B8%AD%E7%9A%84%E8%AF%B7%E6%B1%82/</loc>
     <lastmod>2016-12-22T01:30:57.186Z</lastmod>
     <data>
@@ -141,24 +159,6 @@
            
              
               <breadCrumb title="blog" url="http://gxhpersonal.github.io/blog/blog/categories/blog/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://gxhpersonal.github.io/blog/blog/2016/09/27/angular%E5%B8%B8%E7%94%A8%E8%BF%87%E6%BB%A4%E5%99%A8/</loc>
-    <lastmod>2016-11-22T04:14:10.956Z</lastmod>
-    <data>
-        <display>
-        <title>angular常用过滤器</title>
-        <pubTime>2016-09-27T03:30:40.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="angular" url="http://gxhpersonal.github.io/blog/blog/categories/angular/"/>
           
         </display>
     </data>
