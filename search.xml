@@ -6,8 +6,18 @@
     <entry>
       <title><![CDATA[JS常见问题]]></title>
       <url>http://gxhpersonal.github.io/blog/blog/2016/12/26/JS%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</url>
-      <content type="html"><![CDATA[<p>###APP环境登录判断<br>        //登录拦截主方法，url:登录成功后跳转链接<br>        CheckLoginAndGoNext: function (url) {<br>            if (!url) {<br>                url = window.location.href;<br>            }<br>            window.hzch5.CheckLogin(url);<br>        },</p>
-<pre><code>//登录拦截 第一步：check登录状态
+      <content type="html"><![CDATA[<h3 id="encodeURIComponent函数"><a href="#encodeURIComponent函数" class="headerlink" title="encodeURIComponent函数"></a>encodeURIComponent函数</h3><p>1.encodeURIComponent() 函数可把字符串作为 URI 组件进行编码。</p>
+<ul>
+<li><p>请注意 encodeURIComponent() 函数 与 encodeURI() 函数的区别之处，前者假定它的参数是 URI 的一部分（比如        协议、主机名、路径或查询字符串）。因此 encodeURIComponent() 函数将转义用于分隔 URI 各个部分的标点符号。<br>###APP环境登录判断</p>
+<pre><code>//登录拦截主方法，url:登录成功后跳转链接
+CheckLoginAndGoNext: function (url) {
+    if (!url) {
+        url = window.location.href;
+    }
+    window.hzch5.CheckLogin(url);
+},
+
+//登录拦截 第一步：check登录状态
 CheckLogin: function (url) {
     if (!url) {
         url = window.location.href;
@@ -68,7 +78,9 @@ checkLoginByToken: function (token, url) {
     });
 },
 //登录拦截 结束
-</code></pre>]]></content>
+</code></pre></li>
+</ul>
+]]></content>
     </entry>
     
     <entry>
