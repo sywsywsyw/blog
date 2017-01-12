@@ -6,7 +6,8 @@
     <entry>
       <title><![CDATA[jquery常见问题]]></title>
       <url>http://gxhpersonal.github.io/blog/blog/2016/12/29/jquery%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</url>
-      <content type="html"></content>
+      <content type="html"><![CDATA[<p>###trigger() 方法<br>给指定元素添加触发事件，例：$(“#this”).trigger(“click”)</p>
+]]></content>
     </entry>
     
     <entry>
