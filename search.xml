@@ -799,7 +799,7 @@ $ git branch -d [branch-name]
 <blockquote>
 <p>下面这个包含在controller中<br>hzcApp.constant(‘imgLazyLoadConf’, {<br>                tolerance: 50,<br>                detectElement: true<br>      })</p>
 </blockquote>
-]]></content>
+<h3 id="directive"><a href="#directive" class="headerlink" title="directive"></a>directive</h3>]]></content>
     </entry>
     
   
