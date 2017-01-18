@@ -96,7 +96,7 @@
 当一个元素需要隐藏和显示时，用ng-if的话，会出现其中包含的元素身上的方法无法正确调用的现象，所以，当元素中有方法时，最好使用 ng-show 和 ng-hide
 
 获取input焦点123456var myApp = angular.module(&apos;myApp&apos;,[]);myApp.directive(&apos;setFocus&apos;, function()&amp;#123;return fun">
-<meta property="og:updated_time" content="2017-01-17T02:25:38.291Z">
+<meta property="og:updated_time" content="2017-01-18T02:14:13.583Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于angular个人遇到的问题">
 <meta name="twitter:description" content="关于ng-if
@@ -365,7 +365,8 @@
 <blockquote>
 <p>下面这个包含在controller中<br>hzcApp.constant(‘imgLazyLoadConf’, {<br>                tolerance: 50,<br>                detectElement: true<br>      })</p>
 </blockquote>
-<h3 id="directive"><a href="#directive" class="headerlink" title="directive"></a>directive</h3>
+<h3 id="directive"><a href="#directive" class="headerlink" title="directive"></a>directive</h3><p>2 . 在AngularJS中，操作DOM一般在指令中完成，事件监听机制是在对于已经静态生成的dom绑定事件，而如果在指令中动态生成了DOM节点，动态生成的节点不会被JS事件监听<br>angular.module(‘myapp’,[])<br>.directive(‘myText’,function($compile){<br>    var template:’<div ng-click="hello()">Hi everyone</div>‘,<br>    return{<br>        restrict:’A’,<br>        link:function(scope,ele,attr){<br>             ele.on(“click”, function() {<br>                scope.$apply(function() {<br>                    var content = $compile(template)(scope);<br>                    element.append(content);<br>               })<br>            });<br>        }<br>    }<br>}</p>
+
       
     </div>
 
