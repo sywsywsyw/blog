@@ -104,7 +104,7 @@ img标签和同级div之间的间隙处理
 
 img标签和同级div之间的间隙处理
 给img标签设置 vertic">
-<meta property="og:updated_time" content="2017-01-13T02:49:13.330Z">
+<meta property="og:updated_time" content="2017-01-19T06:19:29.838Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="其他css问题">
 <meta name="twitter:description" content="flex布局清除所有a标签在点击时出现的特效
@@ -374,6 +374,7 @@ img标签和同级div之间的间隙处理
 <p>Chrome：该行无文字时，光标高度与line-height一致；该行有文字时，光标高度从input顶部到文字底部(这两种情况都是在有设定line-height的时候)，如果没有line-height，则是与font-size一致。</p>
 <p>解决的方案：</p>
 <p>给input的height设定一个较小的高度，然后用padding去填充，基本上可以解决所有浏览器的问题</p>
+<h3 id="文字竖排排列显示方案"><a href="#文字竖排排列显示方案" class="headerlink" title="文字竖排排列显示方案"></a>文字竖排排列显示方案</h3><p>1.writing-mode:lr-tb或writing-mode:tb-rl<br>  参数：<br>    <1>、lr-tb：从左向右，从上往下<br>    <2>、tb-rl：从上往下，从右向左<br>    运行代码发现，IE显示正常，火狐、谷歌浏览器却不支持，所以不建议使用writing-mode属性。<br>2.对文字对象宽度设置只能排下一个文字的宽度距离，让文字一行排不下两个文字使其文字自动换行，就形成了竖立排版需求。<br>3.利用html br换行标签实现文字换行，对每个文字后加上换行br标签让其竖列排版。</2></1></p>
 
       
     </div>
@@ -527,7 +528,7 @@ img标签和同级div之间的间隙处理
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#flex布局"><span class="nav-number">1.</span> <span class="nav-text">flex布局</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#清除所有a标签在点击时出现的特效"><span class="nav-number">2.</span> <span class="nav-text">清除所有a标签在点击时出现的特效</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文字与图片不能垂直居中对齐"><span class="nav-number">3.</span> <span class="nav-text">文字与图片不能垂直居中对齐</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#img标签和同级div之间的间隙处理"><span class="nav-number">4.</span> <span class="nav-text">img标签和同级div之间的间隙处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文本超出后显示省略号"><span class="nav-number">5.</span> <span class="nav-text">文本超出后显示省略号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ios在fixed布局下出现bug问题"><span class="nav-number">6.</span> <span class="nav-text">ios在fixed布局下出现bug问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义光标"><span class="nav-number">7.</span> <span class="nav-text">自定义光标</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#input标签"><span class="nav-number">8.</span> <span class="nav-text">input标签</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#flex布局"><span class="nav-number">1.</span> <span class="nav-text">flex布局</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#清除所有a标签在点击时出现的特效"><span class="nav-number">2.</span> <span class="nav-text">清除所有a标签在点击时出现的特效</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文字与图片不能垂直居中对齐"><span class="nav-number">3.</span> <span class="nav-text">文字与图片不能垂直居中对齐</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#img标签和同级div之间的间隙处理"><span class="nav-number">4.</span> <span class="nav-text">img标签和同级div之间的间隙处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文本超出后显示省略号"><span class="nav-number">5.</span> <span class="nav-text">文本超出后显示省略号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ios在fixed布局下出现bug问题"><span class="nav-number">6.</span> <span class="nav-text">ios在fixed布局下出现bug问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义光标"><span class="nav-number">7.</span> <span class="nav-text">自定义光标</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#input标签"><span class="nav-number">8.</span> <span class="nav-text">input标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文字竖排排列显示方案"><span class="nav-number">9.</span> <span class="nav-text">文字竖排排列显示方案</span></a></li></ol></div>
             
           </div>
         </section>
