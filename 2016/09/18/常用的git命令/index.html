@@ -112,7 +112,7 @@ $ git init
 //克隆一个项目
 $ git clone https://github.com/gxhpersonal/blog.git
 配置Git的设置文件为.gitconfig，它可">
-<meta property="og:updated_time" content="2016-09-18T09:19:18.930Z">
+<meta property="og:updated_time" content="2017-01-24T10:20:00.692Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="常用的git命令">
 <meta name="twitter:description" content="关于git的几个专用名词
@@ -424,7 +424,11 @@ $ git cherry-pick [commit]
 
 //删除分支
 $ git branch -d [branch-name]
-</code></pre>
+</code></pre><h3 id="指定某个commit到指定的分支"><a href="#指定某个commit到指定的分支" class="headerlink" title="指定某个commit到指定的分支"></a>指定某个commit到指定的分支</h3><p>1.执行git log -3 –graph test，查看test分支下的commit:</p>
+<p>注：commit 后面的hash值代表某个commit，这里把”2e1ada53819d46557b24ee7376dc61d37a06939d“这个commit提交到master。<br>2.执行git checkout master，切换到master分支。</p>
+<p>3.执行 git cherry-pick 2e1ada53819d46557b24ee7376dc61d37a06939d，该commit便被提交到了master分支。</p>
+<p>到此，”2e1ada53819d46557b24ee7376dc61d37a06939d“这个commit便被提交到了master分支。</p>
+
       
     </div>
 
@@ -577,7 +581,7 @@ $ git branch -d [branch-name]
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#关于git的几个专用名词"><span class="nav-number">1.</span> <span class="nav-text">关于git的几个专用名词</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#新建代码库"><span class="nav-number">2.</span> <span class="nav-text">新建代码库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置"><span class="nav-number">3.</span> <span class="nav-text">配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#增加-删除文件"><span class="nav-number">4.</span> <span class="nav-text">增加/删除文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码提交"><span class="nav-number">5.</span> <span class="nav-text">代码提交</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#远程代码取到本地"><span class="nav-number">6.</span> <span class="nav-text">远程代码取到本地</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#本地代码提交到远程仓库"><span class="nav-number">7.</span> <span class="nav-text">本地代码提交到远程仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分支"><span class="nav-number">8.</span> <span class="nav-text">分支</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#关于git的几个专用名词"><span class="nav-number">1.</span> <span class="nav-text">关于git的几个专用名词</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#新建代码库"><span class="nav-number">2.</span> <span class="nav-text">新建代码库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置"><span class="nav-number">3.</span> <span class="nav-text">配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#增加-删除文件"><span class="nav-number">4.</span> <span class="nav-text">增加/删除文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码提交"><span class="nav-number">5.</span> <span class="nav-text">代码提交</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#远程代码取到本地"><span class="nav-number">6.</span> <span class="nav-text">远程代码取到本地</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#本地代码提交到远程仓库"><span class="nav-number">7.</span> <span class="nav-text">本地代码提交到远程仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分支"><span class="nav-number">8.</span> <span class="nav-text">分支</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#指定某个commit到指定的分支"><span class="nav-number">9.</span> <span class="nav-text">指定某个commit到指定的分支</span></a></li></ol></div>
             
           </div>
         </section>

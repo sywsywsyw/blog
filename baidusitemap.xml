@@ -4,6 +4,24 @@
 
     
   <url>
+    <loc>http://gxhpersonal.github.io/blog/blog/2016/09/18/%E5%B8%B8%E7%94%A8%E7%9A%84git%E5%91%BD%E4%BB%A4/</loc>
+    <lastmod>2017-01-24T10:20:00.692Z</lastmod>
+    <data>
+        <display>
+        <title>常用的git命令</title>
+        <pubTime>2016-09-18T07:48:19.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="git" url="http://gxhpersonal.github.io/blog/blog/categories/git/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://gxhpersonal.github.io/blog/blog/2016/09/14/%E5%85%B6%E4%BB%96css%E9%97%AE%E9%A2%98/</loc>
     <lastmod>2017-01-24T01:46:20.871Z</lastmod>
     <data>
@@ -249,24 +267,6 @@
            
              
               <breadCrumb title="swiper" url="http://gxhpersonal.github.io/blog/blog/categories/swiper/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://gxhpersonal.github.io/blog/blog/2016/09/18/%E5%B8%B8%E7%94%A8%E7%9A%84git%E5%91%BD%E4%BB%A4/</loc>
-    <lastmod>2016-09-18T09:19:18.930Z</lastmod>
-    <data>
-        <display>
-        <title>常用的git命令</title>
-        <pubTime>2016-09-18T07:48:19.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="git" url="http://gxhpersonal.github.io/blog/blog/categories/git/"/>
           
         </display>
     </data>
