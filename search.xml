@@ -6,7 +6,8 @@
     <entry>
       <title><![CDATA[ES6]]></title>
       <url>http://gxhpersonal.github.io/blog/blog/2017/02/06/ES6/</url>
-      <content type="html"><![CDATA[<h3 id="Promise"><a href="#Promise" class="headerlink" title="Promise"></a>Promise</h3>]]></content>
+      <content type="html"><![CDATA[<h3 id="let"><a href="#let" class="headerlink" title="let"></a>let</h3><p>let和var类似，let必须先声明后使用，否则会报错；</p>
+<h3 id="Promise"><a href="#Promise" class="headerlink" title="Promise"></a>Promise</h3>]]></content>
     </entry>
     
     <entry>
