@@ -4,6 +4,24 @@
 
     
   <url>
+    <loc>http://gxhpersonal.github.io/blog/blog/2016/11/30/JS%E5%AD%97%E7%AC%A6%E4%B8%B2%EF%BC%8C%E6%95%B0%E7%BB%84/</loc>
+    <lastmod>2017-02-16T07:22:21.678Z</lastmod>
+    <data>
+        <display>
+        <title>JS字符串控制</title>
+        <pubTime>2016-11-30T10:27:25.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="js" url="http://gxhpersonal.github.io/blog/blog/categories/js/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://gxhpersonal.github.io/blog/blog/2016/09/14/%E5%85%B6%E4%BB%96css%E9%97%AE%E9%A2%98/</loc>
     <lastmod>2017-02-16T03:25:25.658Z</lastmod>
     <data>
@@ -141,24 +159,6 @@
            
              
               <breadCrumb title="angular" url="http://gxhpersonal.github.io/blog/blog/categories/angular/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://gxhpersonal.github.io/blog/blog/2016/11/30/JS%E5%AD%97%E7%AC%A6%E4%B8%B2%EF%BC%8C%E6%95%B0%E7%BB%84/</loc>
-    <lastmod>2016-12-16T07:46:08.307Z</lastmod>
-    <data>
-        <display>
-        <title>JS字符串控制</title>
-        <pubTime>2016-11-30T10:27:25.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="js" url="http://gxhpersonal.github.io/blog/blog/categories/js/"/>
           
         </display>
     </data>
