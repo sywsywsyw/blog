@@ -6,7 +6,10 @@
     <entry>
       <title><![CDATA[vue常见问题]]></title>
       <url>http://gxhpersonal.github.io/blog/blog/2017/02/22/vue%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</url>
-      <content type="html"></content>
+      <content type="html"><![CDATA[<h3 id="如何让css只在当前组件起作用"><a href="#如何让css只在当前组件起作用" class="headerlink" title="如何让css只在当前组件起作用"></a>如何让css只在当前组件起作用</h3><p>在style标签中加入scoped语句</p>
+<style scoped></style>
+
+]]></content>
     </entry>
     
     <entry>
