@@ -33,6 +33,8 @@
       <title><![CDATA[JS常见问题]]></title>
       <url>http://gxhpersonal.github.io/blog/blog/2016/12/26/JS%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</url>
       <content type="html"><![CDATA[<h3 id="Ajax跨域问题解决"><a href="#Ajax跨域问题解决" class="headerlink" title="Ajax跨域问题解决"></a>Ajax跨域问题解决</h3><p><a href="">http://www.cnblogs.com/pandang/p/5341250.html</a></p>
+<h3 id="JS判断浏览器种类IE，FF，Opera-Safari-chrome…"><a href="#JS判断浏览器种类IE，FF，Opera-Safari-chrome…" class="headerlink" title="JS判断浏览器种类IE，FF，Opera,Safari,chrome…"></a>JS判断浏览器种类IE，FF，Opera,Safari,chrome…</h3><p><a href="">http://www.jb51.net/article/50464.htm</a></p>
+<p>//基本原理就是根据浏览器的userAgent判断<br>var userAgent = navigator.userAgent;<br>//例如：<br>if (userAgent.indexOf(“Safari”) &gt; -1) {<br>        return “Safari”;<br>} //判断是否Safari浏览器</p>
 <h3 id="警告，确认，信息输入弹窗"><a href="#警告，确认，信息输入弹窗" class="headerlink" title="警告，确认，信息输入弹窗"></a>警告，确认，信息输入弹窗</h3><p>alert confirm prompt</p>
 <h3 id="encodeURIComponent函数"><a href="#encodeURIComponent函数" class="headerlink" title="encodeURIComponent函数"></a>encodeURIComponent函数</h3><p>1.encodeURIComponent() 函数可把字符串作为 URI 组件进行编码。</p>
 <ul>
