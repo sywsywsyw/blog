@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://gxhpersonal.github.io/blog/blog/2016/11/25/html%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</loc>
+    
+    <lastmod>2017-03-02T01:21:57.343Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://gxhpersonal.github.io/blog/blog/2016/12/26/JS%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</loc>
     
     <lastmod>2017-02-27T10:23:34.345Z</lastmod>
@@ -68,13 +75,6 @@
     <loc>http://gxhpersonal.github.io/blog/blog/2016/11/28/angular%E4%B8%AD%E7%9A%84%E8%AF%B7%E6%B1%82/</loc>
     
     <lastmod>2016-12-22T01:30:57.186Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://gxhpersonal.github.io/blog/blog/2016/11/25/html%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</loc>
-    
-    <lastmod>2016-12-07T02:06:29.016Z</lastmod>
     
   </url>
   
@@ -149,7 +149,7 @@
   </url>
   
   <url>
-    <loc>http://gxhpersonal.github.io/blog/blog/2016/09/14/call()%E5%92%8Capply()/</loc>
+    <loc>http://gxhpersonal.github.io/blog/blog/2016/09/14/undefined/</loc>
     
     <lastmod>2016-09-18T01:36:48.962Z</lastmod>
     
@@ -163,7 +163,7 @@
   </url>
   
   <url>
-    <loc>http://gxhpersonal.github.io/blog/blog/2016/09/14/undefined/</loc>
+    <loc>http://gxhpersonal.github.io/blog/blog/2016/09/14/call()%E5%92%8Capply()/</loc>
     
     <lastmod>2016-09-18T01:36:48.962Z</lastmod>
     
