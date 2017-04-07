@@ -613,6 +613,10 @@ $ git branch -d [branch-name]
 <h3 id="文字竖排排列显示方案"><a href="#文字竖排排列显示方案" class="headerlink" title="文字竖排排列显示方案"></a>文字竖排排列显示方案</h3><p>1.writing-mode:lr-tb或writing-mode:tb-rl<br>  参数：<br>    <1>、lr-tb：从左向右，从上往下<br>    <2>、tb-rl：从上往下，从右向左<br>    运行代码发现，IE显示正常，火狐、谷歌浏览器却不支持，所以不建议使用writing-mode属性。<br>2.对文字对象宽度设置只能排下一个文字的宽度距离，让文字一行排不下两个文字使其文字自动换行，就形成了竖立排版需求。<br>3.利用html br换行标签实现文字换行，对每个文字后加上换行br标签让其竖列排版。</2></1></p>
 <h3 id="ios下input样式问题"><a href="#ios下input样式问题" class="headerlink" title="ios下input样式问题"></a>ios下input样式问题</h3><p>1.ios下如果想要禁用input,input设置为readonly仍然会呼起键盘，所以必须设置disabled属性。<br>2.ios下设置为disabled属性，input表单背景颜色会变灰，透明度会降低，所以，必须设置<br>    input:disabled{<br>       opacity:1;<br>       bakcground:#fff;<br>    }</p>
 <h3 id="css3滤镜效果：-webkit-filter"><a href="#css3滤镜效果：-webkit-filter" class="headerlink" title="css3滤镜效果：-webkit-filter"></a>css3滤镜效果：-webkit-filter</h3><p><a href="">http://www.css88.com/html5-demo/-webkit-filter/index.html</a></p>
+<h3 id="字体抗锯齿效果"><a href="#字体抗锯齿效果" class="headerlink" title="字体抗锯齿效果"></a>字体抗锯齿效果</h3><p>Webkit在自己的引擎中支持了这一效果。<br>-webkit-font-smoothing<br>它有三个属性值：<br>none —— 对低像素的文本比较好<br>subpixel-antialiased——默认值<br>antialiased ——抗锯齿很好<br>.icon {</p>
+<p>-webkit-font-smoothing: antialiased;</p>
+<p>-moz-osx-font-smoothing: grayscale;  //Gecko也推出了自己的抗锯齿效果的非标定义</p>
+<p>}</p>
 ]]></content>
     </entry>
     
