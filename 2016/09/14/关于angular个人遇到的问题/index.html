@@ -96,7 +96,7 @@
 当一个元素需要隐藏和显示时，用ng-if的话，会出现其中包含的元素身上的方法无法正确调用的现象，所以，当元素中有方法时，最好使用 ng-show 和 ng-hide
 
 ###动态插入的标签元素带有angular语法不执行解决12var uploadInfo = &amp;apos;上传成功！&amp;lt;a ng-click=&amp;quot;quitTo(&amp;apos;customer&amp;apos;)&amp;">
-<meta property="og:updated_time" content="2017-02-23T09:38:23.429Z">
+<meta property="og:updated_time" content="2017-04-28T07:54:11.299Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于angular个人遇到的问题">
 <meta name="twitter:description" content="关于ng-if
@@ -369,6 +369,7 @@
 <p>下面这个包含在controller中<br>hzcApp.constant(‘imgLazyLoadConf’, {<br>                tolerance: 50,<br>                detectElement: true<br>      })</p>
 </blockquote>
 <h3 id="directive"><a href="#directive" class="headerlink" title="directive"></a>directive</h3><p>2 . 在AngularJS中，操作DOM一般在指令中完成，事件监听机制是在对于已经静态生成的dom绑定事件，而如果在指令中动态生成了DOM节点，动态生成的节点不会被JS事件监听<br>angular.module(‘myapp’,[])<br>.directive(‘myText’,function($compile){<br>    var template:’<div ng-click="hello()">Hi everyone</div>‘,<br>    return{<br>        restrict:’A’,<br>        link:function(scope,ele,attr){<br>             ele.on(“click”, function() {<br>                scope.$apply(function() {<br>                    var content = $compile(template)(scope);<br>                    element.append(content);<br>               })<br>            });<br>        }<br>    }<br>}</p>
+<h3 id="timeout-apply"><a href="#timeout-apply" class="headerlink" title="$timeout $apply"></a>$timeout $apply</h3><p>$timeout会帮你调用$apply()，让你不需要手动地调用它<br>$apply会吧我们的代码wrapped到了$scope.$apply()中，它会自动触发$rootScope.$digest()，从而让watchers被触发用以更新view</p>
 
       
     </div>
@@ -518,7 +519,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#关于ng-if"><span class="nav-number">1.</span> <span class="nav-text">关于ng-if</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#获取input焦点"><span class="nav-number">2.</span> <span class="nav-text">获取input焦点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ng-repeat遍历数组"><span class="nav-number">3.</span> <span class="nav-text">ng-repeat遍历数组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出当前点击的对象属性值"><span class="nav-number">4.</span> <span class="nav-text">输出当前点击的对象属性值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#跳转页面"><span class="nav-number">5.</span> <span class="nav-text">跳转页面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#倒计时"><span class="nav-number">6.</span> <span class="nav-text">倒计时</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字符串拼接"><span class="nav-number">7.</span> <span class="nav-text">字符串拼接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#angularJS全局API"><span class="nav-number">8.</span> <span class="nav-text">angularJS全局API</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#angularJS懒加载"><span class="nav-number">9.</span> <span class="nav-text">angularJS懒加载</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#directive"><span class="nav-number">10.</span> <span class="nav-text">directive</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#关于ng-if"><span class="nav-number">1.</span> <span class="nav-text">关于ng-if</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#获取input焦点"><span class="nav-number">2.</span> <span class="nav-text">获取input焦点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ng-repeat遍历数组"><span class="nav-number">3.</span> <span class="nav-text">ng-repeat遍历数组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出当前点击的对象属性值"><span class="nav-number">4.</span> <span class="nav-text">输出当前点击的对象属性值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#跳转页面"><span class="nav-number">5.</span> <span class="nav-text">跳转页面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#倒计时"><span class="nav-number">6.</span> <span class="nav-text">倒计时</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字符串拼接"><span class="nav-number">7.</span> <span class="nav-text">字符串拼接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#angularJS全局API"><span class="nav-number">8.</span> <span class="nav-text">angularJS全局API</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#angularJS懒加载"><span class="nav-number">9.</span> <span class="nav-text">angularJS懒加载</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#directive"><span class="nav-number">10.</span> <span class="nav-text">directive</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#timeout-apply"><span class="nav-number">11.</span> <span class="nav-text">$timeout $apply</span></a></li></ol></div>
             
           </div>
         </section>

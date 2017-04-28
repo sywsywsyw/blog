@@ -844,6 +844,7 @@ $ git branch -d [branch-name]
 <p>下面这个包含在controller中<br>hzcApp.constant(‘imgLazyLoadConf’, {<br>                tolerance: 50,<br>                detectElement: true<br>      })</p>
 </blockquote>
 <h3 id="directive"><a href="#directive" class="headerlink" title="directive"></a>directive</h3><p>2 . 在AngularJS中，操作DOM一般在指令中完成，事件监听机制是在对于已经静态生成的dom绑定事件，而如果在指令中动态生成了DOM节点，动态生成的节点不会被JS事件监听<br>angular.module(‘myapp’,[])<br>.directive(‘myText’,function($compile){<br>    var template:’<div ng-click="hello()">Hi everyone</div>‘,<br>    return{<br>        restrict:’A’,<br>        link:function(scope,ele,attr){<br>             ele.on(“click”, function() {<br>                scope.$apply(function() {<br>                    var content = $compile(template)(scope);<br>                    element.append(content);<br>               })<br>            });<br>        }<br>    }<br>}</p>
+<h3 id="timeout-apply"><a href="#timeout-apply" class="headerlink" title="$timeout $apply"></a>$timeout $apply</h3><p>$timeout会帮你调用$apply()，让你不需要手动地调用它<br>$apply会吧我们的代码wrapped到了$scope.$apply()中，它会自动触发$rootScope.$digest()，从而让watchers被触发用以更新view</p>
 ]]></content>
     </entry>
     
