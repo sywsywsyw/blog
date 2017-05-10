@@ -90,7 +90,7 @@
 <meta property="og:url" content="http://gxhpersonal.github.io/blog/2016/09/14/其他css问题/index.html">
 <meta property="og:site_name" content="Blog station">
 <meta property="og:description" content="flex布局1.意为弹性布局，块元素：display:flex;行内元素：display:inline-flex;2.不同内核浏览器需要加前缀区分，如：display:-webkit-flex; /Safari/3.设为flex布局后，子元素的float,clear,vertical-align属性将失效。4.flex属性：1）flex-direction:row（默认值）：主轴为水平方向，起点在">
-<meta property="og:updated_time" content="2017-04-19T12:12:46.389Z">
+<meta property="og:updated_time" content="2017-05-10T06:42:46.281Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="其他css问题">
 <meta name="twitter:description" content="flex布局1.意为弹性布局，块元素：display:flex;行内元素：display:inline-flex;2.不同内核浏览器需要加前缀区分，如：display:-webkit-flex; /Safari/3.设为flex布局后，子元素的float,clear,vertical-align属性将失效。4.flex属性：1）flex-direction:row（默认值）：主轴为水平方向，起点在">
@@ -362,7 +362,8 @@
 <p>-webkit-font-smoothing: antialiased;</p>
 <p>-moz-osx-font-smoothing: grayscale;  //Gecko也推出了自己的抗锯齿效果的非标定义</p>
 <p>}</p>
-<h3 id="弹层出现禁用背景body滚动条"><a href="#弹层出现禁用背景body滚动条" class="headerlink" title="弹层出现禁用背景body滚动条"></a>弹层出现禁用背景body滚动条</h3>
+<h3 id="弹层出现禁用背景body滚动条"><a href="#弹层出现禁用背景body滚动条" class="headerlink" title="弹层出现禁用背景body滚动条"></a>弹层出现禁用背景body滚动条</h3><p>height:100%;overscroll:hidden;<br>touch-action:none;//禁止触发默认的手势操作。<br>pan-x：可以在父级元素(the nearest ancestor)内进行水平移动的手势操作。<br>pan-y：可以在父级元素内进行垂直移动的手势操作。<br>manipulation：允许手势水平/垂直平移或持续的缩放。任何auto属性支持的额外操作都不支持；<br>注：touch-action只支持具有行内块，块级的元素</p>
+
       
     </div>
 

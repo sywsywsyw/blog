@@ -4,6 +4,24 @@
 
     
   <url>
+    <loc>http://gxhpersonal.github.io/blog/blog/2016/09/14/%E5%85%B6%E4%BB%96css%E9%97%AE%E9%A2%98/</loc>
+    <lastmod>2017-05-10T06:42:46.281Z</lastmod>
+    <data>
+        <display>
+        <title>其他css问题</title>
+        <pubTime>2016-09-14T10:07:27.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="css" url="http://gxhpersonal.github.io/blog/blog/categories/css/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://gxhpersonal.github.io/blog/blog/2016/11/30/JS%E5%AD%97%E7%AC%A6%E4%B8%B2%EF%BC%8C%E6%95%B0%E7%BB%84/</loc>
     <lastmod>2017-05-05T07:39:49.659Z</lastmod>
     <data>
@@ -33,24 +51,6 @@
            
              
               <breadCrumb title="angular" url="http://gxhpersonal.github.io/blog/blog/categories/angular/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://gxhpersonal.github.io/blog/blog/2016/09/14/%E5%85%B6%E4%BB%96css%E9%97%AE%E9%A2%98/</loc>
-    <lastmod>2017-04-19T12:12:46.389Z</lastmod>
-    <data>
-        <display>
-        <title>其他css问题</title>
-        <pubTime>2016-09-14T10:07:27.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="css" url="http://gxhpersonal.github.io/blog/blog/categories/css/"/>
           
         </display>
     </data>
