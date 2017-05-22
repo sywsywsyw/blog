@@ -9,6 +9,9 @@
       <content type="html"><![CDATA[<h3 id="如何让css只在当前组件起作用"><a href="#如何让css只在当前组件起作用" class="headerlink" title="如何让css只在当前组件起作用"></a>如何让css只在当前组件起作用</h3><p>在style标签中加入scoped语句</p>
 <style scoped></style>
 
+<p>css支持scss语法：</p>
+<style lang="scss"></style>
+
 ]]></content>
     </entry>
     
