@@ -658,6 +658,9 @@ $ git branch -d [branch-name]
 <p>-moz-osx-font-smoothing: grayscale;  //Gecko也推出了自己的抗锯齿效果的非标定义</p>
 <p>}</p>
 <h3 id="弹层出现禁用背景body滚动条"><a href="#弹层出现禁用背景body滚动条" class="headerlink" title="弹层出现禁用背景body滚动条"></a>弹层出现禁用背景body滚动条</h3><p>height:100%;overscroll:hidden;<br>touch-action:none;//禁止触发默认的手势操作。<br>pan-x：可以在父级元素(the nearest ancestor)内进行水平移动的手势操作。<br>pan-y：可以在父级元素内进行垂直移动的手势操作。<br>manipulation：允许手势水平/垂直平移或持续的缩放。任何auto属性支持的额外操作都不支持；<br>注：touch-action只支持具有行内块，块级的元素</p>
+<h3 id="CSS控制输入文本大小写"><a href="#CSS控制输入文本大小写" class="headerlink" title="CSS控制输入文本大小写"></a>CSS控制输入文本大小写</h3><blockquote>
+<p>text-transform：none；capitalize；uppercase；lowercase；inherit；<br>none默认。定义带有小写字母和大写字母的标准的文本。<br>capitalize文本中的每个单词以大写字母开头。<br>uppercase定义仅有大写字母。lowercase定义无大写字母，仅有小写字母。<br>inherit规定应该从父元素继承 text-transform 属性的值。</p>
+</blockquote>
 ]]></content>
     </entry>
     
