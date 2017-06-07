@@ -4,6 +4,24 @@
 
     
   <url>
+    <loc>http://gxhpersonal.github.io/blog/blog/2016/12/29/jquery%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</loc>
+    <lastmod>2017-06-07T06:16:46.071Z</lastmod>
+    <data>
+        <display>
+        <title>jquery常见问题</title>
+        <pubTime>2016-12-29T02:04:56.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="jquery" url="http://gxhpersonal.github.io/blog/blog/categories/jquery/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://gxhpersonal.github.io/blog/blog/2016/09/14/%E5%85%B6%E4%BB%96css%E9%97%AE%E9%A2%98/</loc>
     <lastmod>2017-06-05T02:05:25.331Z</lastmod>
     <data>
@@ -141,24 +159,6 @@
            
              
               <breadCrumb title="git" url="http://gxhpersonal.github.io/blog/blog/categories/git/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://gxhpersonal.github.io/blog/blog/2016/12/29/jquery%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</loc>
-    <lastmod>2017-02-13T02:37:10.043Z</lastmod>
-    <data>
-        <display>
-        <title>jquery常见问题</title>
-        <pubTime>2016-12-29T02:04:56.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="jquery" url="http://gxhpersonal.github.io/blog/blog/categories/jquery/"/>
           
         </display>
     </data>

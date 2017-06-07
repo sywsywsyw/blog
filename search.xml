@@ -29,7 +29,15 @@
       <url>http://gxhpersonal.github.io/blog/blog/2016/12/29/jquery%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</url>
       <content type="html"><![CDATA[<p>###trigger() 方法<br>给指定元素添加触发事件，例：$(“#this”).trigger(“click”)</p>
 <p>###jQuery noConflict() 方法<br>noConflict() 方法会释放会 $ 标识符的控制，这样其他脚本就可以使用它了。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">var jq = $.noConflict();</div><div class="line">jq(document).ready(function()&#123;</div><div class="line">  jq(&quot;button&quot;).click(function()&#123;</div><div class="line">    jq(&quot;p&quot;).text(&quot;jQuery 仍在运行！&quot;);</div><div class="line">  &#125;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>]]></content>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">var jq = $.noConflict();</div><div class="line">jq(document).ready(function()&#123;</div><div class="line">  jq(&quot;button&quot;).click(function()&#123;</div><div class="line">    jq(&quot;p&quot;).text(&quot;jQuery 仍在运行！&quot;);</div><div class="line">  &#125;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h3 id="ready-方法"><a href="#ready-方法" class="headerlink" title="ready()方法"></a>ready()方法</h3><p>当 DOM（文档对象模型） 已经加载，并且页面（包括图像）已经完全呈现时，会发生 ready 事件。</p>
+<blockquote>
+<p>ready() 函数仅能用于当前文档，因此无需选择器。<br>语法 1<br>$(document).ready(function)<br>语法 2<br>$().ready(function)<br>语法 3<br>$(function)</p>
+<ul>
+<li>提示：ready() 函数不应与 <body onload=""> 一起使用。</body></li>
+</ul>
+</blockquote>
+]]></content>
     </entry>
     
     <entry>
