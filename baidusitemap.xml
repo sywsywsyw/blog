@@ -4,6 +4,24 @@
 
     
   <url>
+    <loc>http://gxhpersonal.github.io/blog/blog/2016/12/26/JS%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</loc>
+    <lastmod>2017-06-13T08:17:19.551Z</lastmod>
+    <data>
+        <display>
+        <title>JS常见问题</title>
+        <pubTime>2016-12-26T05:37:16.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="js" url="http://gxhpersonal.github.io/blog/blog/categories/js/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://gxhpersonal.github.io/blog/blog/2016/12/29/jquery%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</loc>
     <lastmod>2017-06-07T06:16:46.071Z</lastmod>
     <data>
@@ -123,24 +141,6 @@
            
              
               <breadCrumb title="html" url="http://gxhpersonal.github.io/blog/blog/categories/html/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://gxhpersonal.github.io/blog/blog/2016/12/26/JS%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</loc>
-    <lastmod>2017-02-27T10:23:34.345Z</lastmod>
-    <data>
-        <display>
-        <title>JS常见问题</title>
-        <pubTime>2016-12-26T05:37:16.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="js" url="http://gxhpersonal.github.io/blog/blog/categories/js/"/>
           
         </display>
     </data>
