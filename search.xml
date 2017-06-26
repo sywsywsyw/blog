@@ -169,7 +169,10 @@ checkLoginByToken: function (token, url) {
 <h3 id="split-方法"><a href="#split-方法" class="headerlink" title=".split()方法"></a>.split()方法</h3><blockquote>
 <p>stringObject.split(separator,howm)<br>separator: 必需，字符串或正则表达式，以这个字符对应要操作的字符串中的字符分割<br>howm: 可选，返回数组的最大长度</p>
 </blockquote>
-<h3 id="reverse-方法"><a href="#reverse-方法" class="headerlink" title=".reverse()方法"></a>.reverse()方法</h3><blockquote>
+<h3 id="splice-方法"><a href="#splice-方法" class="headerlink" title=".splice()方法"></a>.splice()方法</h3><blockquote>
+<p>array.splice(index,howmany,item1,…..,itemX);<br>参数1必需。整数，规定添加/删除项目的位置，使用负数可从数组结尾处规定位置。，<br>参数2必需。要删除的项目数量。如果设置为 0，则不会删除项目。，<br>参数3可选。向数组添加的新项目。</p>
+</blockquote>
+<h3 id="slice-方法-可从-已有的数组中返回选定的元素"><a href="#slice-方法-可从-已有的数组中返回选定的元素" class="headerlink" title=".slice()方法   可从  已有的数组中返回选定的元素"></a>.slice()方法   可从  已有的数组中返回选定的元素</h3><h3 id="reverse-方法"><a href="#reverse-方法" class="headerlink" title=".reverse()方法"></a>.reverse()方法</h3><blockquote>
 <p>arrayPbject.reverse()<br>用于颠倒数组中元素顺序</p>
 </blockquote>
 <h3 id="join-方法"><a href="#join-方法" class="headerlink" title=".join()方法"></a>.join()方法</h3><blockquote>
