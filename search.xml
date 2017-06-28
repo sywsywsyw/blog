@@ -418,7 +418,9 @@ checkLoginByToken: function (token, url) {
 </ol>
 </blockquote>
 <p>###limitTo过滤器：用来控制显示在页面的数量<br>ng-repeat:v in data | limitTo:15</p>
-]]></content>
+<p>###angularJS中的ng-bind-html指令和$sce服务<br>把$sce封装成一个过滤器就可以在模板上随时调用了</p>
+<p>app.filter(‘to_trusted’, [‘$sce’, function ($sce) {<br>return function (text) {<br>    return $sce.trustAsHtml(text);<br>};</p>
+<p ng-bind-html="currentWork.description | to_trusted"></p>]]></content>
     </entry>
     
     <entry>
