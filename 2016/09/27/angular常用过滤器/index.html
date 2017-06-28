@@ -106,7 +106,7 @@ lowercase 过滤器将字符串格式化为小写：
 
 
 1&amp;lt;p&amp;gt;姓名为 &amp;#123;&amp;#123; lastNa">
-<meta property="og:updated_time" content="2017-06-28T02:56:57.424Z">
+<meta property="og:updated_time" content="2017-06-28T03:07:08.973Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="angular常用过滤器">
 <meta name="twitter:description" content="一。表达式中添加过滤器过滤器可以通过一个管道字符（|）和一个过滤器添加到表达式中。
@@ -379,7 +379,8 @@ lowercase 过滤器将字符串格式化为小写：
 <p>###limitTo过滤器：用来控制显示在页面的数量<br>ng-repeat:v in data | limitTo:15</p>
 <p>###angularJS中的ng-bind-html指令和$sce服务<br>把$sce封装成一个过滤器就可以在模板上随时调用了</p>
 <p>app.filter(‘to_trusted’, [‘$sce’, function ($sce) {<br>return function (text) {<br>    return $sce.trustAsHtml(text);<br>};</p>
-<p ng-bind-html="currentWork.description | to_trusted"></p>
+<p></p><p ng-bind-html="currentWork.description | to_trusted"></p><br>其中$sce是angularJS自带的安全处理模块，$sce.trustAsHtml(input)方法便是将数据内容以html的形式进行解析并返回。将此过滤器添加到ng-bind-html所绑定的数据中，便实现了在数据加载时对于html标签的自动转义。<p></p>
+
       
     </div>
 
