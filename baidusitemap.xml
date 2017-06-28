@@ -4,6 +4,24 @@
 
     
   <url>
+    <loc>http://gxhpersonal.github.io/blog/blog/2017/02/22/vue%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</loc>
+    <lastmod>2017-06-28T06:39:03.560Z</lastmod>
+    <data>
+        <display>
+        <title>vue常见问题</title>
+        <pubTime>2017-02-22T03:34:59.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="vue" url="http://gxhpersonal.github.io/blog/blog/categories/vue/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://gxhpersonal.github.io/blog/blog/2016/09/27/angular%E5%B8%B8%E7%94%A8%E8%BF%87%E6%BB%A4%E5%99%A8/</loc>
     <lastmod>2017-06-28T03:07:08.973Z</lastmod>
     <data>
@@ -33,24 +51,6 @@
            
              
               <breadCrumb title="html" url="http://gxhpersonal.github.io/blog/blog/categories/html/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://gxhpersonal.github.io/blog/blog/2017/02/22/vue%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</loc>
-    <lastmod>2017-06-27T08:51:29.028Z</lastmod>
-    <data>
-        <display>
-        <title>vue常见问题</title>
-        <pubTime>2017-02-22T03:34:59.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="vue" url="http://gxhpersonal.github.io/blog/blog/categories/vue/"/>
           
         </display>
     </data>

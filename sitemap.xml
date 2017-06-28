@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://gxhpersonal.github.io/blog/blog/2017/02/22/vue%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</loc>
+    
+    <lastmod>2017-06-28T06:39:03.560Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://gxhpersonal.github.io/blog/blog/2016/09/27/angular%E5%B8%B8%E7%94%A8%E8%BF%87%E6%BB%A4%E5%99%A8/</loc>
     
     <lastmod>2017-06-28T03:07:08.973Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>http://gxhpersonal.github.io/blog/blog/2016/11/25/html%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</loc>
     
     <lastmod>2017-06-27T08:59:54.737Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://gxhpersonal.github.io/blog/blog/2017/02/22/vue%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</loc>
-    
-    <lastmod>2017-06-27T08:51:29.028Z</lastmod>
     
   </url>
   
