@@ -11,7 +11,7 @@
 <h3 id="v-for遍历数据问题"><a href="#v-for遍历数据问题" class="headerlink" title="v-for遍历数据问题"></a>v-for遍历数据问题</h3><blockquote>
 <p>在vue中用v-for必须搭配v-bind:key=”key”来使用；</p>
 </blockquote>
-]]></content>
+<h3 id="props-用来接收父组件传过来的数据"><a href="#props-用来接收父组件传过来的数据" class="headerlink" title="props:{}用来接收父组件传过来的数据"></a>props:{}用来接收父组件传过来的数据</h3>]]></content>
     </entry>
     
     <entry>
