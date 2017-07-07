@@ -94,7 +94,7 @@
 <meta property="og:description" content="let  constlet和var类似，let必须先声明后使用，否则会报错；let声明变量，const声明常量；12345678function kuai()&amp;#123;  let n = 5;  if(true)&amp;#123;    let n = 10;  &amp;#125;  console.log(n)&amp;#125;kuai()
 上面代码说明let有块级作用域，不同块级相同变量不受影响；
 顶层对象的">
-<meta property="og:updated_time" content="2017-07-05T02:05:37.952Z">
+<meta property="og:updated_time" content="2017-07-07T02:18:33.997Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ES6">
 <meta name="twitter:description" content="let  constlet和var类似，let必须先声明后使用，否则会报错；let声明变量，const声明常量；12345678function kuai()&amp;#123;  let n = 5;  if(true)&amp;#123;    let n = 10;  &amp;#125;  console.log(n)&amp;#125;kuai()
@@ -338,6 +338,7 @@
 <p>上面代码说明let有块级作用域，不同块级相同变量不受影响；</p>
 <h3 id="顶层对象的属性和全局变量关系"><a href="#顶层对象的属性和全局变量关系" class="headerlink" title="顶层对象的属性和全局变量关系"></a>顶层对象的属性和全局变量关系</h3><p>ES5中的顶层变量属性和全局变量挂钩，被认为是JS最大的败笔之一，<br>ES6中let，class和const声明的变量不再与顶层对象的属性关联</p>
 <h3 id="Promise"><a href="#Promise" class="headerlink" title="Promise"></a>Promise</h3><h3 id="export-default-为模块指定默认输出"><a href="#export-default-为模块指定默认输出" class="headerlink" title="export default {}为模块指定默认输出"></a>export default {}为模块指定默认输出</h3><p>export default function () {<br>  console.log(‘foo’);<br>}<br>其他模块加载该模块时，import命令可以为该匿名函数指定任意名字<br>import customName from ‘./export-default’;</p>
+<h3 id="ES6支持方法简写"><a href="#ES6支持方法简写" class="headerlink" title="ES6支持方法简写"></a>ES6支持方法简写</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a&#123;</div><div class="line">  points:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">     <span class="keyword">return</span> <span class="keyword">this</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">* ES6可以简写为</div><div class="line"><span class="keyword">var</span> a&#123;</div><div class="line">   points()&#123;</div><div class="line">     <span class="keyword">return</span> <span class="keyword">this</span>;</div><div class="line">   &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -491,7 +492,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#let-const"><span class="nav-number">1.</span> <span class="nav-text">let  const</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#顶层对象的属性和全局变量关系"><span class="nav-number">2.</span> <span class="nav-text">顶层对象的属性和全局变量关系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Promise"><span class="nav-number">3.</span> <span class="nav-text">Promise</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#export-default-为模块指定默认输出"><span class="nav-number">4.</span> <span class="nav-text">export default {}为模块指定默认输出</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#let-const"><span class="nav-number">1.</span> <span class="nav-text">let  const</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#顶层对象的属性和全局变量关系"><span class="nav-number">2.</span> <span class="nav-text">顶层对象的属性和全局变量关系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Promise"><span class="nav-number">3.</span> <span class="nav-text">Promise</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#export-default-为模块指定默认输出"><span class="nav-number">4.</span> <span class="nav-text">export default {}为模块指定默认输出</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ES6支持方法简写"><span class="nav-number">5.</span> <span class="nav-text">ES6支持方法简写</span></a></li></ol></div>
             
           </div>
         </section>
