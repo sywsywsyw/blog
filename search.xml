@@ -269,10 +269,11 @@ checkLoginByToken: function (token, url) {
 <ul>
 <li>控制onerror事件只触发一次，需要增加这句话：this.onerror=null;<br>onerror=”this.src=’默认图片的url地址;this.onerror=null’”/&gt;</li>
 </ul>
-<h3 id="input标签在chrome浏览器下背景颜色变黄色的问题"><a href="#input标签在chrome浏览器下背景颜色变黄色的问题" class="headerlink" title="input标签在chrome浏览器下背景颜色变黄色的问题"></a>input标签在chrome浏览器下背景颜色变黄色的问题</h3><p>如图<br><img src="http://https://cdn-qiniu-activity1.huizuche.com/TIM%E6%88%AA%E5%9B%BE20170718165325.png" alt=""></p>
+<h3 id="input标签在chrome浏览器下背景颜色变黄色的问题"><a href="#input标签在chrome浏览器下背景颜色变黄色的问题" class="headerlink" title="input标签在chrome浏览器下背景颜色变黄色的问题"></a>input标签在chrome浏览器下背景颜色变黄色的问题</h3><p>如图<br><img src="http://ota5i8p1g.bkt.clouddn.com/input.png" alt=""></p>
 <p>解决方法：</p>
 <blockquote>
-<p>方法一：<br> <input type="text" autocomplete="off">，没错，就是给input标签设置禁用自动完成属性；出现黄色背景就是因为启用了自动完成属性；<br>方法二：<br> -webkit-box-shadow: 0 0 0px 1000px white inset；  没错，就是给input设置内置阴影！而且一定要大，至少要比你的input本身大！不过，box-shadow是很慢的！而且，如果你的input是用图片做背景or，是没有办法做这么干的！</p>
+<p>方法一：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input type=&quot;text&quot;  autocomplete=&quot;off&quot;&gt;，没错，就是给input标签设置禁用自动完成属性；出现黄色背景就是因为启用了自动完成属性；</div></pre></td></tr></table></figure></p>
+<p>方法二：<br> -webkit-box-shadow: 0 0 0px 1000px white inset；  没错，就是给input设置内置阴影！而且一定要大，至少要比你的input本身大！不过，box-shadow是很慢的！而且，如果你的input是用图片做背景or，是没有办法做这么干的！</p>
 </blockquote>
 <h3 id="localstorage"><a href="#localstorage" class="headerlink" title="localstorage"></a>localstorage</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> storage = <span class="built_in">JSON</span>.parse(<span class="built_in">window</span>.localStorage.getItem(<span class="string">"CdlformData"</span>)) || &#123;&#125;;  <span class="comment">//从本地取localstorage数据</span></div><div class="line">storage[<span class="string">"DistributionType"</span>] = id;    <span class="comment">//localstorage数据设置key = value;</span></div><div class="line"><span class="built_in">window</span>.localStorage.setItem(<span class="string">'CdlformData'</span>,  <span class="built_in">JSON</span>.stringify(storage));   <span class="comment">// 设置好的数据存到localstorage</span></div></pre></td></tr></table></figure>
 <h3 id="h5-video标签"><a href="#h5-video标签" class="headerlink" title="h5 video标签"></a>h5 video标签</h3><blockquote>
