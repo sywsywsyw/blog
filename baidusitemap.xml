@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://gxhpersonal.github.io/blog/blog/2017/02/06/ES6/</loc>
-    <lastmod>2017-08-02T06:57:56.204Z</lastmod>
+    <lastmod>2017-08-02T07:35:32.122Z</lastmod>
     <data>
         <display>
         <title>ES6</title>
@@ -15,6 +15,24 @@
            
              
               <breadCrumb title="JS" url="http://gxhpersonal.github.io/blog/blog/categories/JS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://gxhpersonal.github.io/blog/blog/2016/09/18/%E5%B8%B8%E7%94%A8%E7%9A%84git%E5%91%BD%E4%BB%A4/</loc>
+    <lastmod>2017-08-02T07:16:50.946Z</lastmod>
+    <data>
+        <display>
+        <title>常用的git命令</title>
+        <pubTime>2016-09-18T07:48:19.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="git" url="http://gxhpersonal.github.io/blog/blog/categories/git/"/>
           
         </display>
     </data>
@@ -203,24 +221,6 @@
 
     
   <url>
-    <loc>http://gxhpersonal.github.io/blog/blog/2016/09/18/%E5%B8%B8%E7%94%A8%E7%9A%84git%E5%91%BD%E4%BB%A4/</loc>
-    <lastmod>2017-02-24T04:10:21.496Z</lastmod>
-    <data>
-        <display>
-        <title>常用的git命令</title>
-        <pubTime>2016-09-18T07:48:19.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="git" url="http://gxhpersonal.github.io/blog/blog/categories/git/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://gxhpersonal.github.io/blog/blog/2016/11/28/angular%E4%B8%AD%E7%9A%84%E8%AF%B7%E6%B1%82/</loc>
     <lastmod>2016-12-22T01:30:57.186Z</lastmod>
     <data>
@@ -365,29 +365,11 @@
 
     
   <url>
-    <loc>http://gxhpersonal.github.io/blog/blog/2016/09/14/cookie/</loc>
+    <loc>http://gxhpersonal.github.io/blog/blog/2016/09/14/window.location/</loc>
     <lastmod>2016-09-18T01:36:48.962Z</lastmod>
     <data>
         <display>
-        <title>cookie</title>
-        <pubTime>2016-09-14T10:07:27.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="JS" url="http://gxhpersonal.github.io/blog/blog/categories/JS/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://gxhpersonal.github.io/blog/blog/2016/09/14/call()%E5%92%8Capply()/</loc>
-    <lastmod>2016-09-18T01:36:48.962Z</lastmod>
-    <data>
-        <display>
-        <title>call()和apply()</title>
+        <title>window.location</title>
         <pubTime>2016-09-14T10:07:27.000Z</pubTime>
         
          
@@ -419,11 +401,29 @@
 
     
   <url>
-    <loc>http://gxhpersonal.github.io/blog/blog/2016/09/14/window.location/</loc>
+    <loc>http://gxhpersonal.github.io/blog/blog/2016/09/14/call()%E5%92%8Capply()/</loc>
     <lastmod>2016-09-18T01:36:48.962Z</lastmod>
     <data>
         <display>
-        <title>window.location</title>
+        <title>call()和apply()</title>
+        <pubTime>2016-09-14T10:07:27.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="JS" url="http://gxhpersonal.github.io/blog/blog/categories/JS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://gxhpersonal.github.io/blog/blog/2016/09/14/cookie/</loc>
+    <lastmod>2016-09-18T01:36:48.962Z</lastmod>
+    <data>
+        <display>
+        <title>cookie</title>
         <pubTime>2016-09-14T10:07:27.000Z</pubTime>
         
          
