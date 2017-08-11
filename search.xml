@@ -150,7 +150,29 @@ checkLoginByToken: function (token, url) {
     <entry>
       <title><![CDATA[JS字符串控制]]></title>
       <url>http://gxhpersonal.github.io/blog/blog/2016/11/30/JS%E5%AD%97%E7%AC%A6%E4%B8%B2%EF%BC%8C%E6%95%B0%E7%BB%84%E5%A4%84%E7%90%86/</url>
-      <content type="html"><![CDATA[<h3 id="字符串大小写互转"><a href="#字符串大小写互转" class="headerlink" title="字符串大小写互转"></a>字符串大小写互转</h3><p>toLocaleUpperCase 方法<br>返回一个字符串，其中所有的字母字符都被转换为大写，同时适应宿主环境的当前区域设置。</p>
+      <content type="html"><![CDATA[<h3 id="split-方法"><a href="#split-方法" class="headerlink" title=".split()方法"></a>.split()方法</h3><blockquote>
+<p>stringObject.split(separator,howm)<br>separator: 必需，字符串或正则表达式，以这个字符对应要操作的字符串中的字符分割<br>howm: 可选，返回数组的最大长度</p>
+</blockquote>
+<h3 id="splice-方法"><a href="#splice-方法" class="headerlink" title=".splice()方法"></a>.splice()方法</h3><blockquote>
+<p>array.splice(index,howmany,item1,…..,itemX);<br>参数1必需。整数，规定添加/删除项目的位置，使用负数可从数组结尾处规定位置。，<br>参数2必需。要删除的项目数量。如果设置为 0，则不会删除项目。，<br>参数3可选。向数组添加的新项目。</p>
+</blockquote>
+<h3 id="slice-方法-可从-已有的数组中返回选定的元素"><a href="#slice-方法-可从-已有的数组中返回选定的元素" class="headerlink" title=".slice()方法   可从  已有的数组中返回选定的元素"></a>.slice()方法   可从  已有的数组中返回选定的元素</h3><blockquote>
+<p>包含起始位置，不包含结束位置</p>
+</blockquote>
+<h3 id="reverse-方法"><a href="#reverse-方法" class="headerlink" title=".reverse()方法"></a>.reverse()方法</h3><blockquote>
+<p>arrayPbject.reverse()<br>用于颠倒数组中元素顺序</p>
+</blockquote>
+<h3 id="join-方法-把数组中的所有元素放入一个字符串"><a href="#join-方法-把数组中的所有元素放入一个字符串" class="headerlink" title=".join()方法  //把数组中的所有元素放入一个字符串"></a>.join()方法  //把数组中的所有元素放入一个字符串</h3><blockquote>
+<p>arrayObject.join(separator)<br>参数用来指定要使用的分隔符，默认为逗号</p>
+</blockquote>
+<h3 id="push-pop-unshift-shift-方法"><a href="#push-pop-unshift-shift-方法" class="headerlink" title=".push(),.pop(),.unshift(),.shift()方法"></a>.push(),.pop(),.unshift(),.shift()方法</h3><p>.push()方法在当前数组末尾添加新元素，返回值为新数组长度；<br>.pop()方法删除当前数组最后一个元素并返回这个元素；<br>.unshift()方法向数组开始位置添加元素；<br>.shift() 方法用于把数组的第一个元素从其中删除，并返回第一个元素的值</p>
+<p>###判断电话号码<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">validateMobile: <span class="function"><span class="keyword">function</span> (<span class="params">str</span>) </span>&#123;</div><div class="line">            <span class="keyword">var</span> reg = <span class="regexp">/^1[3-8]\d&#123;9&#125;$/</span>;</div><div class="line">            <span class="keyword">return</span> reg.test(str);</div><div class="line">        &#125;</div><div class="line"><span class="comment">//邮箱验证</span></div><div class="line"><span class="keyword">var</span> reg = <span class="regexp">/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/</span>;</div></pre></td></tr></table></figure></p>
+<h3 id="substr-方法"><a href="#substr-方法" class="headerlink" title=".substr()方法"></a>.substr()方法</h3><p>string.substr(star,length)<br>第一个参数要抽取的字串的起始下标，如果是负数，倒数，<br>第二个参数表示字串字符数</p>
+<h3 id="string-substring-方法"><a href="#string-substring-方法" class="headerlink" title="string.substring()方法"></a>string.substring()方法</h3><p>返回介于两个指定下标之间的字符，取第一个参数，不取第二个参数，第二个参数不填，则返回到结尾；</p>
+<h3 id="字符串转换数字类型方法"><a href="#字符串转换数字类型方法" class="headerlink" title="字符串转换数字类型方法"></a>字符串转换数字类型方法</h3><p>1.parseInt(),parseFloat()<br>js提供了parseInt()和parseFloat()两个转换函数。前者把值转换成整数，后者把值转换成浮点数。只有对String类型调用这些方法，这两个函数才能正确运行；对其他类型返回的都是NaN(Not a Number)。</p>
+<p>2.Number()<br>Number(value)——把给定的值转换成数字（可以是整数或浮点数）；</p>
+<h3 id="数组去重"><a href="#数组去重" class="headerlink" title="数组去重"></a>数组去重</h3><p>1.利用空数组+空对象push法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">function removeArrSame(arr)&#123;</div><div class="line">	var tmp = &#123;&#125;;</div><div class="line">	var newA = [];</div><div class="line">	for(var i=0;i&lt;arr.length;i++)&#123;</div><div class="line"> 		if(!tmp[arr[i]])&#123;</div><div class="line">			tmp[arr[i]] = 1;</div><div class="line">			newA.push(arr[i]);</div><div class="line">	&#125;</div><div class="line"> &#125;	</div><div class="line"> return newA;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="字符串大小写互转"><a href="#字符串大小写互转" class="headerlink" title="字符串大小写互转"></a>字符串大小写互转</h3><p>toLocaleUpperCase 方法<br>返回一个字符串，其中所有的字母字符都被转换为大写，同时适应宿主环境的当前区域设置。</p>
 <blockquote>
 <p>stringVar.tolocaleUpperCase()</p>
 </blockquote>
@@ -184,27 +206,6 @@ checkLoginByToken: function (token, url) {
 <p>THIS IS A STRING OBJECT</p>
 </blockquote>
 <h3 id="输出图形字符"><a href="#输出图形字符" class="headerlink" title="输出图形字符"></a>输出图形字符</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"> <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">1000</span>;i&lt;<span class="number">10000</span>;i++)</div><div class="line">&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="built_in">String</span>.fromCharCode(i))</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h3 id="split-方法"><a href="#split-方法" class="headerlink" title=".split()方法"></a>.split()方法</h3><blockquote>
-<p>stringObject.split(separator,howm)<br>separator: 必需，字符串或正则表达式，以这个字符对应要操作的字符串中的字符分割<br>howm: 可选，返回数组的最大长度</p>
-</blockquote>
-<h3 id="splice-方法"><a href="#splice-方法" class="headerlink" title=".splice()方法"></a>.splice()方法</h3><blockquote>
-<p>array.splice(index,howmany,item1,…..,itemX);<br>参数1必需。整数，规定添加/删除项目的位置，使用负数可从数组结尾处规定位置。，<br>参数2必需。要删除的项目数量。如果设置为 0，则不会删除项目。，<br>参数3可选。向数组添加的新项目。</p>
-</blockquote>
-<h3 id="slice-方法-可从-已有的数组中返回选定的元素"><a href="#slice-方法-可从-已有的数组中返回选定的元素" class="headerlink" title=".slice()方法   可从  已有的数组中返回选定的元素"></a>.slice()方法   可从  已有的数组中返回选定的元素</h3><blockquote>
-<p>包含起始位置，不包含结束位置</p>
-</blockquote>
-<h3 id="reverse-方法"><a href="#reverse-方法" class="headerlink" title=".reverse()方法"></a>.reverse()方法</h3><blockquote>
-<p>arrayPbject.reverse()<br>用于颠倒数组中元素顺序</p>
-</blockquote>
-<h3 id="join-方法-把数组中的所有元素放入一个字符串"><a href="#join-方法-把数组中的所有元素放入一个字符串" class="headerlink" title=".join()方法  //把数组中的所有元素放入一个字符串"></a>.join()方法  //把数组中的所有元素放入一个字符串</h3><blockquote>
-<p>arrayObject.join(separator)<br>参数用来指定要使用的分隔符，默认为逗号</p>
-</blockquote>
-<h3 id="push-pop-unshift-shift-方法"><a href="#push-pop-unshift-shift-方法" class="headerlink" title=".push(),.pop(),.unshift(),.shift()方法"></a>.push(),.pop(),.unshift(),.shift()方法</h3><p>.push()方法在当前数组末尾添加新元素，返回值为新数组长度；<br>.pop()方法删除当前数组最后一个元素并返回这个元素；<br>.unshift()方法向数组开始位置添加元素；<br>.shift() 方法用于把数组的第一个元素从其中删除，并返回第一个元素的值</p>
-<p>###判断电话号码<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">validateMobile: <span class="function"><span class="keyword">function</span> (<span class="params">str</span>) </span>&#123;</div><div class="line">            <span class="keyword">var</span> reg = <span class="regexp">/^1[3-8]\d&#123;9&#125;$/</span>;</div><div class="line">            <span class="keyword">return</span> reg.test(str);</div><div class="line">        &#125;</div><div class="line"><span class="comment">//邮箱验证</span></div><div class="line"><span class="keyword">var</span> reg = <span class="regexp">/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/</span>;</div></pre></td></tr></table></figure></p>
-<h3 id="substr-方法"><a href="#substr-方法" class="headerlink" title=".substr()方法"></a>.substr()方法</h3><p>string.substr(star,length)<br>第一个参数要抽取的字串的起始下标，如果是负数，倒数，<br>第二个参数表示字串字符数</p>
-<h3 id="string-substring-方法"><a href="#string-substring-方法" class="headerlink" title="string.substring()方法"></a>string.substring()方法</h3><p>返回介于两个指定下标之间的字符，取第一个参数，不取第二个参数，第二个参数不填，则返回到结尾；</p>
-<h3 id="字符串转换数字类型方法"><a href="#字符串转换数字类型方法" class="headerlink" title="字符串转换数字类型方法"></a>字符串转换数字类型方法</h3><p>1.parseInt(),parseFloat()<br>js提供了parseInt()和parseFloat()两个转换函数。前者把值转换成整数，后者把值转换成浮点数。只有对String类型调用这些方法，这两个函数才能正确运行；对其他类型返回的都是NaN(Not a Number)。</p>
-<p>2.Number()<br>Number(value)——把给定的值转换成数字（可以是整数或浮点数）；</p>
 ]]></content>
     </entry>
     
