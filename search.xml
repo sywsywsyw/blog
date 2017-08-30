@@ -137,7 +137,11 @@ checkLoginByToken: function (token, url) {
     });
 },
 //登录拦截 结束
-</code></pre>]]></content>
+</code></pre><p>###时间格式转换</p>
+<blockquote>
+<p>console中截的图，直接字面意思理解使用就好<br><img src="http://ota5i8p1g.bkt.clouddn.com/timeFormat.png" alt="时间格式转换"></p>
+</blockquote>
+]]></content>
     </entry>
     
     <entry>
