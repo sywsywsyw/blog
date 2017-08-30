@@ -4,6 +4,24 @@
 
     
   <url>
+    <loc>http://gxhpersonal.github.io/blog/blog/2016/12/26/JS%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</loc>
+    <lastmod>2017-08-30T01:58:59.628Z</lastmod>
+    <data>
+        <display>
+        <title>JS常见问题</title>
+        <pubTime>2016-12-26T05:37:16.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="JS" url="http://gxhpersonal.github.io/blog/blog/categories/JS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://gxhpersonal.github.io/blog/blog/2017/02/06/ES6/</loc>
     <lastmod>2017-08-29T06:46:25.790Z</lastmod>
     <data>
@@ -87,24 +105,6 @@
            
              
               <breadCrumb title="git" url="http://gxhpersonal.github.io/blog/blog/categories/git/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://gxhpersonal.github.io/blog/blog/2016/12/26/JS%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</loc>
-    <lastmod>2017-08-01T08:36:35.843Z</lastmod>
-    <data>
-        <display>
-        <title>JS常见问题</title>
-        <pubTime>2016-12-26T05:37:16.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="JS" url="http://gxhpersonal.github.io/blog/blog/categories/JS/"/>
           
         </display>
     </data>
