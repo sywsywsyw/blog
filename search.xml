@@ -490,6 +490,8 @@ $ git clone https://github.com/gxhpersonal/blog.git
 <pre><code>// 设置提交代码时的用户信息
 git config --global user.name &quot;gxhpersonal&quot;
 git config --global user.email &quot;991158744@qq.com&quot;
+</code></pre><h3 id="查看信息"><a href="#查看信息" class="headerlink" title="查看信息"></a>查看信息</h3><pre><code>//显示有变更的文件
+$ git status
 </code></pre><h3 id="增加-删除文件"><a href="#增加-删除文件" class="headerlink" title="增加/删除文件"></a>增加/删除文件</h3><pre><code>//添加当前目录的所有文件到暂存区
 $ git add .
 
@@ -547,8 +549,10 @@ $ git branch -d [branch-name]
 <p>☞ 这一步会在用户目录下的.gitconfig文件最后添加:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[credential]</div><div class="line">    helper = store</div></pre></td></tr></table></figure></p>
 <p>2.现在push你的代码 (git push), 这时会让你输入用户名密码, 这一步输入的用户名密码会被记住, 下次再push代码时就不用输入用户名密码啦!<br>☞这一步会在用户目录下生成文件.git-credential 用来记录用户名密码的信息.<br>☞ git config –global 命令实际上在操作用户目录下的.gitconfig文件, 我们cat一下此文件(cat .gitconfig), 其内容如下:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">[user]</div><div class="line"> name = alice</div><div class="line"> email = alice@aol.com</div><div class="line">[push]</div><div class="line"> default = simple</div><div class="line">[credential]</div><div class="line"> helper = store</div></pre></td></tr></table></figure></p>
 <ul>
-<li>拓展：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git config --global user.email &quot;alice@aol.com&quot; 操作的就是上面的email</div><div class="line">git config --global push.default matching 操作的就是上面的push段中的default字段</div><div class="line">git config --global credential.helper store 操作的就是上面最后一行的值</div></pre></td></tr></table></figure></li>
+<li>拓展：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git config --global user.email &quot;alice@aol.com&quot; 操作的就是上面的email</div><div class="line">git config --global push.default matching 操作的就是上面的push段中的default字段</div><div class="line">git config --global credential.helper store 操作的就是上面最后一行的值</div></pre></td></tr></table></figure>
+</li>
 </ul>
+<p>###更多</p>
 ]]></content>
     </entry>
     
