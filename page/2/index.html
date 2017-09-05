@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-Hans">
+<html class="theme-next mist use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -111,7 +111,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/blog/',
-    scheme: 'Pisces',
+    scheme: 'Mist',
     version: '5.1.2',
     sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -1128,147 +1128,6 @@ $ git branch -d [branch-name]
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://gxhpersonal.github.io/blog/blog/2016/09/14/cookie/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="郭雪辉">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/blog/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Blog station">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/blog/2016/09/14/cookie/" itemprop="url">cookie</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-09-14T18:07:27+08:00">
-                2016-09-14
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/blog/categories/JS/" itemprop="url" rel="index">
-                    <span itemprop="name">JS</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="cookie"><a href="#cookie" class="headerlink" title="cookie"></a>cookie</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//设置cookie  </span></div><div class="line"><span class="comment">//name是cookie中的名，value是对应的值，iTime是多久过期（单位为天）  </span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">setCookie</span>(<span class="params">name,value,iTime</span>)</span>&#123;  </div><div class="line">    <span class="keyword">var</span> oDate = <span class="keyword">new</span> <span class="built_in">Date</span>();  </div><div class="line">    <span class="comment">//设置cookie过期时间  </span></div><div class="line">    oDate.setDate(oDate.getDate()+iTime);  </div><div class="line">    <span class="built_in">document</span>.cookie = name+<span class="string">'='</span>+value+<span class="string">';expires='</span>+oDate.toGMTString();  </div><div class="line">&#125;  </div><div class="line"><span class="comment">//获取cookie  </span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">getCookie</span>(<span class="params">name</span>)</span>&#123;  </div><div class="line">    <span class="comment">//cookie中的数据都是以分号加空格区分开  </span></div><div class="line">    <span class="keyword">var</span> arr = <span class="built_in">document</span>.cookie.split(<span class="string">"; "</span>);  </div><div class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>; i&lt;arr.length; i++)&#123;  </div><div class="line">        <span class="keyword">if</span>(arr[i].split(<span class="string">"="</span>)[<span class="number">0</span>] == name)&#123;  </div><div class="line">            <span class="keyword">return</span> arr[i].split(<span class="string">"="</span>)[<span class="number">1</span>];  </div><div class="line">        &#125;  </div><div class="line">    &#125;  </div><div class="line">    <span class="comment">//未找到对应的cookie则返回空字符串  </span></div><div class="line">    <span class="keyword">return</span> <span class="string">''</span>;  </div><div class="line">&#125;  </div><div class="line"><span class="comment">//删除cookie  </span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">removeCookie</span>(<span class="params">name</span>)</span>&#123;  </div><div class="line">    <span class="comment">//调用setCookie方法，把时间设置为-1  </span></div><div class="line">    setCookie(name,<span class="number">1</span>,<span class="number">-1</span>);  </div><div class="line">&#125;</div></pre></td></tr></table></figure>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://gxhpersonal.github.io/blog/blog/2016/09/14/call()和apply()/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1426,7 +1285,7 @@ $ git branch -d [branch-name]
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://gxhpersonal.github.io/blog/blog/2016/09/14/关于em rem px/">
+    <link itemprop="mainEntityOfPage" href="http://gxhpersonal.github.io/blog/blog/2016/09/14/cookie/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="郭雪辉">
@@ -1445,7 +1304,7 @@ $ git branch -d [branch-name]
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/blog/2016/09/14/关于em rem px/" itemprop="url">关于em rem px</a></h1>
+                <a class="post-title-link" href="/blog/2016/09/14/cookie/" itemprop="url">cookie</a></h1>
         
 
         <div class="post-meta">
@@ -1480,8 +1339,8 @@ $ git branch -d [branch-name]
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/blog/categories/css/" itemprop="url" rel="index">
-                    <span itemprop="name">css</span>
+                  <a href="/blog/categories/JS/" itemprop="url" rel="index">
+                    <span itemprop="name">JS</span>
                   </a>
                 </span>
 
@@ -1519,12 +1378,7 @@ $ git branch -d [branch-name]
       
         
           
-            <h3 id="px-em-rem"><a href="#px-em-rem" class="headerlink" title="px em rem"></a>px em rem</h3><blockquote>
-<p>1.em<br>一般都是 body 的 font-size 为基准，例如：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">body</span> &#123;</div><div class="line">    <span class="attribute">font-size</span>: <span class="number">62.5%</span>;</div><div class="line">    <span class="comment">/*10 ÷ 16 × 100% = 62.5%*/</span></div><div class="line">&#125;</div><div class="line"><span class="selector-tag">h1</span> &#123;</div><div class="line">    <span class="attribute">font-size</span>: <span class="number">2.4em</span>;</div><div class="line">    <span class="comment">/*2.4em × 10 = 24px */</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-</blockquote>
-<p>计算公式：1 ÷ 父元素的font-size × 需要转换的像素值 = em值</p>
-<p>2.rem<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">html</span> &#123;</div><div class="line">    <span class="attribute">font-size</span>: <span class="number">62.5%</span>;</div><div class="line">    <span class="comment">/*10 ÷ 16 × 100% = 62.5%*/</span></div><div class="line">&#125;</div><div class="line"><span class="selector-tag">body</span> &#123;</div><div class="line">    <span class="attribute">font-size</span>: <span class="number">1.4rem</span>;</div><div class="line">    <span class="comment">/*1.4 × 10px = 14px */</span></div><div class="line">&#125;</div><div class="line"><span class="selector-tag">h1</span> &#123;</div><div class="line">    <span class="attribute">font-size</span>: <span class="number">2.4rem</span>;</div><div class="line">    <span class="comment">/*2.4 × 10px = 24px*/</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-
+            <h3 id="cookie"><a href="#cookie" class="headerlink" title="cookie"></a>cookie</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//设置cookie  </span></div><div class="line"><span class="comment">//name是cookie中的名，value是对应的值，iTime是多久过期（单位为天）  </span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">setCookie</span>(<span class="params">name,value,iTime</span>)</span>&#123;  </div><div class="line">    <span class="keyword">var</span> oDate = <span class="keyword">new</span> <span class="built_in">Date</span>();  </div><div class="line">    <span class="comment">//设置cookie过期时间  </span></div><div class="line">    oDate.setDate(oDate.getDate()+iTime);  </div><div class="line">    <span class="built_in">document</span>.cookie = name+<span class="string">'='</span>+value+<span class="string">';expires='</span>+oDate.toGMTString();  </div><div class="line">&#125;  </div><div class="line"><span class="comment">//获取cookie  </span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">getCookie</span>(<span class="params">name</span>)</span>&#123;  </div><div class="line">    <span class="comment">//cookie中的数据都是以分号加空格区分开  </span></div><div class="line">    <span class="keyword">var</span> arr = <span class="built_in">document</span>.cookie.split(<span class="string">"; "</span>);  </div><div class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>; i&lt;arr.length; i++)&#123;  </div><div class="line">        <span class="keyword">if</span>(arr[i].split(<span class="string">"="</span>)[<span class="number">0</span>] == name)&#123;  </div><div class="line">            <span class="keyword">return</span> arr[i].split(<span class="string">"="</span>)[<span class="number">1</span>];  </div><div class="line">        &#125;  </div><div class="line">    &#125;  </div><div class="line">    <span class="comment">//未找到对应的cookie则返回空字符串  </span></div><div class="line">    <span class="keyword">return</span> <span class="string">''</span>;  </div><div class="line">&#125;  </div><div class="line"><span class="comment">//删除cookie  </span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">removeCookie</span>(<span class="params">name</span>)</span>&#123;  </div><div class="line">    <span class="comment">//调用setCookie方法，把时间设置为-1  </span></div><div class="line">    setCookie(name,<span class="number">1</span>,<span class="number">-1</span>);  </div><div class="line">&#125;</div></pre></td></tr></table></figure>
           
         
       
@@ -1725,7 +1579,7 @@ $ git branch -d [branch-name]
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://gxhpersonal.github.io/blog/blog/2016/09/14/其他css问题/">
+    <link itemprop="mainEntityOfPage" href="http://gxhpersonal.github.io/blog/blog/2016/09/14/关于em rem px/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="郭雪辉">
@@ -1744,7 +1598,7 @@ $ git branch -d [branch-name]
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/blog/2016/09/14/其他css问题/" itemprop="url">其他css问题</a></h1>
+                <a class="post-title-link" href="/blog/2016/09/14/关于em rem px/" itemprop="url">关于em rem px</a></h1>
         
 
         <div class="post-meta">
@@ -1818,51 +1672,154 @@ $ git branch -d [branch-name]
       
         
           
-            <h3 id="flex布局"><a href="#flex布局" class="headerlink" title="flex布局"></a>flex布局</h3><p><a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool" target="_blank" rel="external">更多参见阮老师blog</a><br>1.意为弹性布局，块元素：display:flex;行内元素：display:inline-flex;<br>2.不同内核浏览器需要加前缀区分，如：display:-webkit-flex; /<em>Safari</em>/<br>3.设为flex布局后，子元素的float,clear,vertical-align属性将失效。<br>4.flex属性：<br>1）flex-direction:row（默认值）：主轴为水平方向，起点在左端。<br>                  row-reverse：主轴为水平方向，起点在右端。<br>                  column：主轴为垂直方向，起点在上沿。<br>                  column-reverse：主轴为垂直方向，起点在下沿<br>2)flex-wrap属性: nowrap（默认）：不换行。<br>                wrap：换行，第一行在上方。<br>                wrap-reverse：换行，第一行在下方。<br>3)flex-flow：属性是flex-direction属性和flex-wrap属性的简写形式，默认值为row nowrap。<br>4)justify-content:flex-start | flex-end | center | space-between | space-around<br>5)align-items: flex-start | flex-end | center | baseline | stretch;</p>
-<h3 id="清除所有a标签在点击时出现的特效"><a href="#清除所有a标签在点击时出现的特效" class="headerlink" title="清除所有a标签在点击时出现的特效"></a>清除所有a标签在点击时出现的特效</h3><blockquote>
-<p>清除所有a标签在点击时出现的特效：a{ -webkit-tap-highlight-color:rgba(255,0,0,0);}</p>
+            <h3 id="px-em-rem"><a href="#px-em-rem" class="headerlink" title="px em rem"></a>px em rem</h3><blockquote>
+<p>1.em<br>一般都是 body 的 font-size 为基准，例如：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">body</span> &#123;</div><div class="line">    <span class="attribute">font-size</span>: <span class="number">62.5%</span>;</div><div class="line">    <span class="comment">/*10 ÷ 16 × 100% = 62.5%*/</span></div><div class="line">&#125;</div><div class="line"><span class="selector-tag">h1</span> &#123;</div><div class="line">    <span class="attribute">font-size</span>: <span class="number">2.4em</span>;</div><div class="line">    <span class="comment">/*2.4em × 10 = 24px */</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 </blockquote>
-<h3 id="文字与图片不能垂直居中对齐"><a href="#文字与图片不能垂直居中对齐" class="headerlink" title="文字与图片不能垂直居中对齐"></a>文字与图片不能垂直居中对齐</h3><blockquote>
-<p>给图片添加css样式<br>vertical-align:text-bottom；<br>vertical-align只适用于行内块元素</p>
-</blockquote>
-<h3 id="img标签和同级div之间的间隙处理"><a href="#img标签和同级div之间的间隙处理" class="headerlink" title="img标签和同级div之间的间隙处理"></a>img标签和同级div之间的间隙处理</h3><blockquote>
-<p>给img标签设置 vertical-align:top;display:block;</p>
-</blockquote>
-<h3 id="在移动端手机APP中禁止长按来阻止其他手机自带默认事件（如：iPhone的3Dtouch）"><a href="#在移动端手机APP中禁止长按来阻止其他手机自带默认事件（如：iPhone的3Dtouch）" class="headerlink" title="在移动端手机APP中禁止长按来阻止其他手机自带默认事件（如：iPhone的3Dtouch）"></a>在移动端手机APP中禁止长按来阻止其他手机自带默认事件（如：iPhone的3Dtouch）</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">touch-callout: none;</div><div class="line">-webkit-touch-callout: none;</div><div class="line">-webkit-user-select: none;</div><div class="line">user-select: none;</div></pre></td></tr></table></figure>
-<h3 id="文本超出后显示省略号"><a href="#文本超出后显示省略号" class="headerlink" title="文本超出后显示省略号"></a>文本超出后显示省略号</h3><blockquote>
-<p>p{<br>   width:40px;<br>   white-space: nowrap;<br>   text-overflow: ellipsis;<br>   overflow: hidden;<br>}</p>
-</blockquote>
-<p>p{<br>    overflow: hidden;                //超出部分隐藏<br>    text-overflow: ellipsis;         //显示省略号来修饰被剪掉的文本<br>    display: box;<br>    display: -webkit-box;<br>    line-clamp: 3;                     //非规范属性，实现规定文本行数      火狐不支持这个属性<br>    -webkit-line-clamp: 3;<br>    -webkit-box-orient: vertical;    //规定框的子元素应该被水平或垂直排列<br>    -moz-box-orient: vertical;        //支持火狐的写法<br>} </p>
-<h3 id="自定义光标"><a href="#自定义光标" class="headerlink" title="自定义光标"></a>自定义光标</h3><blockquote>
-<p>cursor: url(/路径/cursor.cur),auto;        后缀似乎必须为cur</p>
-</blockquote>
-<h3 id="input标签"><a href="#input标签" class="headerlink" title="input标签"></a>input标签</h3><blockquote>
-<p>IE：不管该行有没有文字，光标高度与font-size一致。</p>
-</blockquote>
-<p>FF：该行有文字时，光标高度与font-size一致。该行无文字时，光标高度与input的height一致。</p>
-<p>Chrome：该行无文字时，光标高度与line-height一致；该行有文字时，光标高度从input顶部到文字底部(这两种情况都是在有设定line-height的时候)，如果没有line-height，则是与font-size一致。</p>
-<p>解决的方案：</p>
-<p>给input的height设定一个较小的高度，然后用padding去填充，基本上可以解决所有浏览器的问题</p>
-<h3 id="文字竖排排列显示方案"><a href="#文字竖排排列显示方案" class="headerlink" title="文字竖排排列显示方案"></a>文字竖排排列显示方案</h3><p>1.writing-mode:lr-tb或writing-mode:tb-rl<br>  参数：<br>    <1>、lr-tb：从左向右，从上往下<br>    <2>、tb-rl：从上往下，从右向左<br>    运行代码发现，IE显示正常，火狐、谷歌浏览器却不支持，所以不建议使用writing-mode属性。<br>2.对文字对象宽度设置只能排下一个文字的宽度距离，让文字一行排不下两个文字使其文字自动换行，就形成了竖立排版需求。<br>3.利用html br换行标签实现文字换行，对每个文字后加上换行br标签让其竖列排版。</2></1></p>
-<h3 id="ios下input样式问题"><a href="#ios下input样式问题" class="headerlink" title="ios下input样式问题"></a>ios下input样式问题</h3><p>1.ios下如果想要禁用input,input设置为readonly仍然会呼起键盘，所以必须设置disabled属性。<br>2.ios下设置为disabled属性，input表单背景颜色会变灰，透明度会降低，所以，必须设置<br>    input:disabled{<br>       opacity:1;<br>       bakcground:#fff;<br>    }</p>
-<h3 id="css3滤镜效果：-webkit-filter"><a href="#css3滤镜效果：-webkit-filter" class="headerlink" title="css3滤镜效果：-webkit-filter"></a>css3滤镜效果：-webkit-filter</h3><p><a href="">http://www.css88.com/html5-demo/-webkit-filter/index.html</a></p>
-<h3 id="字体抗锯齿效果"><a href="#字体抗锯齿效果" class="headerlink" title="字体抗锯齿效果"></a>字体抗锯齿效果</h3><p>Webkit在自己的引擎中支持了这一效果。<br>-webkit-font-smoothing<br>它有三个属性值：<br>none —— 对低像素的文本比较好<br>subpixel-antialiased——默认值<br>antialiased ——抗锯齿很好<br>.icon {</p>
-<p>-webkit-font-smoothing: antialiased;</p>
-<p>-moz-osx-font-smoothing: grayscale;  //Gecko也推出了自己的抗锯齿效果的非标定义</p>
-<p>}</p>
-<h3 id="弹层出现禁用背景body滚动条"><a href="#弹层出现禁用背景body滚动条" class="headerlink" title="弹层出现禁用背景body滚动条"></a>弹层出现禁用背景body滚动条</h3><p>height:100%;overscroll:hidden;<br>touch-action:none;//禁止触发默认的手势操作。<br>pan-x：可以在父级元素(the nearest ancestor)内进行水平移动的手势操作。<br>pan-y：可以在父级元素内进行垂直移动的手势操作。<br>manipulation：允许手势水平/垂直平移或持续的缩放。任何auto属性支持的额外操作都不支持；<br>注：touch-action只支持具有行内块，块级的元素</p>
-<h3 id="CSS控制输入文本大小写"><a href="#CSS控制输入文本大小写" class="headerlink" title="CSS控制输入文本大小写"></a>CSS控制输入文本大小写</h3><blockquote>
-<p>text-transform：none；capitalize；uppercase；lowercase；inherit；<br>none默认。定义带有小写字母和大写字母的标准的文本。<br>capitalize文本中的每个单词以大写字母开头。<br>uppercase定义仅有大写字母。lowercase定义无大写字母，仅有小写字母。<br>inherit规定应该从父元素继承 text-transform 属性的值。</p>
-</blockquote>
-<h3 id="控制input标签的placeholder属性实现获取焦点显示暗文，失去焦点隐藏-其实就是改变placeholder中的文字颜色"><a href="#控制input标签的placeholder属性实现获取焦点显示暗文，失去焦点隐藏-其实就是改变placeholder中的文字颜色" class="headerlink" title="控制input标签的placeholder属性实现获取焦点显示暗文，失去焦点隐藏(其实就是改变placeholder中的文字颜色)"></a>控制input标签的placeholder属性实现获取焦点显示暗文，失去焦点隐藏(其实就是改变placeholder中的文字颜色)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&amp;::-webkit-input-placeholder &#123; color:transparent; &#125;</div><div class="line">&amp;:-moz-placeholder &#123; color:transparent; &#125;</div><div class="line">&amp;::-moz-placeholder &#123; color:transparent; &#125;</div><div class="line">&amp;:-ms-input-placeholder &#123; color:transparent;&#125;</div><div class="line">&amp;:focus::-webkit-input-placeholder &#123; color:#9fb0bf; &#125;</div><div class="line">&amp;:focus:-moz-placeholder &#123; color:#9fb0bf; &#125;</div><div class="line">&amp;:focus::-moz-placeholder &#123; color:#9fb0bf; &#125;</div><div class="line">&amp;:focus:-ms-input-placeholder &#123; color:#9fb0bf; &#125;</div></pre></td></tr></table></figure>
-<h3 id="will-change提高页面滚动、动画等渲染性能css3"><a href="#will-change提高页面滚动、动画等渲染性能css3" class="headerlink" title="will-change提高页面滚动、动画等渲染性能css3"></a>will-change提高页面滚动、动画等渲染性能css3</h3><p>参考张鑫旭blog:<br><a href="">http://www.zhangxinxu.com/wordpress/2015/11/css3-will-change-improve-paint/</a></p>
-<h3 id="支持webkit内核浏览器的滚动条样式自定义"><a href="#支持webkit内核浏览器的滚动条样式自定义" class="headerlink" title="支持webkit内核浏览器的滚动条样式自定义"></a>支持webkit内核浏览器的滚动条样式自定义</h3><blockquote>
-<p>::-webkit-scrollbar{/<em> 1 </em>/} /<em>滚动条垂直方向的宽度与水平方向的高度</em>/ ::-webkit-scrollbar-button{/<em> 2 </em>/} /<em>滚动条按钮</em>/ ::-webkit-scrollbar-track{/<em> 3 </em>/} /<em>滚动条轨道</em>/ ::-webkit-scrollbar-track-piece{/<em> 4 </em>/} /<em>滚动条垂直方向轨道件</em>/ ::-webkit-scrollbar-thumb{/<em> 5 </em>/} /<em>滚动条轨道上的按钮</em>/ ::-webkit-scrollbar-corner{/<em> 6 </em>/} /<em>滚动条轨道上的滚动角</em>/ </p>
-</blockquote>
-<h3 id="ios在fixed布局下出现bug问题"><a href="#ios在fixed布局下出现bug问题" class="headerlink" title="ios在fixed布局下出现bug问题"></a>ios在fixed布局下出现bug问题</h3><p>软键盘唤起后，页面的fixed 元素将失效（即无法浮动，也可以理解为变成了absolute定位），所以当页面超过一屏且滚动时，失效的 fixed 元素就会跟随滚动了。<br>这便是 iOS 上 fixed 元素和输入框的 bug 。其中不仅限于 type=text 的输入框，凡是软键盘（比如时间日期选择、select 选择等等）被唤起，都会遇到同样地问题。<br>解决方法：<br>    将原 body 滚动的区域域移到 main 内部，而 header 和footer 的样式不变。<br>.main{<br>    position: absolute;<br>    top: 50px;<br>    bottom: 34px;<br>    overflow-y: scroll;<br>}<br>.main  .content {<br>    height: 2000px;<br>}</p>
-<p>这样布局可能会是的滚动失去原来的流畅，加以下代码，恢复之前丝滑般的滚动：<br>    -webkit-overflow-scrolling: touch;</p>
-<p>这样的布局在h5是行不通的，所以需要用JS来控制内部滚动元素的高度：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="number">1.</span> 内部滚动</div><div class="line"><span class="keyword">var</span> w = <span class="built_in">window</span>.innerWidth,</div><div class="line">        h = <span class="built_in">window</span>.innerHeight;  <span class="comment">//获取窗口的高度与宽度(不包含工具条与滚动条):</span></div><div class="line">    $(<span class="string">'#js_orderConWrap'</span>).height(h - $(<span class="string">'.cm-header-wrap'</span>).height());  <span class="comment">//内部元素的高度 = 窗口高度 - 头部或底部的高度(如果有)</span></div><div class="line"></div><div class="line"><span class="comment">//既然都在h5了，所以还要考虑APP环境，在APP环境下头部是不会用h5的，所以需要判断h5和APP环境；</span></div><div class="line"></div><div class="line"><span class="number">2.</span>弹层显示，禁止背景滚动</div><div class="line"><span class="comment">//关闭滚动条</span></div><div class="line">        $(<span class="built_in">document</span>).on(<span class="string">'touchmove'</span>,<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</div><div class="line">            <span class="keyword">if</span>($(<span class="string">'.app-popup-container'</span>).css(<span class="string">'display'</span>) === <span class="string">'block'</span>)&#123;</div><div class="line">                e.preventDefault();</div><div class="line">            &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
+<p>计算公式：1 ÷ 父元素的font-size × 需要转换的像素值 = em值</p>
+<p>2.rem<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">html</span> &#123;</div><div class="line">    <span class="attribute">font-size</span>: <span class="number">62.5%</span>;</div><div class="line">    <span class="comment">/*10 ÷ 16 × 100% = 62.5%*/</span></div><div class="line">&#125;</div><div class="line"><span class="selector-tag">body</span> &#123;</div><div class="line">    <span class="attribute">font-size</span>: <span class="number">1.4rem</span>;</div><div class="line">    <span class="comment">/*1.4 × 10px = 14px */</span></div><div class="line">&#125;</div><div class="line"><span class="selector-tag">h1</span> &#123;</div><div class="line">    <span class="attribute">font-size</span>: <span class="number">2.4rem</span>;</div><div class="line">    <span class="comment">/*2.4 × 10px = 24px*/</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://gxhpersonal.github.io/blog/blog/2016/09/14/判断android和ios/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="郭雪辉">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/blog/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog station">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/blog/2016/09/14/判断android和ios/" itemprop="url">判断android和ios</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-09-14T18:07:27+08:00">
+                2016-09-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/blog/categories/JS/" itemprop="url" rel="index">
+                    <span itemprop="name">JS</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="与APP交互"><a href="#与APP交互" class="headerlink" title="与APP交互"></a>与APP交互</h3><p>很多时候APP中会嵌套H5的页面，这个时候与APP的交互就显得尤为重要，一般我们与APP交互会在window对象下构造一个共用函数，并且需要时返回指定约定的值，APP那边会根据约定的值去执行相应的操作，从而达到交互的目的；<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//如：window.nativeBack = function()&#123;return 1&#125;</span></div></pre></td></tr></table></figure></p>
+<h3 id="判断android和ios"><a href="#判断android和ios" class="headerlink" title="判断android和ios"></a>判断android和ios</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> browser = &#123;</div><div class="line">versions: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line"><span class="keyword">var</span> u = navigator.userAgent, app = navigator.appVersion;</div><div class="line"><span class="keyword">return</span> &#123; <span class="comment">//移动终端浏览器版本信息 </span></div><div class="line">ios: !!u.match(<span class="regexp">/\(i[^;]+;( U;)? CPU.+Mac OS X/</span>), <span class="comment">//ios终端 </span></div><div class="line">android: u.indexOf(<span class="string">'Android'</span>) &gt; <span class="number">-1</span> || u.indexOf(<span class="string">'Linux'</span>) &gt; <span class="number">-1</span>, <span class="comment">//android终端或uc浏览器 </span></div><div class="line">iPhone: u.indexOf(<span class="string">'iPhone'</span>) &gt; <span class="number">-1</span>, <span class="comment">//是否为iPhone或者QQHD浏览器 </span></div><div class="line">iPad: u.indexOf(<span class="string">'iPad'</span>) &gt; <span class="number">-1</span>, <span class="comment">//是否iPad </span></div><div class="line">&#125;;</div><div class="line">&#125;(),</div><div class="line">&#125;</div><div class="line"><span class="keyword">if</span> (browser.versions.iPhone || browser.versions.iPad || browser.versions.ios) &#123;</div><div class="line"><span class="comment">//说明是ios系统</span></div><div class="line"><span class="built_in">window</span>.location.href=<span class="string">""</span>;</div><div class="line">&#125;</div><div class="line"><span class="keyword">if</span> (browser.versions.android) &#123;</div><div class="line"><span class="comment">//说明是Android系统</span></div><div class="line"><span class="built_in">window</span>.location.href=<span class="string">""</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
           
         
       
@@ -2019,7 +1976,7 @@ $ git branch -d [branch-name]
 
   <span class="post-meta-divider">|</span>
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.2</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.2</div>
 
 
         
@@ -2102,13 +2059,6 @@ $ git branch -d [branch-name]
 
   
   
-
-
-  <script type="text/javascript" src="/blog/js/src/affix.js?v=5.1.2"></script>
-
-  <script type="text/javascript" src="/blog/js/src/schemes/pisces.js?v=5.1.2"></script>
-
-
 
   <script type="text/javascript" src="/blog/js/src/scrollspy.js?v=5.1.2"></script>
 <script type="text/javascript" src="/blog/js/src/post-details.js?v=5.1.2"></script>
