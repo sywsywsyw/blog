@@ -1,18 +1,31 @@
-<!doctype html>
+<!DOCTYPE html>
 
 
 
+  
 
-<html class="theme-next mist">
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
 
 
 
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
 
 
 
@@ -61,9 +74,9 @@
 
 
 
-<link href="/blog/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+<link href="/blog/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/blog/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+<link href="/blog/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="Hexo, NexT" />
@@ -75,7 +88,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/blog/favicon.ico?v=5.0.1" />
+  <link rel="shortcut icon" type="image/x-icon" href="/blog/favicon.ico?v=5.1.2" />
 
 
 
@@ -104,79 +117,84 @@ v-for遍历数据中的v-bind:key（:key）问题
 
 
 
-<script type="text/javascript" id="hexo.configuration">
+<script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: 'Mist',
-    sidebar: {"position":"left","display":"post"},
+    root: '/blog/',
+    scheme: 'Pisces',
+    version: '5.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
-    motion: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn"}},
     duoshuo: {
-      userId: 0,
+      userId: '0',
       author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
   };
 </script>
 
 
 
-
   <link rel="canonical" href="http://gxhpersonal.github.io/blog/2017/02/22/vue常见问题/"/>
 
-  <title> vue常见问题 | Blog station </title>
-</head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
+
+
+  <title>vue常见问题 | Blog station</title>
   
 
 
 
-  <script type="text/javascript">
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "//hm.baidu.com/hm.js?781146505a3f7e8d448b6dfe48570cd6";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
 
 
 
 
 
+</head>
 
-
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
     
   
 
-  <div class="container one-collumn sidebar-position-left page-post-detail ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-meta ">
-  
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
 
-  <div class="custom-logo-site-title">
-    <a href="/blog/"  class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <span class="site-title">Blog station</span>
-      <span class="logo-line-after"><i></i></span>
-    </a>
+    <div class="custom-logo-site-title">
+      <a href="/blog/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Blog station</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">水滴石穿</p>
+      
   </div>
-  <p class="site-subtitle">水滴石穿</p>
-</div>
 
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
 </div>
 
 <nav class="site-nav">
@@ -195,66 +213,15 @@ v-for遍历数据中的v-bind:key（:key）问题
           </a>
         </li>
       
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/blog/categories" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/blog/about" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/blog/archives" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
 
-      
-        <li class="menu-item menu-item-search">
-          
-            <a href="javascript:;" class="popup-trigger">
-          
-            
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
-            
-            搜索
-          </a>
-        </li>
       
     </ul>
   
 
   
-    <div class="site-search">
-      
-  <div class="popup">
- <span class="search-icon fa fa-search"></span>
- <input type="text" id="local-search-input">
- <div id="local-search-result"></div>
- <span class="popup-btn-close">close</span>
-</div>
-
-
-    </div>
-  
 </nav>
+
+
 
  </div>
     </header>
@@ -269,49 +236,68 @@ v-for遍历数据中的v-bind:key（:key）问题
     
 
   
-  
 
   
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://gxhpersonal.github.io/blog/blog/2017/02/22/vue常见问题/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="郭雪辉">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/blog/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog station">
+    </span>
 
     
       <header class="post-header">
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                vue常见问题
-              
-            
-          </h1>
+          <h1 class="post-title" itemprop="name headline">vue常见问题</h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-02-22T11:34:59+08:00" content="2017-02-22">
-              2017-02-22
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-22T11:34:59+08:00">
+                2017-02-22
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/blog/categories/vue/" itemprop="url" rel="index">
                     <span itemprop="name">vue</span>
                   </a>
@@ -319,7 +305,6 @@ v-for遍历数据中的v-bind:key（:key）问题
 
                 
                 
-
               
             </span>
           
@@ -329,16 +314,21 @@ v-for遍历数据中的v-bind:key（:key）问题
           
 
           
-
-          
           
 
           
+
+          
+
+          
+
         </div>
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -358,47 +348,25 @@ v-for遍历数据中的v-bind:key（:key）问题
 <p>现在这样写:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;ul id=&quot;example&quot;&gt;</div><div class="line">    &lt;li v-for=&quot;(item,index) in items&quot;&gt;</div><div class="line">        &#123;&#123;item&#125;&#125;</div><div class="line">        &#123;&#123;index&#125;&#125;</div><div class="line">    &lt;/li&gt;</div><div class="line">&lt;/ul&gt;</div></pre></td></tr></table></figure></p>
 <p>第一个参数是值,第二个参数是索引;目的是为了保持和原生的一致;</p>
 <h3 id="鼠标右键事件"><a href="#鼠标右键事件" class="headerlink" title="鼠标右键事件"></a>鼠标右键事件</h3><p>@contextmenu.prevent=”alert(‘您点击的是鼠标右键’)”</p>
-<h3 id="vue微信分享"><a href="#vue微信分享" class="headerlink" title="vue微信分享"></a>vue微信分享</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div></pre></td><td class="code"><pre><div class="line"><span class="number">1.</span>页面中引入微信文件</div><div class="line">&lt;script src=<span class="string">"https://res.wx.qq.com/open/js/jweixin-1.0.0.js"</span>&gt;&lt;/script&gt;</div><div class="line"></div><div class="line"><span class="number">2.</span><span class="comment">//微信分享方法相关配置</span></div><div class="line"><span class="keyword">import</span> Vue <span class="keyword">from</span> <span class="string">'vue'</span>;</div><div class="line"><span class="keyword">import</span> vueResource <span class="keyword">from</span> <span class="string">'vue-resource'</span>;</div><div class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</div><div class="line"></div><div class="line">    setWxConfig: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">        Vue.http.options.emulateJSON = <span class="literal">true</span>;</div><div class="line">        Vue.http.get(<span class="string">'/Api/Activity/GetWeixinAPIConfig?url='</span> + <span class="built_in">window</span>.location.href).then(response =&gt; &#123;</div><div class="line">            <span class="keyword">let</span> weixinConfigData = response.body;</div><div class="line">            wx.config(&#123;</div><div class="line">                debug: <span class="literal">false</span>,</div><div class="line">                appId: weixinConfigData.AppId,</div><div class="line">                timestamp: weixinConfigData.Timestamp,</div><div class="line">                nonceStr: weixinConfigData.NonceStr,</div><div class="line">                signature: weixinConfigData.signature,</div><div class="line">                jsApiList: [</div><div class="line">                    <span class="string">'checkJsApi'</span>,</div><div class="line">                    <span class="string">'onMenuShareTimeline'</span>,</div><div class="line">                    <span class="string">'onMenuShareAppMessage'</span>,</div><div class="line">                    <span class="string">'onMenuShareQQ'</span>,</div><div class="line">                    <span class="string">'onMenuShareWeibo'</span>,</div><div class="line">                    <span class="string">'hideMenuItems'</span>,</div><div class="line">                    <span class="string">'showMenuItems'</span>,</div><div class="line">                    <span class="string">'hideAllNonBaseMenuItem'</span>,</div><div class="line">                    <span class="string">'showAllNonBaseMenuItem'</span>,</div><div class="line">                    <span class="string">'translateVoice'</span>,</div><div class="line">                    <span class="string">'startRecord'</span>,</div><div class="line">                    <span class="string">'stopRecord'</span>,</div><div class="line">                    <span class="string">'onRecordEnd'</span>,</div><div class="line">                    <span class="string">'playVoice'</span>,</div><div class="line">                    <span class="string">'pauseVoice'</span>,</div><div class="line">                    <span class="string">'stopVoice'</span>,</div><div class="line">                    <span class="string">'uploadVoice'</span>,</div><div class="line">                    <span class="string">'downloadVoice'</span>,</div><div class="line">                    <span class="string">'chooseImage'</span>,</div><div class="line">                    <span class="string">'previewImage'</span>,</div><div class="line">                    <span class="string">'uploadImage'</span>,</div><div class="line">                    <span class="string">'downloadImage'</span>,</div><div class="line">                    <span class="string">'getNetworkType'</span>,</div><div class="line">                    <span class="string">'openLocation'</span>,</div><div class="line">                    <span class="string">'getLocation'</span>,</div><div class="line">                    <span class="string">'hideOptionMenu'</span>,</div><div class="line">                    <span class="string">'showOptionMenu'</span>,</div><div class="line">                    <span class="string">'closeWindow'</span>,</div><div class="line">                    <span class="string">'scanQRCode'</span>,</div><div class="line">                    <span class="string">'chooseWXPay'</span>,</div><div class="line">                    <span class="string">'openProductSpecificView'</span>,</div><div class="line">                    <span class="string">'addCard'</span>,</div><div class="line">                    <span class="string">'chooseCard'</span>,</div><div class="line">                    <span class="string">'openCard'</span></div><div class="line">                ]</div><div class="line">            &#125;);</div><div class="line">        &#125;, response =&gt; &#123;</div><div class="line">            <span class="comment">// error callback</span></div><div class="line">        &#125;);</div><div class="line">    &#125;,</div><div class="line">    wxShare(obj) &#123;</div><div class="line">        wx.ready(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line"></div><div class="line">            wx.onMenuShareAppMessage(&#123;</div><div class="line">                title: obj.shareTitle,</div><div class="line">                desc: obj.descContent,</div><div class="line">                link: obj.lineLink,</div><div class="line">                imgUrl: obj.imgUrl,</div><div class="line">                trigger: <span class="function"><span class="keyword">function</span> (<span class="params">res</span>) </span>&#123;</div><div class="line">                    <span class="comment">//alert('用户点击发送给朋友');</span></div><div class="line">                &#125;,</div><div class="line">                success: <span class="function"><span class="keyword">function</span> (<span class="params">res</span>) </span>&#123;</div><div class="line">                    <span class="comment">// alert('已分享');</span></div><div class="line">                &#125;,</div><div class="line">                cancel: <span class="function"><span class="keyword">function</span> (<span class="params">res</span>) </span>&#123;</div><div class="line">                    <span class="comment">//alert('已取消');</span></div><div class="line">                &#125;,</div><div class="line">                fail: <span class="function"><span class="keyword">function</span> (<span class="params">res</span>) </span>&#123;</div><div class="line">                    <span class="comment">//  alert(JSON.stringify(res));</span></div><div class="line">                &#125;</div><div class="line">            &#125;);</div><div class="line"></div><div class="line">            wx.onMenuShareTimeline(&#123;</div><div class="line">                title: obj.shareTitle,</div><div class="line">                desc: obj.descContent,</div><div class="line">                link: obj.lineLink,</div><div class="line">                imgUrl: obj.imgUrl,</div><div class="line">                trigger: <span class="function"><span class="keyword">function</span> (<span class="params">res</span>) </span>&#123;</div><div class="line">                    <span class="comment">// alert('用户点击分享到朋友圈');</span></div><div class="line">                &#125;,</div><div class="line">                success: <span class="function"><span class="keyword">function</span> (<span class="params">res</span>) </span>&#123;</div><div class="line">                    <span class="comment">// alert('已分享');</span></div><div class="line">                &#125;,</div><div class="line">                cancel: <span class="function"><span class="keyword">function</span> (<span class="params">res</span>) </span>&#123;</div><div class="line">                    <span class="comment">// alert('已取消');</span></div><div class="line">                &#125;,</div><div class="line">                fail: <span class="function"><span class="keyword">function</span> (<span class="params">res</span>) </span>&#123;</div><div class="line">                    <span class="comment">// alert(JSON.stringify(res));</span></div><div class="line">                &#125;</div><div class="line">            &#125;);</div><div class="line"></div><div class="line">            wx.onMenuShareQQ(&#123;</div><div class="line">                title: obj.shareTitle,</div><div class="line">                desc: obj.descContent,</div><div class="line">                link: obj.lineLink,</div><div class="line">                imgUrl: obj.imgUrl,</div><div class="line">                success: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">                    <span class="comment">// 用户确认分享后执行的回调函数</span></div><div class="line">                &#125;,</div><div class="line">                cancel: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">                    <span class="comment">// 用户取消分享后执行的回调函数</span></div><div class="line">                &#125;</div><div class="line">            &#125;);</div><div class="line">        &#125;);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="number">3.</span>在指定组件中引入公共微信分享方法文件；就可以调用分享方法</div><div class="line"><span class="keyword">import</span> wechat <span class="keyword">from</span> <span class="string">"../../common/wechat.js"</span>;</div><div class="line">wechat.setWxConfig();</div><div class="line">wechat.wxShare(&#123; </div><div class="line">shareTitle: <span class="string">"惠租车-驾照全球通国家查询"</span>, </div><div class="line">descContent: <span class="string">"[驾照全球通]全球自驾200国，顶级车行认证！"</span>, </div><div class="line">lineLink: location.href, </div><div class="line">imgUrl: <span class="string">"https://cdn-qiniu-app1.huizuche.com/2.6/logo_share.jpg"</span> &#125;);</div></pre></td></tr></table></figure>
+<h3 id="vue微信分享"><a href="#vue微信分享" class="headerlink" title="vue微信分享"></a>vue微信分享</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div></pre></td><td class="code"><pre><div class="line"><span class="number">1.</span>页面中引入微信文件</div><div class="line">&lt;script src=<span class="string">"https://res.wx.qq.com/open/js/jweixin-1.0.0.js"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></div><div class="line"></div><div class="line"><span class="number">2.</span><span class="comment">//微信分享方法相关配置</span></div><div class="line"><span class="keyword">import</span> Vue <span class="keyword">from</span> <span class="string">'vue'</span>;</div><div class="line"><span class="keyword">import</span> vueResource <span class="keyword">from</span> <span class="string">'vue-resource'</span>;</div><div class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</div><div class="line"></div><div class="line">    setWxConfig: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">        Vue.http.options.emulateJSON = <span class="literal">true</span>;</div><div class="line">        Vue.http.get(<span class="string">'/Api/Activity/GetWeixinAPIConfig?url='</span> + <span class="built_in">window</span>.location.href).then(response =&gt; &#123;</div><div class="line">            <span class="keyword">let</span> weixinConfigData = response.body;</div><div class="line">            wx.config(&#123;</div><div class="line">                debug: <span class="literal">false</span>,</div><div class="line">                appId: weixinConfigData.AppId,</div><div class="line">                timestamp: weixinConfigData.Timestamp,</div><div class="line">                nonceStr: weixinConfigData.NonceStr,</div><div class="line">                signature: weixinConfigData.signature,</div><div class="line">                jsApiList: [</div><div class="line">                    <span class="string">'checkJsApi'</span>,</div><div class="line">                    <span class="string">'onMenuShareTimeline'</span>,</div><div class="line">                    <span class="string">'onMenuShareAppMessage'</span>,</div><div class="line">                    <span class="string">'onMenuShareQQ'</span>,</div><div class="line">                    <span class="string">'onMenuShareWeibo'</span>,</div><div class="line">                    <span class="string">'hideMenuItems'</span>,</div><div class="line">                    <span class="string">'showMenuItems'</span>,</div><div class="line">                    <span class="string">'hideAllNonBaseMenuItem'</span>,</div><div class="line">                    <span class="string">'showAllNonBaseMenuItem'</span>,</div><div class="line">                    <span class="string">'translateVoice'</span>,</div><div class="line">                    <span class="string">'startRecord'</span>,</div><div class="line">                    <span class="string">'stopRecord'</span>,</div><div class="line">                    <span class="string">'onRecordEnd'</span>,</div><div class="line">                    <span class="string">'playVoice'</span>,</div><div class="line">                    <span class="string">'pauseVoice'</span>,</div><div class="line">                    <span class="string">'stopVoice'</span>,</div><div class="line">                    <span class="string">'uploadVoice'</span>,</div><div class="line">                    <span class="string">'downloadVoice'</span>,</div><div class="line">                    <span class="string">'chooseImage'</span>,</div><div class="line">                    <span class="string">'previewImage'</span>,</div><div class="line">                    <span class="string">'uploadImage'</span>,</div><div class="line">                    <span class="string">'downloadImage'</span>,</div><div class="line">                    <span class="string">'getNetworkType'</span>,</div><div class="line">                    <span class="string">'openLocation'</span>,</div><div class="line">                    <span class="string">'getLocation'</span>,</div><div class="line">                    <span class="string">'hideOptionMenu'</span>,</div><div class="line">                    <span class="string">'showOptionMenu'</span>,</div><div class="line">                    <span class="string">'closeWindow'</span>,</div><div class="line">                    <span class="string">'scanQRCode'</span>,</div><div class="line">                    <span class="string">'chooseWXPay'</span>,</div><div class="line">                    <span class="string">'openProductSpecificView'</span>,</div><div class="line">                    <span class="string">'addCard'</span>,</div><div class="line">                    <span class="string">'chooseCard'</span>,</div><div class="line">                    <span class="string">'openCard'</span></div><div class="line">                ]</div><div class="line">            &#125;);</div><div class="line">        &#125;, response =&gt; &#123;</div><div class="line">            <span class="comment">// error callback</span></div><div class="line">        &#125;);</div><div class="line">    &#125;,</div><div class="line">    wxShare(obj) &#123;</div><div class="line">        wx.ready(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line"></div><div class="line">            wx.onMenuShareAppMessage(&#123;</div><div class="line">                title: obj.shareTitle,</div><div class="line">                desc: obj.descContent,</div><div class="line">                link: obj.lineLink,</div><div class="line">                imgUrl: obj.imgUrl,</div><div class="line">                trigger: <span class="function"><span class="keyword">function</span> (<span class="params">res</span>) </span>&#123;</div><div class="line">                    <span class="comment">//alert('用户点击发送给朋友');</span></div><div class="line">                &#125;,</div><div class="line">                success: <span class="function"><span class="keyword">function</span> (<span class="params">res</span>) </span>&#123;</div><div class="line">                    <span class="comment">// alert('已分享');</span></div><div class="line">                &#125;,</div><div class="line">                cancel: <span class="function"><span class="keyword">function</span> (<span class="params">res</span>) </span>&#123;</div><div class="line">                    <span class="comment">//alert('已取消');</span></div><div class="line">                &#125;,</div><div class="line">                fail: <span class="function"><span class="keyword">function</span> (<span class="params">res</span>) </span>&#123;</div><div class="line">                    <span class="comment">//  alert(JSON.stringify(res));</span></div><div class="line">                &#125;</div><div class="line">            &#125;);</div><div class="line"></div><div class="line">            wx.onMenuShareTimeline(&#123;</div><div class="line">                title: obj.shareTitle,</div><div class="line">                desc: obj.descContent,</div><div class="line">                link: obj.lineLink,</div><div class="line">                imgUrl: obj.imgUrl,</div><div class="line">                trigger: <span class="function"><span class="keyword">function</span> (<span class="params">res</span>) </span>&#123;</div><div class="line">                    <span class="comment">// alert('用户点击分享到朋友圈');</span></div><div class="line">                &#125;,</div><div class="line">                success: <span class="function"><span class="keyword">function</span> (<span class="params">res</span>) </span>&#123;</div><div class="line">                    <span class="comment">// alert('已分享');</span></div><div class="line">                &#125;,</div><div class="line">                cancel: <span class="function"><span class="keyword">function</span> (<span class="params">res</span>) </span>&#123;</div><div class="line">                    <span class="comment">// alert('已取消');</span></div><div class="line">                &#125;,</div><div class="line">                fail: <span class="function"><span class="keyword">function</span> (<span class="params">res</span>) </span>&#123;</div><div class="line">                    <span class="comment">// alert(JSON.stringify(res));</span></div><div class="line">                &#125;</div><div class="line">            &#125;);</div><div class="line"></div><div class="line">            wx.onMenuShareQQ(&#123;</div><div class="line">                title: obj.shareTitle,</div><div class="line">                desc: obj.descContent,</div><div class="line">                link: obj.lineLink,</div><div class="line">                imgUrl: obj.imgUrl,</div><div class="line">                success: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">                    <span class="comment">// 用户确认分享后执行的回调函数</span></div><div class="line">                &#125;,</div><div class="line">                cancel: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">                    <span class="comment">// 用户取消分享后执行的回调函数</span></div><div class="line">                &#125;</div><div class="line">            &#125;);</div><div class="line">        &#125;);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="number">3.</span>在指定组件中引入公共微信分享方法文件；就可以调用分享方法</div><div class="line"><span class="keyword">import</span> wechat <span class="keyword">from</span> <span class="string">"../../common/wechat.js"</span>;</div><div class="line">wechat.setWxConfig();</div><div class="line">wechat.wxShare(&#123; </div><div class="line">shareTitle: <span class="string">"惠租车-驾照全球通国家查询"</span>, </div><div class="line">descContent: <span class="string">"[驾照全球通]全球自驾200国，顶级车行认证！"</span>, </div><div class="line">lineLink: location.href, </div><div class="line">imgUrl: <span class="string">"https://cdn-qiniu-app1.huizuche.com/2.6/logo_share.jpg"</span> &#125;);</div></pre></td></tr></table></figure>
 
       
     </div>
+    
+    
+    
 
-    <div>
-      
-        
+    
 
-      
-    </div>
+    
 
-    <div>
-      
-        
-  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
-    <div>您的支持将鼓励我继续创作！fighting</div>
-    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
-      <span>赏</span>
-    </button>
-    <div id="QR" style="display: none;">
-      
-        <div id="wechat" style="display: inline-block">
-          <img id="wechat_qr" src="./source/wechatpay.png" alt="郭雪辉 WeChat Pay"/>
-          <p>微信打赏</p>
-        </div>
-      
-      
-        <div id="alipay" style="display: inline-block">
-          <img id="alipay_qr" src="./source/alipay.png" alt="郭雪辉 Alipay"/>
-          <p>支付宝打赏</p>
-        </div>
-      
-    </div>
-  </div>
-
-
-      
-    </div>
+    
 
     <footer class="post-footer">
+      
+
+      
+      
       
 
       
@@ -411,6 +379,8 @@ v-for遍历数据中的v-bind:key（:key）问题
             
           </div>
 
+          <span class="post-nav-divider"></span>
+
           <div class="post-nav-prev post-nav-item">
             
           </div>
@@ -420,6 +390,10 @@ v-for遍历数据中的v-bind:key（:key）问题
       
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -453,6 +427,7 @@ v-for遍历数据中的v-bind:key（:key）问题
   </div>
 
   <aside id="sidebar" class="sidebar">
+    
     <div class="sidebar-inner">
 
       
@@ -468,25 +443,35 @@ v-for遍历数据中的v-bind:key（:key）问题
         </ul>
       
 
-      <section class="site-overview sidebar-panel ">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/blog/images/avatar.png"
-               alt="郭雪辉" />
-          <p class="site-author-name" itemprop="name">郭雪辉</p>
-          <p class="site-description motion-element" itemprop="description">水滴石穿</p>
+          
+            <img class="site-author-image" itemprop="image"
+              src="/blog/images/avatar.png"
+              alt="郭雪辉" />
+          
+            <p class="site-author-name" itemprop="name">郭雪辉</p>
+            <p class="site-description motion-element" itemprop="description">水滴石穿</p>
         </div>
+
         <nav class="site-state motion-element">
-          <div class="site-state-item site-state-posts">
-            <a href="/blog/archives">
-              <span class="site-state-item-count">24</span>
-              <span class="site-state-item-name">日志</span>
-            </a>
-          </div>
 
           
+            <div class="site-state-item site-state-posts">
+            
+              <a href="/blog/archives">
+            
+                <span class="site-state-item-count">24</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
             <div class="site-state-item site-state-categories">
-              <a href="/blog/categories">
+              <a href="/blog/categories/index.html">
                 <span class="site-state-item-count">10</span>
                 <span class="site-state-item-name">分类</span>
               </a>
@@ -501,17 +486,6 @@ v-for遍历数据中的v-bind:key（:key）问题
 
         <div class="links-of-author motion-element">
           
-            
-              <span class="links-of-author-item">
-                <a href="http://weibo.com/WEBguoxh" target="_blank" title="微博">
-                  
-                    <i class="fa fa-fw fa-globe"></i>
-                  
-                  微博
-                </a>
-              </span>
-            
-          
         </div>
 
         
@@ -520,19 +494,29 @@ v-for遍历数据中的v-bind:key（:key）问题
         
         
 
+        
+
+
       </section>
 
       
+      <!--noindex-->
         <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
           <div class="post-toc">
+
             
               
             
+
             
               <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#如何让css只在当前组件起作用"><span class="nav-number">1.</span> <span class="nav-text">如何让css只在当前组件起作用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#v-for遍历数据中的v-bind-key（-key）问题"><span class="nav-number">2.</span> <span class="nav-text">v-for遍历数据中的v-bind:key（:key）问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#props-用来接收父组件传过来的数据"><span class="nav-number">3.</span> <span class="nav-text">props:{}用来接收父组件传过来的数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#引入模块和引入文件"><span class="nav-number">4.</span> <span class="nav-text">引入模块和引入文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#vue数据绑定支持JS表达式-以后v-for的时候再也不用先在JS中处理一遍数据再绑定了"><span class="nav-number">5.</span> <span class="nav-text">vue数据绑定支持JS表达式(以后v-for的时候再也不用先在JS中处理一遍数据再绑定了)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#vue中的index索引值问题"><span class="nav-number">6.</span> <span class="nav-text">vue中的index索引值问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#鼠标右键事件"><span class="nav-number">7.</span> <span class="nav-text">鼠标右键事件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#vue微信分享"><span class="nav-number">8.</span> <span class="nav-text">vue微信分享</span></a></li></ol></div>
             
+
           </div>
         </section>
+      <!--/noindex-->
+      
+
       
 
     </div>
@@ -547,52 +531,43 @@ v-for遍历数据中的v-bind:key（:key）问题
       <div class="footer-inner">
         <div class="copyright" >
   
-  &copy;  2016 - 
+  &copy; 
   <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">郭雪辉
+  <span class="author" itemprop="copyrightHolder">郭雪辉</span>
 
-  </span>
-</div>
-
-<div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
-</div>
-
-<div class="theme-info">
-  主题 -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
-  </a>
+  
 </div>
 
 
-<script>
-(function(){
-    var bp = document.createElement('script');
-    var curProtocol = window.location.protocol.split(':')[0];
-    if (curProtocol === 'https') {
-        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
-    }
-    else {
-        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-    }
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(bp, s);
-})();
-</script>
+  <div class="powered-by">由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+  <span class="post-meta-divider">|</span>
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.2</div>
+
 
         
+
+
+
+
+
+
 
         
       </div>
     </footer>
 
-    <div class="back-to-top">
-      <i class="fa fa-arrow-up"></i>
-    </div>
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
   </div>
 
   
@@ -612,6 +587,15 @@ v-for遍历数据中的v-bind:key（:key）问题
 
 
   
+
+
+
+
+
+
+
+
+
 
 
 
@@ -637,168 +621,79 @@ v-for遍历数据中的v-bind:key（:key）问题
   
 
 
-  <script type="text/javascript" src="/blog/js/src/utils.js?v=5.0.1"></script>
+  <script type="text/javascript" src="/blog/js/src/utils.js?v=5.1.2"></script>
 
-  <script type="text/javascript" src="/blog/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-  
-  <script type="text/javascript" src="/blog/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/blog/js/src/post-details.js?v=5.0.1"></script>
-
-
-
-  
-
-
-  <script type="text/javascript" src="/blog/js/src/bootstrap.js?v=5.0.1"></script>
-
-
-
-  
-
-
-
-  
-
+  <script type="text/javascript" src="/blog/js/src/motion.js?v=5.1.2"></script>
 
 
 
   
   
-  <script type="text/javascript">
-    // Popup Window;
-    var isfetched = false;
-    // Search DB path;
-    var search_path = "search.xml";
-    if (search_path.length == 0) {
-       search_path = "search.xml";
-    }
-    var path = "/blog/" + search_path;
-    // monitor main search box;
 
-    function proceedsearch() {
-      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
-      $('.popup').toggle();
 
-    }
-    // search function;
-    var searchFunc = function(path, search_id, content_id) {
-    'use strict';
-    $.ajax({
-        url: path,
-        dataType: "xml",
-        async: true,
-        success: function( xmlResponse ) {
-            // get the contents from search data
-            isfetched = true;
-            $('.popup').detach().appendTo('.header-inner');
-            var datas = $( "entry", xmlResponse ).map(function() {
-                return {
-                    title: $( "title", this ).text(),
-                    content: $("content",this).text(),
-                    url: $( "url" , this).text()
-                };
-            }).get();
-            var $input = document.getElementById(search_id);
-            var $resultContent = document.getElementById(content_id);
-            $input.addEventListener('input', function(){
-                var matchcounts = 0;
-                var str='<ul class=\"search-result-list\">';
-                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                $resultContent.innerHTML = "";
-                if (this.value.trim().length > 1) {
-                // perform local searching
-                datas.forEach(function(data) {
-                    var isMatch = true;
-                    var content_index = [];
-                    var data_title = data.title.trim().toLowerCase();
-                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
-                    var data_url = data.url;
-                    var index_title = -1;
-                    var index_content = -1;
-                    var first_occur = -1;
-                    // only match artiles with not empty titles and contents
-                    if(data_title != '' && data_content != '') {
-                        keywords.forEach(function(keyword, i) {
-                            index_title = data_title.indexOf(keyword);
-                            index_content = data_content.indexOf(keyword);
-                            if( index_title < 0 && index_content < 0 ){
-                                isMatch = false;
-                            } else {
-                                if (index_content < 0) {
-                                    index_content = 0;
-                                }
-                                if (i == 0) {
-                                    first_occur = index_content;
-                                }
-                            }
-                        });
-                    }
-                    // show search results
-                    if (isMatch) {
-                        matchcounts += 1;
-                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
-                        var content = data.content.trim().replace(/<[^>]+>/g,"");
-                        if (first_occur >= 0) {
-                            // cut out 100 characters
-                            var start = first_occur - 20;
-                            var end = first_occur + 80;
-                            if(start < 0){
-                                start = 0;
-                            }
-                            if(start == 0){
-                                end = 50;
-                            }
-                            if(end > content.length){
-                                end = content.length;
-                            }
-                            var match_content = content.substring(start, end);
-                            // highlight all keywords
-                            keywords.forEach(function(keyword){
-                                var regS = new RegExp(keyword, "gi");
-                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
-                            });
+  <script type="text/javascript" src="/blog/js/src/affix.js?v=5.1.2"></script>
 
-                            str += "<p class=\"search-result\">" + match_content +"...</p>"
-                        }
-                        str += "</li>";
-                    }
-                })};
-                str += "</ul>";
-                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
-                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
-                $resultContent.innerHTML = str;
-            });
-            proceedsearch();
-        }
-    });}
+  <script type="text/javascript" src="/blog/js/src/schemes/pisces.js?v=5.1.2"></script>
 
-    // handle and trigger popup window;
-    $('.popup-trigger').click(function(e) {
-      e.stopPropagation();
-      if (isfetched == false) {
-        searchFunc(path, 'local-search-input', 'local-search-result');
-      } else {
-        proceedsearch();
-      };
 
-    });
 
-    $('.popup-btn-close').click(function(e){
-      $('.popup').hide();
-      $(".popoverlay").remove();
-      $('body').css('overflow', '');
-    });
-    $('.popup').click(function(e){
-      e.stopPropagation();
-    });
-  </script>
+  <script type="text/javascript" src="/blog/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/blog/js/src/post-details.js?v=5.1.2"></script>
 
+
+  
+  <script type="text/javascript" src="/blog/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/blog/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
 
   
 

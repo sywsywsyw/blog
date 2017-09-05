@@ -1,18 +1,31 @@
-<!doctype html>
+<!DOCTYPE html>
 
 
 
+  
 
-<html class="theme-next mist">
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
 
 
 
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
 
 
 
@@ -61,9 +74,9 @@
 
 
 
-<link href="/blog/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+<link href="/blog/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/blog/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+<link href="/blog/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="Hexo, NexT" />
@@ -75,7 +88,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/blog/favicon.ico?v=5.0.1" />
+  <link rel="shortcut icon" type="image/x-icon" href="/blog/favicon.ico?v=5.1.2" />
 
 
 
@@ -94,81 +107,85 @@
 
 
 
-<script type="text/javascript" id="hexo.configuration">
+<script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: 'Mist',
-    sidebar: {"position":"left","display":"post"},
+    root: '/blog/',
+    scheme: 'Pisces',
+    version: '5.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
-    motion: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn"}},
     duoshuo: {
-      userId: 0,
+      userId: '0',
       author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
   };
 </script>
 
 
 
-
   <link rel="canonical" href="http://gxhpersonal.github.io/blog/"/>
 
-  <title> Blog station </title>
-</head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
+
+
+  <title>Blog station</title>
   
 
 
 
-  <script type="text/javascript">
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "//hm.baidu.com/hm.js?781146505a3f7e8d448b6dfe48570cd6";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
 
 
 
 
 
+</head>
 
-
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left 
+  page-home">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-meta ">
-  
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
 
-  <div class="custom-logo-site-title">
-    <a href="/blog/"  class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <span class="site-title">Blog station</span>
-      <span class="logo-line-after"><i></i></span>
-    </a>
+    <div class="custom-logo-site-title">
+      <a href="/blog/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Blog station</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">水滴石穿</p>
+      
   </div>
-  <p class="site-subtitle">水滴石穿</p>
-</div>
 
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
 </div>
 
 <nav class="site-nav">
@@ -187,66 +204,15 @@
           </a>
         </li>
       
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/blog/categories" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/blog/about" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/blog/archives" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
 
-      
-        <li class="menu-item menu-item-search">
-          
-            <a href="javascript:;" class="popup-trigger">
-          
-            
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
-            
-            搜索
-          </a>
-        </li>
       
     </ul>
   
 
   
-    <div class="site-search">
-      
-  <div class="popup">
- <span class="search-icon fa fa-search"></span>
- <input type="text" id="local-search-input">
- <div id="local-search-result"></div>
- <span class="popup-btn-close">close</span>
-</div>
-
-
-    </div>
-  
 </nav>
+
+
 
  </div>
     </header>
@@ -261,13 +227,27 @@
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://gxhpersonal.github.io/blog/blog/2017/02/22/vue常见问题/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="郭雪辉">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/blog/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog station">
+    </span>
 
     
       <header class="post-header">
@@ -275,38 +255,42 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/blog/2017/02/22/vue常见问题/" itemprop="url">
-                  vue常见问题
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/blog/2017/02/22/vue常见问题/" itemprop="url">vue常见问题</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-02-22T11:34:59+08:00" content="2017-02-22">
-              2017-02-22
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-22T11:34:59+08:00">
+                2017-02-22
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/blog/categories/vue/" itemprop="url" rel="index">
                     <span itemprop="name">vue</span>
                   </a>
@@ -314,7 +298,6 @@
 
                 
                 
-
               
             </span>
           
@@ -324,16 +307,21 @@
           
 
           
-
-          
           
 
           
+
+          
+
+          
+
         </div>
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -342,27 +330,38 @@
       
         
           
-          如何让css只在当前组件起作用在style标签中加入scoped语句1&lt;style scope
-          ...
+            <h3 id="如何让css只在当前组件起作用"><a href="#如何让css只在当前组件起作用" class="headerlink" title="如何让css只在当前组件起作用"></a>如何让css只在当前组件起作用</h3><p>在style标签中加入scoped语句<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;style scoped&gt;&lt;/style&gt;</div></pre></td></tr></table></figure></p>
+<p>css支持scss语法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;style lang=&quot;scss&quot;&gt;&lt;/style&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="v-for遍历数据中的v-bind-key（-key）问题"><a href="#v-for遍历数据中的v-bind-key（-key）问题" class="headerlink" title="v-for遍历数据中的v-bind:key（:key）问题"></a>v-for遍历数据中的v-bind:key（:key）问题</h3><blockquote>
+<p>在vue中用v-for最好搭配v-bind:key=”key”来使用；<br>key的作用主要是为了高效的更新虚拟DOM<br>我们知道，vue和react都实现了一套虚拟DOM，使我们可以不直接操作DOM元素，只操作数据便可以重新渲染页面。而隐藏在背后的原理便是其高效的Diff算法。</p>
+</blockquote>
+<h3 id="props-用来接收父组件传过来的数据"><a href="#props-用来接收父组件传过来的数据" class="headerlink" title="props:{}用来接收父组件传过来的数据"></a>props:{}用来接收父组件传过来的数据</h3><h3 id="引入模块和引入文件"><a href="#引入模块和引入文件" class="headerlink" title="引入模块和引入文件"></a>引入模块和引入文件</h3><p><em>引入模块：import webview from “../../common/webview.js”;
+</em>引入文件：import “../../filter/webpFilter.js”;</p>
+<h3 id="vue数据绑定支持JS表达式-以后v-for的时候再也不用先在JS中处理一遍数据再绑定了"><a href="#vue数据绑定支持JS表达式-以后v-for的时候再也不用先在JS中处理一遍数据再绑定了" class="headerlink" title="vue数据绑定支持JS表达式(以后v-for的时候再也不用先在JS中处理一遍数据再绑定了)"></a>vue数据绑定支持JS表达式(以后v-for的时候再也不用先在JS中处理一遍数据再绑定了)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&#123;&#123; number + 1 &#125;&#125;</div><div class="line">&#123;&#123; ok ? &apos;YES&apos; : &apos;NO&apos; &#125;&#125;</div><div class="line">&#123;&#123; message.split(&apos;&apos;).reverse().join(&apos;&apos;) &#125;&#125;</div><div class="line">&lt;div v-bind:id=&quot;&apos;list-&apos; + id&quot;&gt;&lt;/div&gt;</div></pre></td></tr></table></figure>
+<h3 id="vue中的index索引值问题"><a href="#vue中的index索引值问题" class="headerlink" title="vue中的index索引值问题"></a>vue中的index索引值问题</h3><p>vue 中$index $key 已经移除了<br>之前可以这样:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;ul id=&quot;example&quot;&gt;</div><div class="line">    &lt;li v-for=&quot;item in items&quot;&gt;</div><div class="line">        &#123;&#123;$index&#125;&#125;</div><div class="line">        &#123;&#123;$key&#125;&#125;</div><div class="line">    &lt;/li&gt;</div><div class="line">&lt;/ul&gt;</div></pre></td></tr></table></figure></p>
+<p>现在已经移除,如果还用的话就会报错:Uncaught ReferenceError: $index is not defined;</p>
+<p>现在这样写:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;ul id=&quot;example&quot;&gt;</div><div class="line">    &lt;li v-for=&quot;(item,index) in items&quot;&gt;</div><div class="line">        &#123;&#123;item&#125;&#125;</div><div class="line">        &#123;&#123;index&#125;&#125;</div><div class="line">    &lt;/li&gt;</div><div class="line">&lt;/ul&gt;</div></pre></td></tr></table></figure></p>
+<p>第一个参数是值,第二个参数是索引;目的是为了保持和原生的一致;</p>
+<h3 id="鼠标右键事件"><a href="#鼠标右键事件" class="headerlink" title="鼠标右键事件"></a>鼠标右键事件</h3><p>@contextmenu.prevent=”alert(‘您点击的是鼠标右键’)”</p>
+<h3 id="vue微信分享"><a href="#vue微信分享" class="headerlink" title="vue微信分享"></a>vue微信分享</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div></pre></td><td class="code"><pre><div class="line"><span class="number">1.</span>页面中引入微信文件</div><div class="line">&lt;script src=<span class="string">"https://res.wx.qq.com/open/js/jweixin-1.0.0.js"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></div><div class="line"></div><div class="line"><span class="number">2.</span><span class="comment">//微信分享方法相关配置</span></div><div class="line"><span class="keyword">import</span> Vue <span class="keyword">from</span> <span class="string">'vue'</span>;</div><div class="line"><span class="keyword">import</span> vueResource <span class="keyword">from</span> <span class="string">'vue-resource'</span>;</div><div class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</div><div class="line"></div><div class="line">    setWxConfig: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">        Vue.http.options.emulateJSON = <span class="literal">true</span>;</div><div class="line">        Vue.http.get(<span class="string">'/Api/Activity/GetWeixinAPIConfig?url='</span> + <span class="built_in">window</span>.location.href).then(response =&gt; &#123;</div><div class="line">            <span class="keyword">let</span> weixinConfigData = response.body;</div><div class="line">            wx.config(&#123;</div><div class="line">                debug: <span class="literal">false</span>,</div><div class="line">                appId: weixinConfigData.AppId,</div><div class="line">                timestamp: weixinConfigData.Timestamp,</div><div class="line">                nonceStr: weixinConfigData.NonceStr,</div><div class="line">                signature: weixinConfigData.signature,</div><div class="line">                jsApiList: [</div><div class="line">                    <span class="string">'checkJsApi'</span>,</div><div class="line">                    <span class="string">'onMenuShareTimeline'</span>,</div><div class="line">                    <span class="string">'onMenuShareAppMessage'</span>,</div><div class="line">                    <span class="string">'onMenuShareQQ'</span>,</div><div class="line">                    <span class="string">'onMenuShareWeibo'</span>,</div><div class="line">                    <span class="string">'hideMenuItems'</span>,</div><div class="line">                    <span class="string">'showMenuItems'</span>,</div><div class="line">                    <span class="string">'hideAllNonBaseMenuItem'</span>,</div><div class="line">                    <span class="string">'showAllNonBaseMenuItem'</span>,</div><div class="line">                    <span class="string">'translateVoice'</span>,</div><div class="line">                    <span class="string">'startRecord'</span>,</div><div class="line">                    <span class="string">'stopRecord'</span>,</div><div class="line">                    <span class="string">'onRecordEnd'</span>,</div><div class="line">                    <span class="string">'playVoice'</span>,</div><div class="line">                    <span class="string">'pauseVoice'</span>,</div><div class="line">                    <span class="string">'stopVoice'</span>,</div><div class="line">                    <span class="string">'uploadVoice'</span>,</div><div class="line">                    <span class="string">'downloadVoice'</span>,</div><div class="line">                    <span class="string">'chooseImage'</span>,</div><div class="line">                    <span class="string">'previewImage'</span>,</div><div class="line">                    <span class="string">'uploadImage'</span>,</div><div class="line">                    <span class="string">'downloadImage'</span>,</div><div class="line">                    <span class="string">'getNetworkType'</span>,</div><div class="line">                    <span class="string">'openLocation'</span>,</div><div class="line">                    <span class="string">'getLocation'</span>,</div><div class="line">                    <span class="string">'hideOptionMenu'</span>,</div><div class="line">                    <span class="string">'showOptionMenu'</span>,</div><div class="line">                    <span class="string">'closeWindow'</span>,</div><div class="line">                    <span class="string">'scanQRCode'</span>,</div><div class="line">                    <span class="string">'chooseWXPay'</span>,</div><div class="line">                    <span class="string">'openProductSpecificView'</span>,</div><div class="line">                    <span class="string">'addCard'</span>,</div><div class="line">                    <span class="string">'chooseCard'</span>,</div><div class="line">                    <span class="string">'openCard'</span></div><div class="line">                ]</div><div class="line">            &#125;);</div><div class="line">        &#125;, response =&gt; &#123;</div><div class="line">            <span class="comment">// error callback</span></div><div class="line">        &#125;);</div><div class="line">    &#125;,</div><div class="line">    wxShare(obj) &#123;</div><div class="line">        wx.ready(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line"></div><div class="line">            wx.onMenuShareAppMessage(&#123;</div><div class="line">                title: obj.shareTitle,</div><div class="line">                desc: obj.descContent,</div><div class="line">                link: obj.lineLink,</div><div class="line">                imgUrl: obj.imgUrl,</div><div class="line">                trigger: <span class="function"><span class="keyword">function</span> (<span class="params">res</span>) </span>&#123;</div><div class="line">                    <span class="comment">//alert('用户点击发送给朋友');</span></div><div class="line">                &#125;,</div><div class="line">                success: <span class="function"><span class="keyword">function</span> (<span class="params">res</span>) </span>&#123;</div><div class="line">                    <span class="comment">// alert('已分享');</span></div><div class="line">                &#125;,</div><div class="line">                cancel: <span class="function"><span class="keyword">function</span> (<span class="params">res</span>) </span>&#123;</div><div class="line">                    <span class="comment">//alert('已取消');</span></div><div class="line">                &#125;,</div><div class="line">                fail: <span class="function"><span class="keyword">function</span> (<span class="params">res</span>) </span>&#123;</div><div class="line">                    <span class="comment">//  alert(JSON.stringify(res));</span></div><div class="line">                &#125;</div><div class="line">            &#125;);</div><div class="line"></div><div class="line">            wx.onMenuShareTimeline(&#123;</div><div class="line">                title: obj.shareTitle,</div><div class="line">                desc: obj.descContent,</div><div class="line">                link: obj.lineLink,</div><div class="line">                imgUrl: obj.imgUrl,</div><div class="line">                trigger: <span class="function"><span class="keyword">function</span> (<span class="params">res</span>) </span>&#123;</div><div class="line">                    <span class="comment">// alert('用户点击分享到朋友圈');</span></div><div class="line">                &#125;,</div><div class="line">                success: <span class="function"><span class="keyword">function</span> (<span class="params">res</span>) </span>&#123;</div><div class="line">                    <span class="comment">// alert('已分享');</span></div><div class="line">                &#125;,</div><div class="line">                cancel: <span class="function"><span class="keyword">function</span> (<span class="params">res</span>) </span>&#123;</div><div class="line">                    <span class="comment">// alert('已取消');</span></div><div class="line">                &#125;,</div><div class="line">                fail: <span class="function"><span class="keyword">function</span> (<span class="params">res</span>) </span>&#123;</div><div class="line">                    <span class="comment">// alert(JSON.stringify(res));</span></div><div class="line">                &#125;</div><div class="line">            &#125;);</div><div class="line"></div><div class="line">            wx.onMenuShareQQ(&#123;</div><div class="line">                title: obj.shareTitle,</div><div class="line">                desc: obj.descContent,</div><div class="line">                link: obj.lineLink,</div><div class="line">                imgUrl: obj.imgUrl,</div><div class="line">                success: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">                    <span class="comment">// 用户确认分享后执行的回调函数</span></div><div class="line">                &#125;,</div><div class="line">                cancel: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">                    <span class="comment">// 用户取消分享后执行的回调函数</span></div><div class="line">                &#125;</div><div class="line">            &#125;);</div><div class="line">        &#125;);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="number">3.</span>在指定组件中引入公共微信分享方法文件；就可以调用分享方法</div><div class="line"><span class="keyword">import</span> wechat <span class="keyword">from</span> <span class="string">"../../common/wechat.js"</span>;</div><div class="line">wechat.setWxConfig();</div><div class="line">wechat.wxShare(&#123; </div><div class="line">shareTitle: <span class="string">"惠租车-驾照全球通国家查询"</span>, </div><div class="line">descContent: <span class="string">"[驾照全球通]全球自驾200国，顶级车行认证！"</span>, </div><div class="line">lineLink: location.href, </div><div class="line">imgUrl: <span class="string">"https://cdn-qiniu-app1.huizuche.com/2.6/logo_share.jpg"</span> &#125;);</div></pre></td></tr></table></figure>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/blog/2017/02/22/vue常见问题/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -372,6 +371,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -379,13 +382,27 @@
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://gxhpersonal.github.io/blog/blog/2017/02/06/ES6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="郭雪辉">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/blog/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog station">
+    </span>
 
     
       <header class="post-header">
@@ -393,38 +410,42 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/blog/2017/02/06/ES6/" itemprop="url">
-                  ES6
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/blog/2017/02/06/ES6/" itemprop="url">ES6</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-02-06T09:34:53+08:00" content="2017-02-06">
-              2017-02-06
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-06T09:34:53+08:00">
+                2017-02-06
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/blog/categories/JS/" itemprop="url" rel="index">
                     <span itemprop="name">JS</span>
                   </a>
@@ -432,7 +453,6 @@
 
                 
                 
-
               
             </span>
           
@@ -442,16 +462,21 @@
           
 
           
-
-          
           
 
           
+
+          
+
+          
+
         </div>
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -460,27 +485,34 @@
       
         
           
-          let  constlet和var类似，let必须先声明后使用，否则会报错；let声明变量，cons
-          ...
+            <h3 id="let-const"><a href="#let-const" class="headerlink" title="let  const"></a>let  const</h3><p>let和var类似，let必须先声明后使用，否则会报错；<br>let声明变量，const声明常量；<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">function kuai()&#123;</div><div class="line">  let n = 5;</div><div class="line">  if(true)&#123;</div><div class="line">    let n = 10;</div><div class="line">  &#125;</div><div class="line">  console.log(n)</div><div class="line">&#125;</div><div class="line">kuai()</div></pre></td></tr></table></figure></p>
+<p>上面代码说明let有块级作用域，不同块级相同变量不受影响；</p>
+<h3 id="顶层对象的属性和全局变量关系"><a href="#顶层对象的属性和全局变量关系" class="headerlink" title="顶层对象的属性和全局变量关系"></a>顶层对象的属性和全局变量关系</h3><p>ES5中的顶层变量属性和全局变量挂钩，被认为是JS最大的败笔之一，<br>ES6中let，class和const声明的变量不再与顶层对象的属性关联</p>
+<h3 id="Promise"><a href="#Promise" class="headerlink" title="Promise"></a>Promise</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">var promise = new Promise(function (resolve, reject) &#123;</div><div class="line">        console.log(&apos;resolve&apos;);</div><div class="line">		//成功回调</div><div class="line">        resolve();</div><div class="line">		//失败回调</div><div class="line">		reject();</div><div class="line">    &#125;)</div><div class="line">    promise.then(function () &#123;</div><div class="line">        console.log(&apos;success&apos;)</div><div class="line">    &#125;, function () &#123;</div><div class="line">        console.log(&apos;fail&apos;)</div><div class="line">    &#125;)</div><div class="line">    console.log(&apos;justgo&apos;)</div></pre></td></tr></table></figure>
+<h3 id="export-default-为模块指定默认输出"><a href="#export-default-为模块指定默认输出" class="headerlink" title="export default {}为模块指定默认输出"></a>export default {}为模块指定默认输出</h3><p>export default function () {<br>  console.log(‘foo’);<br>}<br>其他模块加载该模块时，import命令可以为该匿名函数指定任意名字<br>import customName from ‘./export-default’;</p>
+<h3 id="ES6支持方法简写"><a href="#ES6支持方法简写" class="headerlink" title="ES6支持方法简写"></a>ES6支持方法简写</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a&#123;</div><div class="line">  points:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">     <span class="keyword">return</span> <span class="keyword">this</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">* ES6可以简写为</div><div class="line"><span class="keyword">var</span> a&#123;</div><div class="line">   points()&#123;</div><div class="line">     <span class="keyword">return</span> <span class="keyword">this</span>;</div><div class="line">   &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="export-export-default的异同"><a href="#export-export-default的异同" class="headerlink" title="export,export default的异同"></a>export,export default的异同</h3><p>1.export在js中可以有多个，export default只能出现一个；<br>2.在一个文件或模块中，export、import可以有多个，export default仅有一个<br>3.通过export方式导出，在导入时要加{ }，export default则不需要<br>4.export能直接导出变量表达式，export default不行。</p>
+<h3 id="ES6的箭头函数"><a href="#ES6的箭头函数" class="headerlink" title="ES6的箭头函数"></a>ES6的箭头函数</h3><p>ES6中的箭头函数写法更加简单，表达更加简洁，简化回调函数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"> var func = v =&gt; v+1;</div><div class="line">等于：</div><div class="line"> var func = function(v)&#123;return v+1&#125;</div><div class="line"></div><div class="line">var result = [1,2,1,3,4].sort((a,b)=&gt;a-b)</div><div class="line">等于：</div><div class="line">var result = [1,2,1,3,4].sort(function(a,b)&#123;return a-b&#125;)</div></pre></td></tr></table></figure></p>
+<h3 id="数组去重"><a href="#数组去重" class="headerlink" title="数组去重"></a>数组去重</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var arr = [1,1,2,3,4,5,66,5,6];</div><div class="line">console.log(new Set(arr))</div><div class="line">//此时console出来的是一个对象，</div><div class="line">console.log(array.from(new Set(arr)))</div><div class="line">//此时console出来的是去重之后的数组</div></pre></td></tr></table></figure>
+<h3 id="字符串拼接"><a href="#字符串拼接" class="headerlink" title="字符串拼接"></a>字符串拼接</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">ES5:</div><div class="line">var func = function(v)&#123;</div><div class="line">	console.log(&apos;name &apos;+v)</div><div class="line">&#125;</div><div class="line">func(&apos;jone&apos;)</div><div class="line"></div><div class="line">ES6:</div><div class="line">var func = v =&gt; console.log(`name $&#123;v&#125;`)</div><div class="line">func(&apos;jone&apos;)</div></pre></td></tr></table></figure>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/blog/2017/02/06/ES6/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -490,6 +522,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -497,13 +533,27 @@
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://gxhpersonal.github.io/blog/blog/2016/12/29/jquery常见问题/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="郭雪辉">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/blog/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog station">
+    </span>
 
     
       <header class="post-header">
@@ -511,38 +561,42 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/blog/2016/12/29/jquery常见问题/" itemprop="url">
-                  jquery常见问题
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/blog/2016/12/29/jquery常见问题/" itemprop="url">jquery常见问题</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-12-29T10:04:56+08:00" content="2016-12-29">
-              2016-12-29
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-12-29T10:04:56+08:00">
+                2016-12-29
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/blog/categories/jquery/" itemprop="url" rel="index">
                     <span itemprop="name">jquery</span>
                   </a>
@@ -550,7 +604,6 @@
 
                 
                 
-
               
             </span>
           
@@ -560,16 +613,21 @@
           
 
           
-
-          
           
 
           
+
+          
+
+          
+
         </div>
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -578,27 +636,34 @@
       
         
           
-          ###trigger() 方法给指定元素添加触发事件，例：$(“#this”).trigger(“c
-          ...
+            <p>###trigger() 方法<br>给指定元素添加触发事件，例：$(“#this”).trigger(“click”)</p>
+<p>###jQuery noConflict() 方法<br>noConflict() 方法会释放会 $ 标识符的控制，这样其他脚本就可以使用它了。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">var jq = $.noConflict();</div><div class="line">jq(document).ready(function()&#123;</div><div class="line">  jq(&quot;button&quot;).click(function()&#123;</div><div class="line">    jq(&quot;p&quot;).text(&quot;jQuery 仍在运行！&quot;);</div><div class="line">  &#125;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h3 id="ready-方法"><a href="#ready-方法" class="headerlink" title="ready()方法"></a>ready()方法</h3><p>当 DOM（文档对象模型） 已经加载，并且页面（包括图像）已经完全呈现时，会发生 ready 事件。</p>
+<blockquote>
+<p>ready() 函数仅能用于当前文档，因此无需选择器。<br>语法 1<br>$(document).ready(function)<br>语法 2<br>$().ready(function)<br>语法 3<br>$(function)</p>
+<ul>
+<li>提示：ready() 函数不应与 <body onload=""> 一起使用。</body></li>
+</ul>
+</blockquote>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/blog/2016/12/29/jquery常见问题/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -608,6 +673,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -615,13 +684,27 @@
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://gxhpersonal.github.io/blog/blog/2016/12/26/JS常见问题/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="郭雪辉">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/blog/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog station">
+    </span>
 
     
       <header class="post-header">
@@ -629,38 +712,42 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/blog/2016/12/26/JS常见问题/" itemprop="url">
-                  JS常见问题
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/blog/2016/12/26/JS常见问题/" itemprop="url">JS常见问题</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-12-26T13:37:16+08:00" content="2016-12-26">
-              2016-12-26
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-12-26T13:37:16+08:00">
+                2016-12-26
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/blog/categories/JS/" itemprop="url" rel="index">
                     <span itemprop="name">JS</span>
                   </a>
@@ -668,7 +755,6 @@
 
                 
                 
-
               
             </span>
           
@@ -678,16 +764,21 @@
           
 
           
-
-          
           
 
           
+
+          
+
+          
+
         </div>
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -696,27 +787,116 @@
       
         
           
-          Ajax跨域问题解决http://www.cnblogs.com/pandang/p/5341250
-          ...
+            <h3 id="Ajax跨域问题解决"><a href="#Ajax跨域问题解决" class="headerlink" title="Ajax跨域问题解决"></a>Ajax跨域问题解决</h3><p><a href="">http://www.cnblogs.com/pandang/p/5341250.html</a></p>
+<h3 id="JS判断浏览器种类IE，FF，Opera-Safari-chrome…"><a href="#JS判断浏览器种类IE，FF，Opera-Safari-chrome…" class="headerlink" title="JS判断浏览器种类IE，FF，Opera,Safari,chrome…"></a>JS判断浏览器种类IE，FF，Opera,Safari,chrome…</h3><p><a href="">http://www.jb51.net/article/50464.htm</a></p>
+<p>//基本原理就是根据浏览器的userAgent判断<br>var userAgent = navigator.userAgent;<br>//例如：<br>if (userAgent.indexOf(“Safari”) &gt; -1) {<br>        return “Safari”;<br>} //判断是否Safari浏览器</p>
+<h3 id="警告，确认，信息输入弹窗"><a href="#警告，确认，信息输入弹窗" class="headerlink" title="警告，确认，信息输入弹窗"></a>警告，确认，信息输入弹窗</h3><p>alert confirm prompt</p>
+<h3 id="encodeURIComponent函数"><a href="#encodeURIComponent函数" class="headerlink" title="encodeURIComponent函数"></a>encodeURIComponent函数</h3><p>1.encodeURIComponent() 函数可把字符串作为 URI 组件进行编码。</p>
+<ul>
+<li>请注意 encodeURIComponent() 函数 与 encodeURI() 函数的区别之处，前者假定它的参数是 URI 的一部分（比如        协议、主机名、路径或查询字符串）。因此 encodeURIComponent() 函数将转义用于分隔 URI 各个部分的标点符号。</li>
+</ul>
+<p>###超出指定字符数显示省略号<br>console.log($(“.friend_detail p”).text().length)<br>    var str = $(“.friend_detail p”).text();<br>    var s = str;<br>    if (str.length &gt; 6) {<br>        s = str.substring(0,6) + “…”;<br>    }<br>    $(“.friend_detail p”).text(s);</p>
+<h3 id="移动端input被输入法挡住"><a href="#移动端input被输入法挡住" class="headerlink" title="移动端input被输入法挡住"></a>移动端input被输入法挡住</h3><p>scrollIntoView(alignWithTop)</p>
+<h3 id="JS监听动画完成事件"><a href="#JS监听动画完成事件" class="headerlink" title="JS监听动画完成事件"></a>JS监听动画完成事件</h3><p>tt.addEventListener(“webkitAnimationEnd”, function(){ //动画结束时事件<br>this.className = this.className.replace(‘change’, ‘ ‘);<br>}, false); </p>
+<h3 id="元素scrollTop属性"><a href="#元素scrollTop属性" class="headerlink" title="元素scrollTop属性"></a>元素scrollTop属性</h3><blockquote>
+<p>只有元素设置了overflow样式，且不为hidden时才会生效，jquery对象要加下标[index]，否则找不到此属性；</p>
+</blockquote>
+<h3 id="JS处理Range"><a href="#JS处理Range" class="headerlink" title="JS处理Range"></a>JS处理Range</h3><blockquote>
+<p>所谓”Range”，是指HTML文档中任意一段内容。一个Range的起始点和结束点位置任意，甚至起始点和结束点可以是一样的（也就是空Range）。最常见的Range是用户文本选择范围(user text selection)。当用户选择了页面上的某一段文字后，你就可以把这个选择转为Range。当然，你也可以直接用程序定义Range<br>举几个常用的处理Range的方法：<br>1.获取用户选中的文本：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">var oBtn = document.getElementById(&quot;button&quot;);</div><div class="line">oBtn.onclick = function() &#123;</div><div class="line">    var userSelection, text;</div><div class="line">    if (window.getSelection) &#123; </div><div class="line">        //现代浏览器</div><div class="line">        userSelection = window.getSelection();</div><div class="line">    &#125; else if (document.selection) &#123; </div><div class="line">        //IE浏览器 考虑到Opera，应该放在后面</div><div class="line">        userSelection = document.selection.createRange();</div><div class="line">    &#125;</div><div class="line">    if (!(text = userSelection.text)) &#123;</div><div class="line">        text = userSelection;</div><div class="line">    &#125;</div><div class="line">    alert(text);</div><div class="line">&#125;;</div></pre></td></tr></table></figure></p>
+</blockquote>
+<p>2.点击表单内容全选：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">function SelectText(name) &#123;</div><div class="line">	if(obj.createTextRange)&#123;//IE浏览器</div><div class="line">    var range = obj.createTextRange();              </div><div class="line">    range.moveEnd(&quot;character&quot;,结束序号);</div><div class="line">    range.moveStart(&quot;character&quot;, 起始序号);</div><div class="line">    range.select();</div><div class="line">&#125;else&#123;//非IE浏览器</div><div class="line">    obj.setSelectionRange(起始序号, 结束序号);</div><div class="line">    obj.focus();</div><div class="line">&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>其他详见张鑫旭博客：<br><a href="">http://www.zhangxinxu.com/wordpress/2011/04/js-range-html%E6%96%87%E6%A1%A3%E6%96%87%E5%AD%97%E5%86%85%E5%AE%B9%E9%80%89%E4%B8%AD%E3%80%81%E5%BA%93%E5%8F%8A%E5%BA%94%E7%94%A8%E4%BB%8B%E7%BB%8D/</a></p>
+<h3 id="window-location"><a href="#window-location" class="headerlink" title="window.location"></a>window.location</h3><blockquote>
+<p>返回（当前页面的）整个 URL：<br>console.log(location.href)</p>
+</blockquote>
+<p>返回当前 URL 的路径名：<br>console.log(location.pathname);</p>
+<p>加载一个新的文档：<br>window.location.assign(“<a href="http://www.w3school.com.cn" target="_blank" rel="external">http://www.w3school.com.cn</a>“)</p>
+<p>  ● location.hostname 返回 web 主机的域名<br>  ● location.pathname 返回当前页面的路径和文件名<br>  ● location.port 返回 web 主机的端口 （80 或 443）<br>  ● location.protocol 返回所使用的 web 协议（http:// 或 https://）</p>
+<h3 id="通过身份证号得到生日，性别，年龄"><a href="#通过身份证号得到生日，性别，年龄" class="headerlink" title="通过身份证号得到生日，性别，年龄"></a>通过身份证号得到生日，性别，年龄</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line">&lt;script&gt;</div><div class="line">//参数UUserCard是身份证号，参数num用来判断要获取什么信息,只取18位身份证号；</div><div class="line">function IdCard(UUserCard,num)&#123;</div><div class="line">   if(num==1)&#123;</div><div class="line">       //获取出生日期</div><div class="line">       birth=UUserCard.substring(6, 10) + &quot;-&quot; + UUserCard.substring(10, 12) + &quot;-&quot; + UUserCard.substring(12, 14);</div><div class="line">    return birth;</div><div class="line">   &#125;</div><div class="line">   if(num==2)&#123;</div><div class="line">       //获取性别（其原理就是取身份证第17位除以2，余数1是男，否则是女）</div><div class="line">       if (parseInt(UUserCard.substr(16, 1)) % 2 == 1) &#123;</div><div class="line">           //男</div><div class="line">     return &quot;男&quot;;</div><div class="line">       &#125; else &#123;</div><div class="line">           //女</div><div class="line">     return &quot;女&quot;;</div><div class="line">       &#125;</div><div class="line">   &#125;</div><div class="line">   if(num==3)&#123;</div><div class="line">        //获取年龄（年龄=当前年-身份证7至10位数字，如果月比当前月小或者月与当前月相等&amp;&amp;日比当前日小于等于，则年龄+1）</div><div class="line">        var myDate = new Date();</div><div class="line">        var month = myDate.getMonth() + 1;</div><div class="line">        var day = myDate.getDate();</div><div class="line">        var age = myDate.getFullYear() - UUserCard.substring(6, 10) - 1;</div><div class="line">        if (UUserCard.substring(10, 12) &lt; month || UUserCard.substring(10, 12) == month &amp;&amp; UUserCard.substring(12, 14) &lt;= day) &#123;</div><div class="line">            age++;</div><div class="line">        &#125;</div><div class="line">  return age;</div><div class="line"> &#125;</div><div class="line">&#125;</div><div class="line">alert (IdCard(&apos;142223198503226111&apos;,3));</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+<p>###APP环境登录判断<br>        //登录拦截主方法，url:登录成功后跳转链接<br>        CheckLoginAndGoNext: function (url) {<br>            if (!url) {<br>                url = window.location.href;<br>            }<br>            window.hzch5.CheckLogin(url);<br>        },</p>
+<pre><code>//登录拦截 第一步：check登录状态
+CheckLogin: function (url) {
+    if (!url) {
+        url = window.location.href;
+    }
+    $.ajax({
+        url: &quot;http://&quot;+window.location.host+&quot;/Account/UserLoginStatus&quot;, type: &quot;POST&quot;, dataType: &quot;json&quot;, success: function (data) {
+            if (data.success) {
+                window.location = url;
+            }
+            else {
+                window.hzch5.ToLoginPage(url);
+            }
+        }
+    });
+},
+  //登录拦截 第二步：未登录跳转登录界面（H5/APP)
+ToLoginPage: function (url) {
+    if (!url) {
+        url = window.location.href;
+    }
+    if (navigator.userAgent.indexOf(&quot;hzc-ios&quot;) &gt; -1 || navigator.userAgent.indexOf(&quot;hzc-android&quot;) &gt; -1) {
+        var cver = window.hzch5.getCookie(&quot;cver&quot;); //app版本号
+        var token = window.hzch5.getCookie(&quot;token&quot;);
+        if (cver) {//2.4版本
+            var token = window.hzch5.getCookie(&quot;token&quot;);
+            if (token) {
+                //根据token同步APP登录状态
+                window.hzch5.checkLoginByToken(token, url);
+                return false;
+            }
+            document.location = &quot;WINDOW:HZC:LOGIN&quot;;                   
+        }
+        else {//小于2.4版本
+        document.location = &quot;http://&quot; + window.location.host + &quot;/Account/userLogin?returnurl=&quot; + encodeURIComponent(url);
+        }
+    }
+    else {
+        document.location = &quot;http://&quot; + window.location.host + &quot;/Account/userLogin?returnurl=&quot; + encodeURIComponent(url);
+    }
+},
+  //登录拦截 第三步  APP登录状态同步
+checkLoginByToken: function (token, url) {
+    if (!url) {
+        url = window.location.href;
+    }
+    if (!token) {
+        token = window.hzch5.getCookie(&quot;token&quot;);
+    }
+    $.ajax({
+        url: &quot;http://&quot; + window.location.host + &quot;/Account/UserLoginAuto&quot;, type: &quot;POST&quot;, dataType: &quot;json&quot;, data: { token: token }, success: function (data) {
+            if (data.success) {
+                document.location = &quot;http://&quot; + window.location.host + &quot;/Account/userLogin?returnurl=&quot; + encodeURIComponent(url);
+            }
+            else {                      
+                document.location = &quot;WINDOW:HZC:LOGIN&quot;;
+            }
+        }
+    });
+},
+//登录拦截 结束
+</code></pre><p>###时间格式转换</p>
+<blockquote>
+<p>console中截的图，直接字面意思理解使用就好<br><img src="http://ota5i8p1g.bkt.clouddn.com/timeFormat.png" alt="时间格式转换"></p>
+</blockquote>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/blog/2016/12/26/JS常见问题/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -726,6 +906,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -733,13 +917,27 @@
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://gxhpersonal.github.io/blog/blog/2016/12/01/JS控制滚动条刷新位置不变/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="郭雪辉">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/blog/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog station">
+    </span>
 
     
       <header class="post-header">
@@ -747,38 +945,42 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/blog/2016/12/01/JS控制滚动条刷新位置不变/" itemprop="url">
-                  JS控制滚动条刷新位置不变
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/blog/2016/12/01/JS控制滚动条刷新位置不变/" itemprop="url">JS控制滚动条刷新位置不变</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-12-01T10:40:18+08:00" content="2016-12-01">
-              2016-12-01
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-12-01T10:40:18+08:00">
+                2016-12-01
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/blog/categories/JS/" itemprop="url" rel="index">
                     <span itemprop="name">JS</span>
                   </a>
@@ -786,7 +988,6 @@
 
                 
                 
-
               
             </span>
           
@@ -796,16 +997,21 @@
           
 
           
-
-          
           
 
           
+
+          
+
+          
+
         </div>
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -814,27 +1020,27 @@
       
         
           
-          有时候，在网页中点击了页面中的按钮或是刷新了页面后，页面滚动条又 会回到顶部，想看后面的记录就又要拖
-          ...
+            <p>有时候，在网页中点击了页面中的按钮或是刷新了页面后，页面滚动条又 会回到顶部，想看后面的记录就又要拖动滚动条，或者要按翻页键，非常不方便，想在提交页面或者在页面刷新的时候仍然保持滚动条的位置不变，最好的办法就是 在JS中用cookie记录下当前滚动条的位置，然后刷新时读取cookie就可以实现这个功能了。<br>代码如下：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line">  &lt;script type=<span class="string">"text/javascript"</span>&gt;</div><div class="line">    <span class="function"><span class="keyword">function</span>  <span class="title">Trim</span>(<span class="params">strValue</span>)     </span></div><div class="line">    &#123;     </div><div class="line">      <span class="keyword">return</span>   strValue.replace(<span class="regexp">/^s*|s*$/g</span>,<span class="string">""</span>);     </div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">SetCookie</span>(<span class="params">sName,sValue</span>)     </span></div><div class="line">    &#123;     </div><div class="line">      <span class="built_in">document</span>.cookie = sName + <span class="string">"="</span> + <span class="built_in">escape</span>(sValue);     </div><div class="line">    &#125;   </div><div class="line">    </div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">GetCookie</span>(<span class="params">sName</span>)     </span></div><div class="line">    &#123;     </div><div class="line">     <span class="keyword">var</span> aCookie = <span class="built_in">document</span>.cookie.split(<span class="string">";"</span>);     </div><div class="line">     <span class="keyword">for</span>(<span class="keyword">var</span>　i=<span class="number">0</span>;　i　&lt; aCookie.length;　i++)     </div><div class="line">     &#123;     </div><div class="line">       <span class="keyword">var</span> aCrumb = aCookie[i].split(<span class="string">"="</span>);     </div><div class="line">       <span class="keyword">if</span>(sName　== Trim(aCrumb[<span class="number">0</span>]))     </div><div class="line">       &#123;     </div><div class="line">         <span class="keyword">return</span> <span class="built_in">unescape</span>(aCrumb[<span class="number">1</span>]);     </div><div class="line">       &#125;     </div><div class="line">     &#125;     </div><div class="line">     </div><div class="line">     　　<span class="keyword">return</span> <span class="literal">null</span>;     </div><div class="line">   &#125; </div><div class="line">   </div><div class="line">   <span class="function"><span class="keyword">function</span> <span class="title">scrollback</span>(<span class="params"></span>)     </span></div><div class="line">   &#123;     </div><div class="line">     <span class="keyword">if</span>(GetCookie(<span class="string">"scroll"</span>)!=<span class="literal">null</span>)&#123;<span class="built_in">document</span>.body.scrollTop=GetCookie(<span class="string">"scroll"</span>)&#125;     </div><div class="line">   &#125;     </div><div class="line">&lt;<span class="regexp">/script&gt;</span></div></pre></td></tr></table></figure></p>
+<p>然后在html页面中设置<body id="body" onscroll="SetCookie("scroll",body.scrollTop);" onload="scrollback();">就可以在刷新或提交后滚动条的位置保持不变了。</body></p>
+<p>上面的是通用的解决方法，在.net中还可以用<pages maintainscrollpositiononpostback="true">这个配置，更容易</pages></p>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/blog/2016/12/01/JS控制滚动条刷新位置不变/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -844,6 +1050,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -851,13 +1061,27 @@
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://gxhpersonal.github.io/blog/blog/2016/11/30/JS字符串，数组处理/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="郭雪辉">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/blog/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog station">
+    </span>
 
     
       <header class="post-header">
@@ -865,38 +1089,42 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/blog/2016/11/30/JS字符串，数组处理/" itemprop="url">
-                  JS字符串控制
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/blog/2016/11/30/JS字符串，数组处理/" itemprop="url">JS字符串控制</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-30T18:27:25+08:00" content="2016-11-30">
-              2016-11-30
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-11-30T18:27:25+08:00">
+                2016-11-30
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/blog/categories/JS/" itemprop="url" rel="index">
                     <span itemprop="name">JS</span>
                   </a>
@@ -904,7 +1132,6 @@
 
                 
                 
-
               
             </span>
           
@@ -914,16 +1141,21 @@
           
 
           
-
-          
           
 
           
+
+          
+
+          
+
         </div>
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -932,28 +1164,81 @@
       
         
           
-          .split()方法
-stringObject.split(separator,howm)separ
-          ...
+            <h3 id="split-方法"><a href="#split-方法" class="headerlink" title=".split()方法"></a>.split()方法</h3><blockquote>
+<p>stringObject.split(separator,howm)<br>separator: 必需，字符串或正则表达式，以这个字符对应要操作的字符串中的字符分割<br>howm: 可选，返回数组的最大长度</p>
+</blockquote>
+<h3 id="splice-方法"><a href="#splice-方法" class="headerlink" title=".splice()方法"></a>.splice()方法</h3><blockquote>
+<p>array.splice(index,howmany,item1,…..,itemX);<br>参数1必需。整数，规定添加/删除项目的位置，使用负数可从数组结尾处规定位置。，<br>参数2必需。要删除的项目数量。如果设置为 0，则不会删除项目。，<br>参数3可选。向数组添加的新项目。</p>
+</blockquote>
+<h3 id="slice-方法-可从-已有的数组中返回选定的元素"><a href="#slice-方法-可从-已有的数组中返回选定的元素" class="headerlink" title=".slice()方法   可从  已有的数组中返回选定的元素"></a>.slice()方法   可从  已有的数组中返回选定的元素</h3><blockquote>
+<p>包含起始位置，不包含结束位置</p>
+</blockquote>
+<h3 id="reverse-方法"><a href="#reverse-方法" class="headerlink" title=".reverse()方法"></a>.reverse()方法</h3><blockquote>
+<p>arrayPbject.reverse()<br>用于颠倒数组中元素顺序</p>
+</blockquote>
+<h3 id="join-方法-把数组中的所有元素放入一个字符串"><a href="#join-方法-把数组中的所有元素放入一个字符串" class="headerlink" title=".join()方法  //把数组中的所有元素放入一个字符串"></a>.join()方法  //把数组中的所有元素放入一个字符串</h3><blockquote>
+<p>arrayObject.join(separator)<br>参数用来指定要使用的分隔符，默认为逗号</p>
+</blockquote>
+<h3 id="push-pop-unshift-shift-方法"><a href="#push-pop-unshift-shift-方法" class="headerlink" title=".push(),.pop(),.unshift(),.shift()方法"></a>.push(),.pop(),.unshift(),.shift()方法</h3><p>.push()方法在当前数组末尾添加新元素，返回值为新数组长度；<br>.pop()方法删除当前数组最后一个元素并返回这个元素；<br>.unshift()方法向数组开始位置添加元素；<br>.shift() 方法用于把数组的第一个元素从其中删除，并返回第一个元素的值</p>
+<p>###判断电话号码<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">validateMobile: <span class="function"><span class="keyword">function</span> (<span class="params">str</span>) </span>&#123;</div><div class="line">            <span class="keyword">var</span> reg = <span class="regexp">/^1[3-8]\d&#123;9&#125;$/</span>;</div><div class="line">            <span class="keyword">return</span> reg.test(str);</div><div class="line">        &#125;</div><div class="line"><span class="comment">//邮箱验证</span></div><div class="line"><span class="keyword">var</span> reg = <span class="regexp">/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/</span>;</div></pre></td></tr></table></figure></p>
+<h3 id="substr-方法"><a href="#substr-方法" class="headerlink" title=".substr()方法"></a>.substr()方法</h3><p>string.substr(star,length)<br>第一个参数要抽取的字串的起始下标，如果是负数，倒数，<br>第二个参数表示字串字符数</p>
+<h3 id="string-substring-方法"><a href="#string-substring-方法" class="headerlink" title="string.substring()方法"></a>string.substring()方法</h3><p>返回介于两个指定下标之间的字符，取第一个参数，不取第二个参数，第二个参数不填，则返回到结尾；</p>
+<h3 id="字符串转换数字类型方法"><a href="#字符串转换数字类型方法" class="headerlink" title="字符串转换数字类型方法"></a>字符串转换数字类型方法</h3><p>1.parseInt(),parseFloat()<br>js提供了parseInt()和parseFloat()两个转换函数。前者把值转换成整数，后者把值转换成浮点数。只有对String类型调用这些方法，这两个函数才能正确运行；对其他类型返回的都是NaN(Not a Number)。</p>
+<p>2.Number()<br>Number(value)——把给定的值转换成数字（可以是整数或浮点数）；</p>
+<h3 id="数组去重"><a href="#数组去重" class="headerlink" title="数组去重"></a>数组去重</h3><p>1.利用空数组+空对象push法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">function removeArrSame1(arr)&#123;</div><div class="line">	var tmp = &#123;&#125;;</div><div class="line">	var newA = [];</div><div class="line">	for(var i=0;i&lt;arr.length;i++)&#123;</div><div class="line"> 		if(!tmp[arr[i]])&#123;</div><div class="line">			tmp[arr[i]] = 1;</div><div class="line">			newA.push(arr[i]);</div><div class="line">	&#125;</div><div class="line"> &#125;	</div><div class="line"> return newA;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>2.new一个新数组push方法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">function removeArrSame2(arr)&#123;</div><div class="line">	var newA = [];</div><div class="line">	for(var i=0;i&lt;arr.length;i++)&#123;</div><div class="line">		if(newA.indexOf(arr[i]) === -1)&#123;</div><div class="line">			newA.push(arr[i])</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	return newA;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="字符串大小写互转"><a href="#字符串大小写互转" class="headerlink" title="字符串大小写互转"></a>字符串大小写互转</h3><p>toLocaleUpperCase 方法<br>返回一个字符串，其中所有的字母字符都被转换为大写，同时适应宿主环境的当前区域设置。</p>
+<blockquote>
+<p>stringVar.tolocaleUpperCase()</p>
+</blockquote>
+<p>必选的 stringVar 引用是一个 String 对象，值或文字。</p>
+<p>说明<br>toLocaleUpperCase 方法转换字符串中的字符，同时适应宿主环境的当前区域设置。在大多数情况下，其结果与利用 toUpperCase 方法所得到的结果是一样的。然而，如果语言规则与常规的 Unicode 大小写映射方式冲突，那么结果就会不同。</p>
+<p>toLocaleLowerCase 方法<br>返回一个字符串，其中所有的字母字符都被转换为小写，同时考虑到宿主环境的当前区域设置。</p>
+<blockquote>
+<p>stringVar.tolocaleLowerCase()</p>
+</blockquote>
+<p>必选的 stringVar 引用是一个 String 对象，值或文字。</p>
+<p>说明<br>toLocaleLowerCase 方法转换字符串中的字符，同时适应宿主环境的当前区域设置。在大多数情况下，其结果与利用 toLowerCase 方法所得到的结果是一样的。然而，如果语言规则与常规的 Unicode 大小写映射方式冲突，那么结果就会不同。</p>
+<p>//转换成小写<br>toLowerCase 方法<br>返回一个字符串，该字符串中的字母被转换为小写字母。</p>
+<blockquote>
+<p>strVariable.toLowerCase()<br>“String Literal”.toLowerCase()</p>
+</blockquote>
+<p>说明<br>toLowerCase 方法对非字母字符不会产生影响。</p>
+<p>下面的示例演示了 of the toLowerCase 方法的效果：</p>
+<blockquote>
+<p>var strVariable = “This is a STRING object”;<br>strVariable = strVariable.toLowerCase();<br>在执行上一条语句后 strVariable 的值为：</p>
+<p>this is a string object</p>
+</blockquote>
+<p>//转换成大写<br>toUpperCase 方法<br>返回一个字符串，该字符串中的所有字母都被转化为大写字母。</p>
+<blockquote>
+<p>strVariable.toUpperCase()<br>“String Literal”.toUpperCase()</p>
+</blockquote>
+<p>说明<br>toUpperCase 方法对非字母字符不会产生影响。</p>
+<p>示例<br>下面的示例演示了 toUpperCase 方法的效果：</p>
+<blockquote>
+<p>var strVariable = “This is a STRING object”;<br>strVariable = strVariable.toUpperCase();</p>
+<p>在执行上一条语句后 strVariable 的值为：</p>
+<p>THIS IS A STRING OBJECT</p>
+</blockquote>
+<h3 id="输出图形字符"><a href="#输出图形字符" class="headerlink" title="输出图形字符"></a>输出图形字符</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"> <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">1000</span>;i&lt;<span class="number">10000</span>;i++)</div><div class="line">&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="built_in">String</span>.fromCharCode(i))</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/blog/2016/11/30/JS字符串，数组处理/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -963,6 +1248,10 @@ stringObject.split(separator,howm)separ
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -970,13 +1259,27 @@ stringObject.split(separator,howm)separ
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://gxhpersonal.github.io/blog/blog/2016/11/28/angular中的请求/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="郭雪辉">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/blog/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog station">
+    </span>
 
     
       <header class="post-header">
@@ -984,38 +1287,42 @@ stringObject.split(separator,howm)separ
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/blog/2016/11/28/angular中的请求/" itemprop="url">
-                  angular中的请求
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/blog/2016/11/28/angular中的请求/" itemprop="url">angular中的请求</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-28T15:14:32+08:00" content="2016-11-28">
-              2016-11-28
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-11-28T15:14:32+08:00">
+                2016-11-28
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/blog/categories/angular/" itemprop="url" rel="index">
                     <span itemprop="name">angular</span>
                   </a>
@@ -1023,7 +1330,6 @@ stringObject.split(separator,howm)separ
 
                 
                 
-
               
             </span>
           
@@ -1033,16 +1339,21 @@ stringObject.split(separator,howm)separ
           
 
           
-
-          
           
 
           
+
+          
+
+          
+
         </div>
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1051,27 +1362,30 @@ stringObject.split(separator,howm)separ
       
         
           
-          $httpangular提供了$http服务来同服务端进行通信，$http服务队浏览器的XMLHtt
-          ...
+            <h2 id="http"><a href="#http" class="headerlink" title="$http"></a>$http</h2><p>angular提供了$http服务来同服务端进行通信，$http服务队浏览器的XMLHttpRequest对象进行了封装，让我们可以以ajax的方式来从服务器请求数据。<br>$http服务是一个接受一个参数的函数，参数的类型是对象，用来配置生成的http的请求，该函数返回一个promise对象（关于promise规范，可以看看这篇文章）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var promise = $http(&#123;</div><div class="line">  method:&apos;GET&apos;,</div><div class="line">  url:&apos;/api/user.json&apos;</div><div class="line">&#125;);</div><div class="line">promise.then(function(resp)&#123;&#125;, function(resp)&#123;&#125;)</div></pre></td></tr></table></figure>
+<p>$http请求的配置对象<br>$http()接受的配置对象可以包含以下属性:</p>
+<blockquote>
+<p>method:http请求方式，可以为GET,DELETE,HEAD,JSONP,POST,PUT<br>url:字符串，请求的目标<br>params:字符串或者对象，会被转换成为查询字符串追加的url后面<br>data:在发送post请求时使用，作为消息体发送到服务器<br>headers:一个列表，每个元素都是一个函数，返回http头<br>xsrfHeaderName(字符串)：保存XSFR令牌的http头的名称<br>xsrfCookieName:保存XSFR令牌的cookie名称<br>transformRequest:函数或者函数数组，用来对http请求的请求体和头信息进行转换，并返回转换后的结果。<br>transformResponse:函数或者函数数组，用来对http响应的响应体和头信息进行转换，并返回转换后的结果。<br>cache:布尔类型或者缓存对象，设置之后angular会缓存get请求。<br>timeout:数值，延迟请求<br>responseType：字符串，响应类型。可以为arraybuffer, blob,document,json, text, moz-blob, moz-chunked-text, moz-chunked-arraybuffer<br>$http请求的响应对象<br>angular传递给then方法的响应对象包括以下几个属性<br>data:转换之后的响应体<br>status:http响应状态码<br>headers:头信息<br>config:生成原始请求的设置对象<br>statusText:http响应状态的文本</p>
+</blockquote>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/blog/2016/11/28/angular中的请求/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1081,6 +1395,10 @@ stringObject.split(separator,howm)separ
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1088,13 +1406,27 @@ stringObject.split(separator,howm)separ
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://gxhpersonal.github.io/blog/blog/2016/11/27/css3变量/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="郭雪辉">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/blog/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog station">
+    </span>
 
     
       <header class="post-header">
@@ -1102,38 +1434,42 @@ stringObject.split(separator,howm)separ
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/blog/2016/11/27/css3变量/" itemprop="url">
-                  css3变量
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/blog/2016/11/27/css3变量/" itemprop="url">css3变量</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-27T16:52:40+08:00" content="2016-11-27">
-              2016-11-27
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-11-27T16:52:40+08:00">
+                2016-11-27
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/blog/categories/css/" itemprop="url" rel="index">
                     <span itemprop="name">css</span>
                   </a>
@@ -1141,7 +1477,6 @@ stringObject.split(separator,howm)separ
 
                 
                 
-
               
             </span>
           
@@ -1151,16 +1486,21 @@ stringObject.split(separator,howm)separ
           
 
           
-
-          
           
 
           
+
+          
+
+          
+
         </div>
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1169,27 +1509,66 @@ stringObject.split(separator,howm)separ
       
         
           
-          一、变量是个好东西在任何语言中，变量的有一点作用都是一样的，那就是可以降低维护成本，附带还有更高性能
-          ...
+            <p>一、变量是个好东西<br>在任何语言中，变量的有一点作用都是一样的，那就是可以降低维护成本，附带还有更高性能，文件更高压缩率的好处。</p>
+<p>随着CSS预编译工具Sass/Less/Stylus的关注和逐渐流行，CSS工作组迅速跟进CSS变量的规范制定，并且，很多浏览器已经跟进，目前，在部分项目中已经可以直接使用了。</p>
+<p>Chrome/Firefox/Safari浏览器都是绿油油的，兼容性大大超出我的预期，于是果断尝鲜记录下语法用法和特性。</p>
+<p>二、CSS变量var()语法和用法和特性<br>CSS中原生的变量定义语法是：–<em>，变量使用语法是：`var(–</em>)<code>，其中</code>*`表示我们的变量名称。关于命名这个东西，各种语言都有些显示，例如CSS选择器不能是数字开头，JS中的变量是不能直接数值的，但是，在CSS变量中，这些限制通通没有，例如：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">:root &#123;</div><div class="line">  --1: #369;</div><div class="line">&#125;</div><div class="line">body &#123;</div><div class="line">  background-color: var(--1);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>结果背景色如下：</p>
+<p>但是，不能包含$，[，^，(，%等字符，普通字符局限在只要是“数字[0-9]”“字母[a-zA-Z]”“下划线_”和“短横线-”这些组合，但是可以是中文，日文或者韩文，例如：<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">body &#123;</div><div class="line">  --深蓝: #369;</div><div class="line">  background-color: var(--深蓝);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>所以，我们就可以直接使用中文名称作为变量，即使英语4级没过的小伙伴也不会有压力了，我们也不需要随时挂个翻译器在身边了。</p>
+<p>无论是变量的定义和使用只能在声明块{}里面，例如，下面这样是无效的：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">--</span>深蓝: <span class="selector-id">#369</span>;</div><div class="line"><span class="selector-tag">body</span> &#123;</div><div class="line">  <span class="attribute">background-color</span>: <span class="built_in">var</span>(--深蓝);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>变量的定义，或者说声明跟CSS计数器的声明类似的，你应该摆脱Sass/Less等预编译工具语法先入为主的语法影响，把CSS的原生变量理解为一种CSS属性。</p>
+<p>这样，你就对其权重和变量应用规则要容易理解地多。</p>
+<p>例如下面这个例子：<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">:root &#123; --color: purple; &#125;</div><div class="line">div &#123; --color: green; &#125;</div><div class="line">#alert &#123; --color: red; &#125;</div><div class="line">* &#123; color: var(--color); &#125;</div><div class="line"></div><div class="line">&lt;p&gt;我的紫色继承于根元素&lt;/p&gt;</div><div class="line">&lt;div&gt;我的绿色来自直接设置&lt;/div&gt;</div><div class="line">&lt;div id='alert'&gt;</div><div class="line">  ID选择器权重更高，因此阿拉是红色！</div><div class="line">  &lt;p&gt;我也是红色，占了继承的光&lt;/p&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure></p>
+<p>上面这个例子我们可以获得这些信息：</p>
+<p>变量也是跟着CSS选择器走的，如果变量所在的选择器和使用变量的元素没有交集，是没有效果的。例如#alert定义的变量，只有id为alert的元素才能享有。如果你想变量全局使用，则你可以设置在:root选择器上；<br>当存在多个同样名称的变量时候，变量的覆盖规则由CSS选择器的权重决定的，但并无!important这种用法，因为没有必要，!important设计初衷是干掉JS的style设置，但对于变量的定义则没有这样的需求。<br>CSS属性名可以走变量吗？</p>
+<p>类似下面这样：<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">body &#123;</div><div class="line">    --bc: background-color;    </div><div class="line">    var(--bc): #369;</div><div class="line">&#125;</div><div class="line">答案是“不可以”，要是可以支持的话，那CSS的压缩可就要逆天了，估计所有的属性都会变成1~2个字符。</div></pre></td></tr></table></figure></p>
+<p>CSS变量支持同时多个声明吗？</p>
+<p>类似下面这样：<br>…<br>不好意思，类似不了，语法上就根本不支持。</p>
+<p>CSS变量使用完整语法<br>CSS变量使用的完整语法为：var( [, ]? )，用中文表示就是：var( &lt;自定义属性名&gt; [, &lt;默认值 ]? )，</p>
+<p>意思就是，如果我们使用的变量没有定义（注意，仅限于没有定义），则使用后面的值作为元素的属性值。举个例子：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">.box &#123;</div><div class="line">  --1: #369;</div><div class="line">&#125;</div><div class="line">body &#123;</div><div class="line">  background-color: var(--1, #cd0000);</div><div class="line">&#125;</div><div class="line">则此时的背景色是#cd0000：</div></pre></td></tr></table></figure>
+<p>CSS变量不合法的缺省特性</p>
+<p>请看下面这个例子：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">body</span> &#123;</div><div class="line">  <span class="attribute">--color</span>: <span class="number">20px</span>;</div><div class="line">  <span class="attribute">background-color</span>: <span class="number">#369</span>;</div><div class="line">  <span class="attribute">background-color</span>: <span class="built_in">var</span>(--color, #cd0000);</div><div class="line">&#125;</div><div class="line">请问，此时&lt;<span class="selector-tag">body</span>&gt;的背景色是？</div><div class="line"></div><div class="line"><span class="selector-tag">A</span>. <span class="selector-tag">transparent</span>    <span class="selector-tag">B</span>. 20<span class="selector-tag">px</span>     <span class="selector-tag">C</span>. <span class="selector-id">#369</span>      <span class="selector-tag">D</span>. <span class="selector-id">#cd0000</span></div><div class="line">答案是…………………………<span class="selector-tag">A</span>. <span class="selector-tag">transparent</span></div></pre></td></tr></table></figure></p>
+<p>不知大家答对了没有！</p>
+<p>这是CSS变量非常有意思的一个点，对于CSS变量，只要语法是正确的，就算变量里面的值是个乱七八糟的东西，也是会作为正常的声明解析，如果发现变量值是不合法的，例如上面背景色显然不能是20px，则使用背景色的缺省值，也就是默认值代替，于是，上面CSS等同于：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">body</span> &#123;</div><div class="line"><span class="attribute">--color</span>: <span class="number">20px</span>;</div><div class="line"><span class="attribute">background-color</span>: <span class="number">#369</span>;</div><div class="line"><span class="attribute">background-color</span>: transparent;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>千万不能想当然得认为等同于background-color:20px，这也是为什么上面要强调CSS默认值的使用仅限于变量未定义的情况，并不包括变量不合法。</p>
+<p>CSS变量的空格尾随特性</p>
+<p>请看下面这个例子：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">body</span> &#123;</div><div class="line">  <span class="attribute">--size</span>: <span class="number">20</span>;   </div><div class="line">  <span class="attribute">font-size</span>: <span class="built_in">var</span>(--size)<span class="built_in">px</span>;</div><div class="line">&#125;</div><div class="line">请问，此时&lt;<span class="selector-tag">body</span>&gt;的<span class="selector-tag">font-size</span>大小是多少？</div></pre></td></tr></table></figure></p>
+<p>如果你以为是20px就太天真了，实际上，此处font-size:var(–size)px等同于font-size:20 px，注意，20后面有个空格，所以，这里的font-size使用的是<body>元素默认的大小。因此，就不要妄图取消就使用一个数值来贯穿全场，还是使用稳妥的做法：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">body</span> &#123;</div><div class="line">  <span class="attribute">--size</span>: <span class="number">20px</span>;   </div><div class="line">  <span class="attribute">font-size</span>: <span class="built_in">var</span>(--size);</div><div class="line">&#125;</div><div class="line">或者使用<span class="selector-tag">CSS3</span> <span class="selector-tag">calc</span>()计算：</div><div class="line"></div><div class="line"><span class="selector-tag">body</span> &#123;</div><div class="line">  <span class="attribute">--size</span>: <span class="number">20</span>;   </div><div class="line">  <span class="attribute">font-size</span>: <span class="built_in">calc</span>(var(--size) * <span class="number">1px</span>);</div><div class="line">&#125;</div><div class="line">此时，&lt;<span class="selector-tag">body</span>&gt;的<span class="selector-tag">font-size</span>大小才是20<span class="selector-tag">px</span>，</div></pre></td></tr></table></figure></body></p>
+<p>CSS变量的相互传递特性</p>
+<p>就是说，我们在CSS变量定义的时候可以直接引入其他变量给自己使用，例如：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">body</span> &#123;</div><div class="line">  <span class="attribute">--green</span>: <span class="number">#4CAF50</span>;   </div><div class="line">  <span class="attribute">--backgroundColor</span>: <span class="built_in">var</span>(--green);</div><div class="line">&#125;</div><div class="line">或者更复杂的使用<span class="selector-tag">CSS3</span> <span class="selector-tag">calc</span>()计算，例如：</div><div class="line"></div><div class="line"><span class="selector-tag">body</span> &#123;</div><div class="line">  <span class="attribute">--columns</span>: <span class="number">4</span>;</div><div class="line">  <span class="attribute">--margins</span>: <span class="built_in">calc</span>(24px / var(--columns));</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>对于复杂布局，CSS变量的这种相互传递和直接引用特性可以简化我们的代码和实现成本，尤其和动态布局在一起的时候，无论是CSS的响应式后者是JS驱动的布局变化。</p>
+<p>我们来看一个CSS变量与响应式布局的例子，您可以狠狠地点击这里：CSS变量与响应式布局实例demo</p>
+<p>默认进去是4栏，如下图：</p>
+<p>随着浏览器宽度减小，4栏可能就变成3栏，2栏甚至1栏，我们实际开发的时候，显然不仅仅是栏目数量变化，宽度小，往往意味着访问设备尺寸有限，此时我们往往会缩小空白间距以及文字字号大小，这样，有限屏幕才能显示更多内容。</p>
+<p>也就是说，当我们响应式变化的时候，改变的CSS属性值不是1个，而是3个或者更多，如果我们有3个响应点，是不是就至少需要9个CSS声明？但是，由于我们有了CSS变量，同时，CSS变量可以传递，当我们遭遇响应点的时候，我们只需要改变一个CSS属性值就可以了。</p>
+<p>下面就是本demo核心CSS代码（只需要改变–columns这一个变量即可）：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.box</span> &#123;</div><div class="line">    <span class="attribute">--columns</span>: <span class="number">4</span>;</div><div class="line">    <span class="attribute">--margins</span>: <span class="built_in">calc</span>(24px / var(--columns));</div><div class="line">    <span class="attribute">--space</span>: <span class="built_in">calc</span>(4px * var(--columns));</div><div class="line">    <span class="attribute">--fontSize</span>: <span class="built_in">calc</span>(20px - 4 / var(--columns));</div><div class="line">&#125;</div><div class="line">@<span class="keyword">media</span> screen and (max-width: <span class="number">1200px</span>) &#123;</div><div class="line">    <span class="selector-class">.box</span> &#123;</div><div class="line">        <span class="attribute">--columns</span>: <span class="number">3</span>;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">@<span class="keyword">media</span> screen and (max-width: <span class="number">900px</span>) &#123;</div><div class="line">    <span class="selector-class">.box</span> &#123;</div><div class="line">        <span class="attribute">--columns</span>: <span class="number">2</span>;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">@<span class="keyword">media</span> screen and (max-width: <span class="number">600px</span>) &#123;</div><div class="line">    <span class="selector-class">.box</span> &#123;</div><div class="line">        <span class="attribute">--columns</span>: <span class="number">1</span>;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>于是，我们在2栏下的效果就是，字号，间距随着栏目数量的减小也一并减小了，然后每栏之间间距是扩大了;</p>
+<p>有没有觉得CSS越来越屌了呢！哈哈~</p>
+<p>三、结束语<br>由于目前几乎没有关于CSS3 var()的文章，因此，上面关于var()的语法特性等都是自己通过看规范文档，外加细致的测试得到的。但是，一个人的能力总是有限的，因此，必然还有很多var()变量有意思的点没发现，因此，就希望大家若是发现var()其他有意思的地方，欢迎评论告知，我们及时添加在文章中，方便你我他她它。</p>
+<p>多人合作项目我也会使用Less/Sass之类的预编译工具，但是，基本上用到的就是变量，其他高级功能，几乎都不怎么使用。所以，如果浏览器全方位支持了原生的CSS变量，我十有八九就会抛弃Less/Sass之类的工具。</p>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/blog/2016/11/27/css3变量/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1199,6 +1578,10 @@ stringObject.split(separator,howm)separ
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1206,13 +1589,27 @@ stringObject.split(separator,howm)separ
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://gxhpersonal.github.io/blog/blog/2016/11/25/html常见问题/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="郭雪辉">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/blog/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog station">
+    </span>
 
     
       <header class="post-header">
@@ -1220,38 +1617,42 @@ stringObject.split(separator,howm)separ
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/blog/2016/11/25/html常见问题/" itemprop="url">
-                  html常见问题
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/blog/2016/11/25/html常见问题/" itemprop="url">html常见问题</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-25T09:45:55+08:00" content="2016-11-25">
-              2016-11-25
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-11-25T09:45:55+08:00">
+                2016-11-25
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/blog/categories/html/" itemprop="url" rel="index">
                     <span itemprop="name">html</span>
                   </a>
@@ -1259,7 +1660,6 @@ stringObject.split(separator,howm)separ
 
                 
                 
-
               
             </span>
           
@@ -1269,16 +1669,21 @@ stringObject.split(separator,howm)separ
           
 
           
-
-          
           
 
           
+
+          
+
+          
+
         </div>
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1287,30 +1692,42 @@ stringObject.split(separator,howm)separ
       
         
           
-          标签变为可编辑
-contenteditable=true
+            <h3 id="标签变为可编辑"><a href="#标签变为可编辑" class="headerlink" title="标签变为可编辑"></a>标签变为可编辑</h3><blockquote>
+<p>contenteditable=true</p>
+</blockquote>
+<p>###textarea标签问题<br>加边框在移动端会出现双边框</p>
+<h3 id="img标签中的图片无法显示"><a href="#img标签中的图片无法显示" class="headerlink" title="img标签中的图片无法显示"></a>img标签中的图片无法显示</h3><p>1、让这个图片元素隐藏：<br>onerror=”this.style.display=’none’”/&gt;<br>2、用默认的图片替换：</p>
+<ul>
+<li>控制onerror事件只触发一次，需要增加这句话：this.onerror=null;<br>onerror=”this.src=’默认图片的url地址;this.onerror=null’”/&gt;</li>
+</ul>
+<h3 id="input标签在chrome浏览器下背景颜色变黄色的问题"><a href="#input标签在chrome浏览器下背景颜色变黄色的问题" class="headerlink" title="input标签在chrome浏览器下背景颜色变黄色的问题"></a>input标签在chrome浏览器下背景颜色变黄色的问题</h3><p>如图<br><img src="http://ota5i8p1g.bkt.clouddn.com/input.png" alt=""></p>
+<p>解决方法：</p>
+<blockquote>
+<p>方法一：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input type=&quot;text&quot;  autocomplete=&quot;off&quot;&gt;，没错，就是给input标签设置禁用自动完成属性；出现黄色背景就是因为启用了自动完成属性；</div></pre></td></tr></table></figure></p>
+<p>方法二：<br> -webkit-box-shadow: 0 0 0px 1000px white inset；  没错，就是给input设置内置阴影！而且一定要大，至少要比你的input本身大！不过，box-shadow是很慢的！而且，如果你的input是用图片做背景or，是没有办法做这么干的！</p>
+</blockquote>
+<h3 id="localstorage"><a href="#localstorage" class="headerlink" title="localstorage"></a>localstorage</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> storage = <span class="built_in">JSON</span>.parse(<span class="built_in">window</span>.localStorage.getItem(<span class="string">"CdlformData"</span>)) || &#123;&#125;;  <span class="comment">//从本地取localstorage数据</span></div><div class="line">storage[<span class="string">"DistributionType"</span>] = id;    <span class="comment">//localstorage数据设置key = value;</span></div><div class="line"><span class="built_in">window</span>.localStorage.setItem(<span class="string">'CdlformData'</span>,  <span class="built_in">JSON</span>.stringify(storage));   <span class="comment">// 设置好的数据存到localstorage</span></div></pre></td></tr></table></figure>
+<h3 id="h5-video标签"><a href="#h5-video标签" class="headerlink" title="h5 video标签"></a>h5 video标签</h3><blockquote>
+<p>自定义播放/暂停,放大，缩小按钮<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span> </div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span> </div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span> </div><div class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span> </div><div class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>h5 vide<span class="tag">&lt;/<span class="name">title</span>&gt;</span> </div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span> </div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"text-align:center"</span>&gt;</span> </div><div class="line">  <span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span>=<span class="string">"playPause()"</span>&gt;</span>播放/暂停<span class="tag">&lt;/<span class="name">button</span>&gt;</span> </div><div class="line">  <span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span>=<span class="string">"makeBig()"</span>&gt;</span>放大<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span>=<span class="string">"makeSmall()"</span>&gt;</span>缩小<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span>=<span class="string">"makeNormal()"</span>&gt;</span>普通<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">br</span>&gt;</span> </div><div class="line">  <span class="tag">&lt;<span class="name">video</span> <span class="attr">id</span>=<span class="string">"video1"</span> <span class="attr">width</span>=<span class="string">"420"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">"http://huizuche.qiniudn.com/video/USA.mp4"</span> <span class="attr">type</span>=<span class="string">"video/mp4"</span>&gt;</span></div><div class="line">    您的浏览器不支持 HTML5 video 标签。</div><div class="line">  <span class="tag">&lt;/<span class="name">video</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span> </div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"> </span></div><div class="line"><span class="keyword">var</span> myVideo=<span class="built_in">document</span>.getElementById(<span class="string">"video1"</span>); </div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">playPause</span>(<span class="params"></span>)</span></div><div class="line">&#123; </div><div class="line">	<span class="keyword">if</span> (myVideo.paused) </div><div class="line">	  myVideo.play(); </div><div class="line">	<span class="keyword">else</span> </div><div class="line">	  myVideo.pause(); </div><div class="line">&#125; </div><div class="line"></div><div class="line">	<span class="function"><span class="keyword">function</span> <span class="title">makeBig</span>(<span class="params"></span>)</span></div><div class="line">&#123; </div><div class="line">	myVideo.width=<span class="number">560</span>; </div><div class="line">&#125; </div><div class="line"></div><div class="line">	<span class="function"><span class="keyword">function</span> <span class="title">makeSmall</span>(<span class="params"></span>)</span></div><div class="line">&#123; </div><div class="line">	myVideo.width=<span class="number">320</span>; </div><div class="line">&#125; </div><div class="line"></div><div class="line">	<span class="function"><span class="keyword">function</span> <span class="title">makeNormal</span>(<span class="params"></span>)</span></div><div class="line">&#123; </div><div class="line">	myVideo.width=<span class="number">420</span>; </div><div class="line">&#125; </div><div class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span> </div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span> </div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure></p>
+</blockquote>
 
-###textarea标签问题加边框在移
-          ...
-
-          <div class="post-more-link text-center">
-            <a class="btn" href="/blog/2016/11/25/html常见问题/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1320,6 +1737,10 @@ contenteditable=true
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1327,13 +1748,27 @@ contenteditable=true
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://gxhpersonal.github.io/blog/blog/2016/11/22/hexo-next主题配置优化/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="郭雪辉">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/blog/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog station">
+    </span>
 
     
       <header class="post-header">
@@ -1341,38 +1776,42 @@ contenteditable=true
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/blog/2016/11/22/hexo-next主题配置优化/" itemprop="url">
-                  hexo next主题配置优化
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/blog/2016/11/22/hexo-next主题配置优化/" itemprop="url">hexo next主题配置优化</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-22T13:44:16+08:00" content="2016-11-22">
-              2016-11-22
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-11-22T13:44:16+08:00">
+                2016-11-22
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/blog/categories/blog/" itemprop="url" rel="index">
                     <span itemprop="name">blog</span>
                   </a>
@@ -1380,7 +1819,6 @@ contenteditable=true
 
                 
                 
-
               
             </span>
           
@@ -1390,16 +1828,21 @@ contenteditable=true
           
 
           
-
-          
           
 
           
+
+          
+
+          
+
         </div>
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1408,27 +1851,102 @@ contenteditable=true
       
         
           
-          NEXT主题官方文档，操作扩展都非常详细，有兴趣可以看一看http://theme-next.iis
-          ...
+            <h3 id="NEXT主题官方文档，操作扩展都非常详细，有兴趣可以看一看"><a href="#NEXT主题官方文档，操作扩展都非常详细，有兴趣可以看一看" class="headerlink" title="NEXT主题官方文档，操作扩展都非常详细，有兴趣可以看一看"></a>NEXT主题官方文档，操作扩展都非常详细，有兴趣可以看一看</h3><p><a href="">http://theme-next.iissnan.com/theme-settings.html</a></p>
+<p></p><h2 id="配置"><a name="t4"></a>配置</h2><p></p>
+<p></p><p>首先我们看看 <code>站点配置文件</code> 的配置 <code>F:\hexo_config.yml</code> 。</p><p></p>
+<pre class="prettyprint" name="code"><code class="hljs avrasm has-numbering"><span class="hljs-preprocessor"># Hexo Configuration</span>
+<span class="hljs-preprocessor">## Docs: https://hexo.io/docs/configuration.html</span>
+<span class="hljs-preprocessor">## Source: https://github.com/hexojs/hexo/</span>
+<span class="hljs-preprocessor"># Site 网站</span>
+<span class="hljs-label">title:</span> 为学   <span class="hljs-preprocessor">#网站标题</span>
+<span class="hljs-label">subtitle:</span> 天下事有难易乎？为之，则难者亦易矣；不为，则易者亦难矣。   <span class="hljs-preprocessor">#网站副标题</span>
+<span class="hljs-label">description:</span> 天下事有难易乎？为之，则难者亦易矣；不为，则易者亦难矣。   <span class="hljs-preprocessor">#网站描述</span>
+<span class="hljs-label">author:</span> willxue   <span class="hljs-preprocessor">#您的名字</span>
+<span class="hljs-label">language:</span> <span class="hljs-built_in">zh</span>-CN   <span class="hljs-preprocessor">#网站使用的语言</span>
+<span class="hljs-label">timezone:</span>           <span class="hljs-preprocessor">#网站时区。Hexo 默认使用您电脑的时区</span>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/blog/2016/11/22/hexo-next主题配置优化/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+<span class="hljs-preprocessor"># URL 网址</span>
+<span class="hljs-preprocessor">## 如果您的网站存放在子目录中，例如 http://yoursite.com/blog，则请将您的 url 设为 http://yoursite.com/blog 并把 root 设为 /blog/。</span>
+<span class="hljs-label">url:</span> http://willxue<span class="hljs-preprocessor">.top</span>
+<span class="hljs-label">permalink:</span> :year/:month/:day/:title/    <span class="hljs-preprocessor">#生成文件名字的格式我改成blog/:title:year:month:day/</span>
+<span class="hljs-label">permalink_defaults:</span>
+
+<span class="hljs-preprocessor"># Directory 目录配置</span>
+<span class="hljs-label">source_dir:</span> source   <span class="hljs-preprocessor">#源文件夹，这个文件夹用来存放内容。</span>
+<span class="hljs-label">public_dir:</span> public   <span class="hljs-preprocessor">#公共文件夹，这个文件夹用于存放生成的站点文件。</span>
+<span class="hljs-label">tag_dir:</span> tags   <span class="hljs-preprocessor">#标签文件夹</span>
+<span class="hljs-label">archive_dir:</span> archives   <span class="hljs-preprocessor">#归档文件夹</span>
+<span class="hljs-label">category_dir:</span> categories   <span class="hljs-preprocessor">#分类文件夹</span>
+<span class="hljs-label">code_dir:</span> downloads/code    <span class="hljs-preprocessor">#nclude code 文件夹</span>
+<span class="hljs-label">i18n_dir:</span> :lang   <span class="hljs-preprocessor">#国际化（i18n）文件夹</span>
+<span class="hljs-label">skip_render:</span>   <span class="hljs-preprocessor">#跳过指定文件的渲染，您可使用 glob 表达式来匹配路径。</span>
+
+<span class="hljs-preprocessor"># Writing 文章</span>
+<span class="hljs-label">new_post_name:</span> :title<span class="hljs-preprocessor">.md</span>   <span class="hljs-preprocessor"># 新建文章默认文件名</span>
+<span class="hljs-label">default_layout:</span> post   <span class="hljs-preprocessor"># 默认布局</span>
+<span class="hljs-label">titlecase:</span> false   <span class="hljs-preprocessor"># Transform title into titlecase</span>
+<span class="hljs-label">external_link:</span> true   <span class="hljs-preprocessor"># 在新标签中打开一个外部链接，默认为true</span>
+<span class="hljs-label">filename_case:</span> <span class="hljs-number">0</span>   <span class="hljs-preprocessor">#转换文件名，1代表小写；2代表大写；默认为0，意思就是创建文章的时候，是否自动帮你转换文件名，默认就行，意义不大。</span>
+<span class="hljs-label">render_drafts:</span> false   <span class="hljs-preprocessor">#是否渲染_drafts目录下的文章，默认为false</span>
+<span class="hljs-label">post_asset_folder:</span> false   <span class="hljs-preprocessor">#启动 Asset 文件夹</span>
+<span class="hljs-label">relative_link:</span> false   <span class="hljs-preprocessor">#把链接改为与根目录的相对位址，默认false</span>
+<span class="hljs-label">future:</span> true   <span class="hljs-preprocessor">#显示未来的文章，默认false</span>
+<span class="hljs-label">highlight:</span>   <span class="hljs-preprocessor">#代码块的设置 </span>
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace:
+
+<span class="hljs-preprocessor"># Category &amp; Tag   分类和标签的设置</span>
+<span class="hljs-label">default_category:</span> uncategorized   <span class="hljs-preprocessor">#默认分类</span>
+<span class="hljs-label">category_map:</span>   <span class="hljs-preprocessor">#分类别名</span>
+<span class="hljs-label">tag_map:</span>   <span class="hljs-preprocessor">#标签别名</span>
+
+<span class="hljs-preprocessor"># Date / Time format</span>
+<span class="hljs-preprocessor">## Hexo uses Moment.js to parse and display date</span>
+<span class="hljs-preprocessor">## You can customize the date format as defined in</span>
+<span class="hljs-preprocessor">## http://momentjs.com/docs/#/displaying/format/</span>
+<span class="hljs-label">date_format:</span> YYYY-MM-DD
+<span class="hljs-label">time_format:</span> HH:mm:ss
+
+<span class="hljs-preprocessor"># Pagination 分页</span>
+<span class="hljs-preprocessor">## Set per_page to 0 to disable pagination</span>
+<span class="hljs-label">per_page:</span> <span class="hljs-number">10</span>   <span class="hljs-preprocessor">#每页显示的文章量 (0 = 关闭分页功能)</span>
+<span class="hljs-label">pagination_dir:</span> page   <span class="hljs-preprocessor">#分页目录</span>
+
+<span class="hljs-preprocessor"># Extensions</span>
+<span class="hljs-preprocessor">## Plugins: https://hexo.io/plugins/</span>
+<span class="hljs-preprocessor">## Themes: https://hexo.io/themes/</span>
+<span class="hljs-label">theme:</span> next
+
+<span class="hljs-label">feed:</span>
+  type: atom       <span class="hljs-preprocessor">#feed 类型 (atom/rss2)</span>
+  path: atom<span class="hljs-preprocessor">.xml</span>   <span class="hljs-preprocessor">#rss 路径</span>
+  limit: <span class="hljs-number">20</span>        <span class="hljs-preprocessor">#在 rss 中最多生成的文章数(0显示所有)</span>
+
+<span class="hljs-preprocessor"># Deployment</span>
+<span class="hljs-preprocessor">## Docs: https://hexo.io/docs/deployment.html</span>
+<span class="hljs-label">deploy:</span> 
+<span class="hljs-label">type:</span> git 
+  repository: https://github<span class="hljs-preprocessor">.com</span>/imwillxue/imwillxue<span class="hljs-preprocessor">.github</span><span class="hljs-preprocessor">.com</span><span class="hljs-preprocessor">.git</span> 
+  branch: master</code></pre>
+          
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1438,6 +1956,10 @@ contenteditable=true
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1470,31 +1992,42 @@ contenteditable=true
   </div>
 
   <aside id="sidebar" class="sidebar">
+    
     <div class="sidebar-inner">
 
       
 
       
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/blog/images/avatar.png"
-               alt="郭雪辉" />
-          <p class="site-author-name" itemprop="name">郭雪辉</p>
-          <p class="site-description motion-element" itemprop="description">水滴石穿</p>
+          
+            <img class="site-author-image" itemprop="image"
+              src="/blog/images/avatar.png"
+              alt="郭雪辉" />
+          
+            <p class="site-author-name" itemprop="name">郭雪辉</p>
+            <p class="site-description motion-element" itemprop="description">水滴石穿</p>
         </div>
+
         <nav class="site-state motion-element">
-          <div class="site-state-item site-state-posts">
-            <a href="/blog/archives">
-              <span class="site-state-item-count">24</span>
-              <span class="site-state-item-name">日志</span>
-            </a>
-          </div>
 
           
+            <div class="site-state-item site-state-posts">
+            
+              <a href="/blog/archives">
+            
+                <span class="site-state-item-count">24</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
             <div class="site-state-item site-state-categories">
-              <a href="/blog/categories">
+              <a href="/blog/categories/index.html">
                 <span class="site-state-item-count">10</span>
                 <span class="site-state-item-name">分类</span>
               </a>
@@ -1509,17 +2042,6 @@ contenteditable=true
 
         <div class="links-of-author motion-element">
           
-            
-              <span class="links-of-author-item">
-                <a href="http://weibo.com/WEBguoxh" target="_blank" title="微博">
-                  
-                    <i class="fa fa-fw fa-globe"></i>
-                  
-                  微博
-                </a>
-              </span>
-            
-          
         </div>
 
         
@@ -1528,7 +2050,12 @@ contenteditable=true
         
         
 
+        
+
+
       </section>
+
+      
 
       
 
@@ -1544,52 +2071,43 @@ contenteditable=true
       <div class="footer-inner">
         <div class="copyright" >
   
-  &copy;  2016 - 
+  &copy; 
   <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">郭雪辉
+  <span class="author" itemprop="copyrightHolder">郭雪辉</span>
 
-  </span>
-</div>
-
-<div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
-</div>
-
-<div class="theme-info">
-  主题 -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
-  </a>
+  
 </div>
 
 
-<script>
-(function(){
-    var bp = document.createElement('script');
-    var curProtocol = window.location.protocol.split(':')[0];
-    if (curProtocol === 'https') {
-        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
-    }
-    else {
-        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-    }
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(bp, s);
-})();
-</script>
+  <div class="powered-by">由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+  <span class="post-meta-divider">|</span>
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.2</div>
+
 
         
+
+
+
+
+
+
 
         
       </div>
     </footer>
 
-    <div class="back-to-top">
-      <i class="fa fa-arrow-up"></i>
-    </div>
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
   </div>
 
   
@@ -1609,6 +2127,15 @@ contenteditable=true
 
 
   
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1634,164 +2161,75 @@ contenteditable=true
   
 
 
-  <script type="text/javascript" src="/blog/js/src/utils.js?v=5.0.1"></script>
+  <script type="text/javascript" src="/blog/js/src/utils.js?v=5.1.2"></script>
 
-  <script type="text/javascript" src="/blog/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/blog/js/src/bootstrap.js?v=5.0.1"></script>
-
-
-
-  
-
-
-
-  
-
+  <script type="text/javascript" src="/blog/js/src/motion.js?v=5.1.2"></script>
 
 
 
   
   
-  <script type="text/javascript">
-    // Popup Window;
-    var isfetched = false;
-    // Search DB path;
-    var search_path = "search.xml";
-    if (search_path.length == 0) {
-       search_path = "search.xml";
-    }
-    var path = "/blog/" + search_path;
-    // monitor main search box;
 
-    function proceedsearch() {
-      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
-      $('.popup').toggle();
 
-    }
-    // search function;
-    var searchFunc = function(path, search_id, content_id) {
-    'use strict';
-    $.ajax({
-        url: path,
-        dataType: "xml",
-        async: true,
-        success: function( xmlResponse ) {
-            // get the contents from search data
-            isfetched = true;
-            $('.popup').detach().appendTo('.header-inner');
-            var datas = $( "entry", xmlResponse ).map(function() {
-                return {
-                    title: $( "title", this ).text(),
-                    content: $("content",this).text(),
-                    url: $( "url" , this).text()
-                };
-            }).get();
-            var $input = document.getElementById(search_id);
-            var $resultContent = document.getElementById(content_id);
-            $input.addEventListener('input', function(){
-                var matchcounts = 0;
-                var str='<ul class=\"search-result-list\">';
-                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                $resultContent.innerHTML = "";
-                if (this.value.trim().length > 1) {
-                // perform local searching
-                datas.forEach(function(data) {
-                    var isMatch = true;
-                    var content_index = [];
-                    var data_title = data.title.trim().toLowerCase();
-                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
-                    var data_url = data.url;
-                    var index_title = -1;
-                    var index_content = -1;
-                    var first_occur = -1;
-                    // only match artiles with not empty titles and contents
-                    if(data_title != '' && data_content != '') {
-                        keywords.forEach(function(keyword, i) {
-                            index_title = data_title.indexOf(keyword);
-                            index_content = data_content.indexOf(keyword);
-                            if( index_title < 0 && index_content < 0 ){
-                                isMatch = false;
-                            } else {
-                                if (index_content < 0) {
-                                    index_content = 0;
-                                }
-                                if (i == 0) {
-                                    first_occur = index_content;
-                                }
-                            }
-                        });
-                    }
-                    // show search results
-                    if (isMatch) {
-                        matchcounts += 1;
-                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
-                        var content = data.content.trim().replace(/<[^>]+>/g,"");
-                        if (first_occur >= 0) {
-                            // cut out 100 characters
-                            var start = first_occur - 20;
-                            var end = first_occur + 80;
-                            if(start < 0){
-                                start = 0;
-                            }
-                            if(start == 0){
-                                end = 50;
-                            }
-                            if(end > content.length){
-                                end = content.length;
-                            }
-                            var match_content = content.substring(start, end);
-                            // highlight all keywords
-                            keywords.forEach(function(keyword){
-                                var regS = new RegExp(keyword, "gi");
-                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
-                            });
+  <script type="text/javascript" src="/blog/js/src/affix.js?v=5.1.2"></script>
 
-                            str += "<p class=\"search-result\">" + match_content +"...</p>"
-                        }
-                        str += "</li>";
-                    }
-                })};
-                str += "</ul>";
-                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
-                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
-                $resultContent.innerHTML = str;
-            });
-            proceedsearch();
-        }
-    });}
+  <script type="text/javascript" src="/blog/js/src/schemes/pisces.js?v=5.1.2"></script>
 
-    // handle and trigger popup window;
-    $('.popup-trigger').click(function(e) {
-      e.stopPropagation();
-      if (isfetched == false) {
-        searchFunc(path, 'local-search-input', 'local-search-result');
-      } else {
-        proceedsearch();
-      };
 
-    });
 
-    $('.popup-btn-close').click(function(e){
-      $('.popup').hide();
-      $(".popoverlay").remove();
-      $('body').css('overflow', '');
-    });
-    $('.popup').click(function(e){
-      e.stopPropagation();
-    });
-  </script>
+  <script type="text/javascript" src="/blog/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/blog/js/src/post-details.js?v=5.1.2"></script>
 
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
 
   
 
