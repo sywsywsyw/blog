@@ -2,10 +2,8 @@
 
 
 
-  
 
-
-<html class="theme-next mist use-motion" lang="zh-Hans">
+<html class="theme-next mist" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -79,7 +77,7 @@
 <link href="/blog/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="angular," />
 
 
 
@@ -103,7 +101,7 @@
 <meta property="og:site_name" content="Blog station">
 <meta property="og:description" content="$httpangular提供了$http服务来同服务端进行通信，$http服务队浏览器的XMLHttpRequest对象进行了封装，让我们可以以ajax的方式来从服务器请求数据。$http服务是一个接受一个参数的函数，参数的类型是对象，用来配置生成的http的请求，该函数返回一个promise对象（关于promise规范，可以看看这篇文章）
 12345var promise = $http(&amp;#1">
-<meta property="og:updated_time" content="2016-12-22T01:30:57.186Z">
+<meta property="og:updated_time" content="2017-09-05T09:32:59.747Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="angular中的请求">
 <meta name="twitter:description" content="$httpangular提供了$http服务来同服务端进行通信，$http服务队浏览器的XMLHttpRequest对象进行了封装，让我们可以以ajax的方式来从服务器请求数据。$http服务是一个接受一个参数的函数，参数的类型是对象，用来配置生成的http的请求，该函数返回一个promise对象（关于promise规范，可以看看这篇文章）
@@ -120,7 +118,7 @@
     sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn"}},
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn"}},
     duoshuo: {
       userId: '0',
       author: '博主'
@@ -178,7 +176,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle">水滴石穿</p>
+        <p class="site-subtitle">天下事有难易乎？为之，则难者亦易矣；不为，则易者亦难矣。</p>
       
   </div>
 
@@ -248,12 +246,12 @@
         </li>
       
         
-        <li class="menu-item menu-item-schedule">
-          <a href="/blog/schedule/" rel="section">
+        <li class="menu-item menu-item-photos">
+          <a href="/blog/photos" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
             
-            日程表
+            相册
           </a>
         </li>
       
@@ -375,6 +373,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/blog/2016/11/28/angular中的请求/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2016/11/28/angular中的请求/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -425,7 +434,7 @@
 
     
       <div id="wechat" style="display: inline-block">
-        <img id="wechat_qr" src="/blog/wechatpay.jpg" alt="郭雪辉 微信支付"/>
+        <img id="wechat_qr" src="/blog/images/wechatpay.jpg" alt="郭雪辉 微信支付"/>
         <p>微信支付</p>
       </div>
     
@@ -448,6 +457,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/blog/tags/angular/" rel="tag"># angular</a>
+          
+        </div>
       
 
       
@@ -500,6 +515,13 @@
           
   <div class="comments" id="comments">
     
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
   </div>
 
 
@@ -540,7 +562,7 @@
               alt="郭雪辉" />
           
             <p class="site-author-name" itemprop="name">郭雪辉</p>
-            <p class="site-description motion-element" itemprop="description">水滴石穿</p>
+            <p class="site-description motion-element" itemprop="description">天下事有难易乎？为之，则难者亦易矣；不为，则易者亦难矣。</p>
         </div>
 
         <nav class="site-state motion-element">
@@ -568,6 +590,15 @@
           
 
           
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/blog/tags/index.html">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
 
         </nav>
 
@@ -592,6 +623,12 @@
         </div>
 
         
+        
+          <div class="cc-license motion-element" itemprop="license">
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank">
+              <img src="/blog/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+            </a>
+          </div>
         
 
         
@@ -694,6 +731,9 @@
 
 
 
+  
+  
+
 
 
 
@@ -719,6 +759,12 @@
 
   
   <script type="text/javascript" src="/blog/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/blog/lib/three/three.min.js"></script>
+
+  
+  <script type="text/javascript" src="/blog/lib/three/three-waves.min.js"></script>
 
 
   
@@ -755,6 +801,26 @@
 
   
 
+    
+      <script id="dsq-count-scr" src="https://gxhpersonal.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://gxhpersonal.github.io/blog/blog/2016/11/28/angular中的请求/';
+          this.page.identifier = '2016/11/28/angular中的请求/';
+          this.page.title = 'angular中的请求';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://gxhpersonal.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
 
 
 
@@ -767,10 +833,6 @@
   
 
 
-
-
-
-  
 
 
 

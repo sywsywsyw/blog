@@ -2,10 +2,8 @@
 
 
 
-  
 
-
-<html class="theme-next mist use-motion" lang="zh-Hans">
+<html class="theme-next mist" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -95,15 +93,15 @@
 
 
 
-<meta name="description" content="水滴石穿">
+<meta name="description" content="天下事有难易乎？为之，则难者亦易矣；不为，则易者亦难矣。">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Blog station">
 <meta property="og:url" content="http://gxhpersonal.github.io/blog/page/2/index.html">
 <meta property="og:site_name" content="Blog station">
-<meta property="og:description" content="水滴石穿">
+<meta property="og:description" content="天下事有难易乎？为之，则难者亦易矣；不为，则易者亦难矣。">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Blog station">
-<meta name="twitter:description" content="水滴石穿">
+<meta name="twitter:description" content="天下事有难易乎？为之，则难者亦易矣；不为，则易者亦难矣。">
 
 
 
@@ -116,7 +114,7 @@
     sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn"}},
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn"}},
     duoshuo: {
       userId: '0',
       author: '博主'
@@ -175,7 +173,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle">水滴石穿</p>
+        <p class="site-subtitle">天下事有难易乎？为之，则难者亦易矣；不为，则易者亦难矣。</p>
       
   </div>
 
@@ -245,12 +243,12 @@
         </li>
       
         
-        <li class="menu-item menu-item-schedule">
-          <a href="/blog/schedule/" rel="section">
+        <li class="menu-item menu-item-photos">
+          <a href="/blog/photos" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
             
-            日程表
+            相册
           </a>
         </li>
       
@@ -374,6 +372,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/blog/2016/11/22/css3-animate/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2016/11/22/css3-animate/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -400,42 +409,19 @@
       
         
           
-            <h2 id="animation"><a href="#animation" class="headerlink" title="animation:"></a>animation:</h2><ul>
-<li>animation-name : xuanzhuan  //动画名字</li>
-<li>animation-duration : 1s ;   //动画时长</li>
-<li>animation-timing-function : linear; //动画运动方式</li>
-<li>animation-fill-mode : both;  //动画最终停留状态</li>
-<li>animation-iteration-count : infinite; //动画运动次数</li>
-<li>animation-direction : alternate; //动画来回</li>
-<li>animation-delay : 1s;   //动画延迟</li>
-<li>animation-play-state : paused  / running;  //给js 用的动画控制</li>
-</ul>
-<p>$.fn.fullpage.  调用方法</p>
-<h2 id="旋转图片：transform"><a href="#旋转图片：transform" class="headerlink" title="旋转图片：transform:"></a>旋转图片：transform:</h2><ul>
-<li>旋转：rotateY  rotateZ  rotateX();          (deg)  </li>
-<li>放大：scaleX scaleY scaleZ scale scale3d          (1.1)  </li>
-<li>斜切：skewX skewY skewZ skew3d          (deg)</li>
-<li>位移：translateX translateY  translateZ  translate3d (px)</li>
-</ul>
-<h2 id="背景图片颜色渐变："><a href="#背景图片颜色渐变：" class="headerlink" title="背景图片颜色渐变："></a>背景图片颜色渐变：</h2><p>   background-image:linear-gradient(#33bb11,#ffaacc)<br>   &lt; linear-gradient&gt;：使用线性渐变创建背景图像。<br>   &lt; radial-gradient&gt;：使用径向(放射性)渐变创建背景图像。<br>   &lt; repeating-linear-gradient&gt;：使用重复的线性渐变创建背景图像。<br>   &lt; repeating-radial-gradient&gt;：使用重复的径向(放射性)渐变创建背景图像</p>
-<h2 id="定义一个动画的方法"><a href="#定义一个动画的方法" class="headerlink" title="定义一个动画的方法"></a>定义一个动画的方法</h2><ul>
-<li>@keyframes</li>
-</ul>
-<h2 id="transform-origin-top-center"><a href="#transform-origin-top-center" class="headerlink" title="transform-origin:top center;"></a>transform-origin:top center;</h2><h2 id="永远不要写all-写那些真正需要监测的属性"><a href="#永远不要写all-写那些真正需要监测的属性" class="headerlink" title="永远不要写all 写那些真正需要监测的属性"></a>永远不要写all 写那些真正需要监测的属性</h2><ul>
-<li>ease ease-in ease-in-out ease-out ease-out linear step-end step-start steps()</li>
-<li>transition-property: all;</li>
-<li>transition-duration: .8s;</li>
-<li>transition-timing-function: ease;</li>
-<li>transition-delay: 0;</li>
-</ul>
-<h2 id="animation-timing-function-cubic-bezier"><a href="#animation-timing-function-cubic-bezier" class="headerlink" title="animation-timing-function:cubic-bezier();"></a>animation-timing-function:cubic-bezier();</h2><pre><code>both:让动画留在最后一帧；
-无限动画：infinite
-</code></pre><p>// 进入一屏的时候会调用afterLoad<br>afterLoad:function(name,index){<br>  name是当前这张的名字 index 当前是第几张<br>}<br>// 离开一屏的时候 会调用onLeave<br>onLeave:function(index,next,dir){<br>  if(index === 5){<br>    $(‘#section5 h1’).addClass(‘animate-fei’);<br>  }<br>  if(index === 1){<br>    //离开失效<br>    return false;<br>  }<br>}</p>
-<h2 id="四、使用css结合js去制作页面中的动画"><a href="#四、使用css结合js去制作页面中的动画" class="headerlink" title="四、使用css结合js去制作页面中的动画"></a>四、使用css结合js去制作页面中的动画</h2><p>1、使用 transtion 结合fullpage 去制作动画<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">transition:transform .5s ease 1s ,opacity .6s ease-in-out;</div><div class="line">transform:rotateX()</div><div class="line">transform:translate3d(30px,40px,0)</div></pre></td></tr></table></figure></p>
-<p>2、使用 animation 结合 fullpage 去制作动画</p>
-<p>a.要动的元素写到每一个section中<br>b.正常状态下采用一种动画(可选)<br>c.在section拥有active类的情况下彩另外一种动画<br>d.一些复杂的情况，把动画预先写好， 在配置项的onLeave afterLoad回调函数中通过添加类名</p>
-
-          
+          animation:
+animation-name : xuanzhuan  //动画名字
+animation-duration : 1s ;   //动画时长
+animation-timing-function : linear; //动画运动方式
+animation-fill-mode : bo
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/blog/2016/11/22/css3-animate/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -549,6 +535,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/blog/2016/09/27/angular常用过滤器/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2016/09/27/angular常用过滤器/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -575,36 +572,20 @@
       
         
           
-            <h2 id="一。表达式中添加过滤器"><a href="#一。表达式中添加过滤器" class="headerlink" title="一。表达式中添加过滤器"></a>一。表达式中添加过滤器</h2><h4 id="过滤器可以通过一个管道字符（-）和一个过滤器添加到表达式中。"><a href="#过滤器可以通过一个管道字符（-）和一个过滤器添加到表达式中。" class="headerlink" title="过滤器可以通过一个管道字符（|）和一个过滤器添加到表达式中。"></a>过滤器可以通过一个管道字符（|）和一个过滤器添加到表达式中。</h4><blockquote>
-<ol>
-<li><p>uppercase 过滤器将字符串格式化为大写：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>姓名为 &#123;&#123; lastName | uppercase &#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div></pre></td></tr></table></figure>
-</li>
-<li><p>lowercase 过滤器将字符串格式化为小写：</p>
-</li>
-</ol>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>姓名为 &#123;&#123; lastName | lowercase &#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div></pre></td></tr></table></figure>
-<ol>
-<li>currency 过滤器将数字格式化为货币格式：<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>总价 = &#123;&#123; (quantity * price) | currency &#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div></pre></td></tr></table></figure>
-</li>
-</ol>
-</blockquote>
-<h2 id="二。向指令添加过滤器"><a href="#二。向指令添加过滤器" class="headerlink" title="二。向指令添加过滤器"></a>二。向指令添加过滤器</h2><blockquote>
-<ol>
-<li><p>orderBy 过滤器根据表达式排列数组：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">li</span> <span class="attr">ng-repeat</span>=<span class="string">"x in names | orderBy:'country'"</span>&gt;</span></div></pre></td></tr></table></figure>
-</li>
-<li><p>filter 过滤器从数组中选择一个子集：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">$scope.names = [</div><div class="line">       &#123;'name':'jack','country':'china','sex':'man'&#125;,</div><div class="line">       &#123;'name':'nick','country':'austrilear','sex':'woman'&#125;,</div><div class="line">       &#123;'name':'rose','country':'rouma','sex':'man'&#125;</div><div class="line">    ];</div><div class="line">  &#125;)</div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">ng-model</span>=<span class="string">"test"</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">li</span> <span class="attr">ng-repeat</span>=<span class="string">"x in names | filter:test | orderBy:'country'"</span>&gt;</span></div><div class="line">    &#123;&#123; (x.name | uppercase) + ', ' + x.country &#125;&#125;</div><div class="line">  <span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div></pre></td></tr></table></figure>
-</li>
-</ol>
-</blockquote>
-<p>###limitTo过滤器：用来控制显示在页面的数量<br>ng-repeat:v in data | limitTo:15</p>
-<p>###angularJS中的ng-bind-html指令和$sce服务<br>把$sce封装成一个过滤器就可以在模板上随时调用了</p>
-<p>app.filter(‘to_trusted’, [‘$sce’, function ($sce) {<br>return function (text) {<br>    return $sce.trustAsHtml(text);<br>};</p>
-<p></p><p ng-bind-html="currentWork.description | to_trusted"></p><br>其中$sce是angularJS自带的安全处理模块，$sce.trustAsHtml(input)方法便是将数据内容以html的形式进行解析并返回。将此过滤器添加到ng-bind-html所绑定的数据中，便实现了在数据加载时对于html标签的自动转义。<p></p>
+          一。表达式中添加过滤器过滤器可以通过一个管道字符（|）和一个过滤器添加到表达式中。
 
-          
+uppercase 过滤器将字符串格式化为大写：
+1&lt;p&gt;姓名为 &#123;&#123; lastName | uppercase &#125;&#125;&lt;/p&gt;
+
+lowercase 
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/blog/2016/09/27/angular常用过滤器/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -718,6 +699,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/blog/2016/09/19/swiper插件/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2016/09/19/swiper插件/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -744,9 +736,15 @@
       
         
           
-            <p>需求环境：移动端环境，swiper.css, swiper.js, 如果用jquery的话，可以用jquery.js和swiper.jquery.js<br>以前也用过swiper做轮播，但是好多参数都不清楚，所以在这总结一下,有新的发现会更新<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"swiper.css"</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="css"></span></div><div class="line">    <span class="selector-class">.swiper-container</span> &#123;</div><div class="line">    <span class="attribute">width</span>: <span class="number">100%</span>;</div><div class="line">    <span class="attribute">height</span>: <span class="number">300px</span>;</div><div class="line">&#125;</div><div class="line">  <span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"></div><div class="line">   <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"swiper-container"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"swiper-wrapper"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"swiper-slide"</span>&gt;</span>Slide 1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"swiper-slide"</span>&gt;</span>Slide 2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"swiper-slide"</span>&gt;</span>Slide 3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="comment">&lt;!-- 如果需要分页器 --&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"swiper-pagination"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    </div><div class="line">    <span class="comment">&lt;!-- 如果需要导航按钮 --&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"swiper-button-prev"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"swiper-button-next"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    </div><div class="line">    <span class="comment">&lt;!-- 如果需要滚动条 --&gt;</span></div><div class="line">    <span class="comment">&lt;!-- &lt;div class="swiper-scrollbar"&gt;&lt;/div&gt; --&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="comment">&lt;!-- 导航等组件可以放在container之外 --&gt;</span></div><div class="line"></div><div class="line">   <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"jquery.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"swiper.jquery.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></div><div class="line">  <span class="keyword">var</span> mySwiper = <span class="keyword">new</span> Swiper (<span class="string">'.swiper-container'</span>, &#123;</div><div class="line">    <span class="comment">// direction: 'vertical',</span></div><div class="line">    loop: <span class="literal">true</span>,</div><div class="line">    autoplay: <span class="number">3000</span>,</div><div class="line">    <span class="comment">//如果需要小圆点可点击</span></div><div class="line">    paginationClickable: <span class="literal">true</span>,</div><div class="line">    <span class="comment">//如果小圆点要变成数字(分式)，例如 1/3</span></div><div class="line">    <span class="comment">// paginationType: 'fraction',</span></div><div class="line">    <span class="comment">// 如果需要分页器</span></div><div class="line">    pagination: <span class="string">'.swiper-pagination'</span>,</div><div class="line">    </div><div class="line">    <span class="comment">// 如果需要前进后退按钮</span></div><div class="line">    nextButton: <span class="string">'.swiper-button-next'</span>,</div><div class="line">    prevButton: <span class="string">'.swiper-button-prev'</span>,</div><div class="line">    <span class="comment">//滑动后停止轮播问题：</span></div><div class="line">    autoplayDisableOnInteraction : <span class="literal">false</span>,</div><div class="line">    <span class="comment">// 如果需要滚动条</span></div><div class="line">    <span class="comment">// scrollbar: '.swiper-scrollbar',</span></div><div class="line">  &#125;)</div><div class="line">  <span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure></p>
-
-          
+          需求环境：移动端环境，swiper.css, swiper.js, 如果用jquery的话，可以用jquery.js和swiper.jquery.js以前也用过swiper做轮播，但是好多参数都不清楚，所以在这总结一下,有新的发现会更新12345678910111213141516171819202
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/blog/2016/09/19/swiper插件/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -860,6 +858,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/blog/2016/09/18/常用的git命令/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2016/09/18/常用的git命令/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -886,86 +895,25 @@
       
         
           
-            <h3 id="关于git的几个专用名词"><a href="#关于git的几个专用名词" class="headerlink" title="关于git的几个专用名词"></a>关于git的几个专用名词</h3><ul>
-<li>Workspace：工作区</li>
-<li>Index / Stage：暂存区</li>
-<li>Repository：仓库区（或本地仓库）</li>
-<li>Remote：远程仓库</li>
-</ul>
-<h3 id="新建代码库"><a href="#新建代码库" class="headerlink" title="新建代码库"></a>新建代码库</h3><pre><code>//在当前目录新建一个git代码库
+          关于git的几个专用名词
+Workspace：工作区
+Index / Stage：暂存区
+Repository：仓库区（或本地仓库）
+Remote：远程仓库
+
+新建代码库//在当前目录新建一个git代码库
 $ git init
 
 //克隆一个项目
-$ git clone https://github.com/gxhpersonal/blog.git
-</code></pre><h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>Git的设置文件为<code>.gitconfig</code>，它可以在用户主目录下（全局配置），也可以在项目目录下（项目配置）。</p>
-<pre><code>// 设置提交代码时的用户信息
-git config --global user.name &quot;gxhpersonal&quot;
-git config --global user.email &quot;991158744@qq.com&quot;
-</code></pre><h3 id="查看信息"><a href="#查看信息" class="headerlink" title="查看信息"></a>查看信息</h3><pre><code>//显示有变更的文件
-$ git status
-</code></pre><h3 id="增加-删除文件"><a href="#增加-删除文件" class="headerlink" title="增加/删除文件"></a>增加/删除文件</h3><pre><code>//添加当前目录的所有文件到暂存区
-$ git add .
-
-//添加每个变化前，都会要求确认
-//对于同一个文件的多处变化，可以实现分次提交
-$ git add -p
-
-//删除工作区文件，并且将这次删除放入暂存区
-$ git rm [file1] [file2] ...
-
-//改名文件，并且将这个改名放入暂存区
-$ git mv [file-original] [file-renamed]
-</code></pre><h3 id="代码提交"><a href="#代码提交" class="headerlink" title="代码提交"></a>代码提交</h3><pre><code>//提交暂存区到仓库区
-$ git commit -m &quot;改的内容标题&quot;
-
-//提交工作区自上次commit之后的变化，直接到仓库区
-$ git commit -a
-</code></pre><h3 id="新建的分支push到远程服务器上"><a href="#新建的分支push到远程服务器上" class="headerlink" title="新建的分支push到远程服务器上"></a>新建的分支push到远程服务器上</h3><pre><code>$ git push -u origin [分支名]
-</code></pre><h3 id="远程代码取到本地"><a href="#远程代码取到本地" class="headerlink" title="远程代码取到本地"></a>远程代码取到本地</h3><pre><code>$ git pull
-</code></pre><h3 id="本地代码提交到远程仓库"><a href="#本地代码提交到远程仓库" class="headerlink" title="本地代码提交到远程仓库"></a>本地代码提交到远程仓库</h3><pre><code>$ git push
-</code></pre><h3 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h3><pre><code> //列出所有本地分支
-$ git branch
-
-//列出所有远程分支
-$ git branch -r
-
-//列出所有本地分支和远程分支
-$ git branch -a
-
-//新建一个分支，但依然停留在当前分支
-$ git branch [branch-name]
-
-//新建一个分支，并切换到该分支
-$ git checkout -b [branch]
-
-//切换到指定分支，并更新工作区
-$ git checkout [branch-name]
-
-//切换到上一个分支
-$ git checkout -
-
-//合并指定分支到当前分支
-$ git merge [branch]
-
-//选择一个commit，合并进当前分支
-$ git cherry-pick [commit]
-
-//删除分支
-$ git branch -d [branch-name]
-</code></pre><h3 id="指定某个commit到指定的分支"><a href="#指定某个commit到指定的分支" class="headerlink" title="指定某个commit到指定的分支"></a>指定某个commit到指定的分支</h3><p>1.执行git log -3 –graph test，查看test分支下的commit:</p>
-<p>注：commit 后面的hash值代表某个commit，这里把”2e1ada53819d46557b24ee7376dc61d37a06939d“这个commit提交到master。<br>2.执行git checkout master，切换到master分支。</p>
-<p>3.执行 git cherry-pick 2e1ada53819d46557b24ee7376dc61d37a06939d，该commit便被提交到了master分支。</p>
-<p>到此，”2e1ada53819d46557b24ee7376dc61d37a06939d“这个commit便被提交到了master分支。</p>
-<h3 id="git提交GitHub代码不再需要每次commit输入username和password解决"><a href="#git提交GitHub代码不再需要每次commit输入username和password解决" class="headerlink" title="git提交GitHub代码不再需要每次commit输入username和password解决"></a>git提交GitHub代码不再需要每次commit输入username和password解决</h3><p>1.在命令行输入命令:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git config --global credential.helper store</div></pre></td></tr></table></figure></p>
-<p>☞ 这一步会在用户目录下的.gitconfig文件最后添加:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[credential]</div><div class="line">    helper = store</div></pre></td></tr></table></figure></p>
-<p>2.现在push你的代码 (git push), 这时会让你输入用户名密码, 这一步输入的用户名密码会被记住, 下次再push代码时就不用输入用户名密码啦!<br>☞这一步会在用户目录下生成文件.git-credential 用来记录用户名密码的信息.<br>☞ git config –global 命令实际上在操作用户目录下的.gitconfig文件, 我们cat一下此文件(cat .gitconfig), 其内容如下:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">[user]</div><div class="line"> name = alice</div><div class="line"> email = alice@aol.com</div><div class="line">[push]</div><div class="line"> default = simple</div><div class="line">[credential]</div><div class="line"> helper = store</div></pre></td></tr></table></figure></p>
-<ul>
-<li>拓展：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git config --global user.email &quot;alice@aol.com&quot; 操作的就是上面的email</div><div class="line">git config --global push.default matching 操作的就是上面的push段中的default字段</div><div class="line">git config --global credential.helper store 操作的就是上面最后一行的值</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>###更多</p>
-
-          
+$ git clone https://github
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/blog/2016/09/18/常用的git命令/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1079,6 +1027,17 @@ $ git branch -d [branch-name]
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/blog/2016/09/18/Markdown语法/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2016/09/18/Markdown语法/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1105,53 +1064,178 @@ $ git branch -d [branch-name]
       
         
           
-            <h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>标题是每篇文章需要也是最常用的格式，在Markdown中，如果一段文字被定义为标题，只要在这段文字前加 <code>#</code> 号即可。<br><code># 一级标题</code><br>…<br><code>###### 六级标题</code></p>
-<blockquote>
-<p>以此类推，建议在 <code>#</code> 号后面加上一个空格，这是最标准的Markdown语法。</p>
-</blockquote>
-<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><p>在Markdown下，列表的显示只需要在文字前加上 <code>-</code> 或 <code>*</code> 即可变为无序列表，有序列表则直接在文字前加 <code>1.</code> <code>2.</code> <code>3.</code> 符号要和文字之间加上一个字符的空格。</p>
-<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><p>如果需要引用一小段别处的句子，那么可以用引用的格式。<br>只需要在文本钱加入 <code>&gt;</code> 这种大于号即可。</p>
-<blockquote>
-<p>例如这样</p>
-</blockquote>
-<h2 id="图片与链接"><a href="#图片与链接" class="headerlink" title="图片与链接"></a>图片与链接</h2><p>插入链接与插入图片的语法很像，区别在一个 <code>!</code> 号。<br>图片为： <code>![](){ImgCap}{/ImgCap}</code><br>链接为： <code>[]()</code><br>插入图片的地址需要图床，推荐使用<a href="https://portal.qiniu.com" target="_blank" rel="external">七牛云</a>，生成URL地址即可。</p>
-<h2 id="粗体与斜体"><a href="#粗体与斜体" class="headerlink" title="粗体与斜体"></a>粗体与斜体</h2><p>Markdown的粗体和斜体也非常简单，用左右各两个 <code>*</code> 或 <code>_</code> 包含一段文本就是粗体的语法，用一个 <code>*</code> 或 <code>_</code> 包含一段文本就是斜体的语法。</p>
-<p><strong>这是粗体</strong> <strong>这是粗体</strong><br><em>这是斜体</em>   <em>这是斜体</em></p>
-<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><p>例如：</p>
-<blockquote>
-<p><strong>| 表头           | 表头                 | 表头l         |</strong><br><strong>| ————-  |:————-:      | —–:       |</strong><br><strong>| 默认左对齐      | 左右各：居中对齐      | 右一个：右对齐 |</strong><br><strong>| 默认左对齐      | 左右各：居中对齐      | 右一个：右对齐 |</strong><br><strong>| 默认左对齐      | 左右各：居中对齐      | 右一个：右对齐 |</strong></p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th>Tables</th>
-<th style="text-align:center">Are</th>
-<th style="text-align:right">Cool</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>col 3 is</td>
-<td style="text-align:center">right-aligned</td>
-<td style="text-align:right">$1600</td>
-</tr>
-<tr>
-<td>col 2 is</td>
-<td style="text-align:center">centered</td>
-<td style="text-align:right">$12</td>
-</tr>
-<tr>
-<td>zebra stripes</td>
-<td style="text-align:center">are neat</td>
-<td style="text-align:right">$1</td>
-</tr>
-</tbody>
-</table>
-<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><p>分割线的语法只需要三个 <code>*</code> 号，例如：</p>
-<hr>
-<h2 id="代码区块"><a href="#代码区块" class="headerlink" title="代码区块"></a>代码区块</h2><p>代码区块也是非常常用的一种标记语法，语法非常简单，只需在代码前面加4个空格或1个制表符(tab),例如：<br>    这是一个代码区块</p>
+          标题标题是每篇文章需要也是最常用的格式，在Markdown中，如果一段文字被定义为标题，只要在这段文字前加 # 号即可。# 一级标题…###### 六级标题
+
+以此类推，建议在 # 号后面加上一个空格，这是最标准的Markdown语法。
+
+列表在Markdown下，列表的显示只需要在文字前加上 - 
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/blog/2016/09/18/Markdown语法/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://gxhpersonal.github.io/blog/blog/2016/09/14/判断android和ios/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="郭雪辉">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/blog/images/navitor.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog station">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/blog/2016/09/14/判断android和ios/" itemprop="url">判断android和ios</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-09-14T18:07:27+08:00">
+                2016-09-14
+              </time>
+            
+
+            
+
+            
+          </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/blog/categories/JS/" itemprop="url" rel="index">
+                    <span itemprop="name">JS</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/blog/2016/09/14/判断android和ios/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2016/09/14/判断android和ios/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          与APP交互很多时候APP中会嵌套H5的页面，这个时候与APP的交互就显得尤为重要，一般我们与APP交互会在window对象下构造一个共用函数，并且需要时返回指定约定的值，APP那边会根据约定的值去执行相应的操作，从而达到交互的目的；1//如：window.nativeBack = function
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/blog/2016/09/14/判断android和ios/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1265,6 +1349,17 @@ $ git branch -d [branch-name]
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/blog/2016/09/14/cookie/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2016/09/14/cookie/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1291,8 +1386,15 @@ $ git branch -d [branch-name]
       
         
           
-            <h3 id="cookie"><a href="#cookie" class="headerlink" title="cookie"></a>cookie</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//设置cookie  </span></div><div class="line"><span class="comment">//name是cookie中的名，value是对应的值，iTime是多久过期（单位为天）  </span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">setCookie</span>(<span class="params">name,value,iTime</span>)</span>&#123;  </div><div class="line">    <span class="keyword">var</span> oDate = <span class="keyword">new</span> <span class="built_in">Date</span>();  </div><div class="line">    <span class="comment">//设置cookie过期时间  </span></div><div class="line">    oDate.setDate(oDate.getDate()+iTime);  </div><div class="line">    <span class="built_in">document</span>.cookie = name+<span class="string">'='</span>+value+<span class="string">';expires='</span>+oDate.toGMTString();  </div><div class="line">&#125;  </div><div class="line"><span class="comment">//获取cookie  </span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">getCookie</span>(<span class="params">name</span>)</span>&#123;  </div><div class="line">    <span class="comment">//cookie中的数据都是以分号加空格区分开  </span></div><div class="line">    <span class="keyword">var</span> arr = <span class="built_in">document</span>.cookie.split(<span class="string">"; "</span>);  </div><div class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>; i&lt;arr.length; i++)&#123;  </div><div class="line">        <span class="keyword">if</span>(arr[i].split(<span class="string">"="</span>)[<span class="number">0</span>] == name)&#123;  </div><div class="line">            <span class="keyword">return</span> arr[i].split(<span class="string">"="</span>)[<span class="number">1</span>];  </div><div class="line">        &#125;  </div><div class="line">    &#125;  </div><div class="line">    <span class="comment">//未找到对应的cookie则返回空字符串  </span></div><div class="line">    <span class="keyword">return</span> <span class="string">''</span>;  </div><div class="line">&#125;  </div><div class="line"><span class="comment">//删除cookie  </span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">removeCookie</span>(<span class="params">name</span>)</span>&#123;  </div><div class="line">    <span class="comment">//调用setCookie方法，把时间设置为-1  </span></div><div class="line">    setCookie(name,<span class="number">1</span>,<span class="number">-1</span>);  </div><div class="line">&#125;</div></pre></td></tr></table></figure>
-          
+          cookie12345678910111213141516171819202122232425//设置cookie  //name是cookie中的名，value是对应的值，iTime是多久过期（单位为天）  function setCookie(name,value,iTime)&#123;   
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/blog/2016/09/14/cookie/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1406,162 +1508,16 @@ $ git branch -d [branch-name]
 
           
             
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="call-和apply"><a href="#call-和apply" class="headerlink" title="call()和apply()"></a>call()和apply()</h3><blockquote>
-<p>1、方法定义<br>call方法:<br>语法：call([thisObj[,arg1[, arg2[,   [,.argN]]]]])<br>定义：调用一个对象的一个方法，以另一个对象替换当前对象。<br>说明：<br>call 方法可以用来代替另一个对象调用一个方法。call 方法可将一个函数的对象上下文从初始的上下文改变为由 thisObj 指定的新对象。<br>如果没有提供 thisObj 参数，那么 Global 对象被用作 thisObj。 </p>
-</blockquote>
-<p>apply方法：<br>语法：apply([thisObj[,argArray]])<br>定义：应用某一对象的一个方法，用另一个对象替换当前对象。<br>说明：<br>如果 argArray 不是一个有效的数组或者不是 arguments 对象，那么将导致一个 TypeError。<br>如果没有提供 argArray 和 thisObj 任何一个参数，那么 Global 对象将被用作 thisObj， 并且无法被传递任何参数。</p>
-<p>2、常用实例<br>a、<br>Javascript代码<br>  function add(a,b)<br>  {<br>       alert(a+b);<br>   }<br>   function sub(a,b)<br>   {<br>       alert(a-b);<br>   }  </p>
-<p>   add.call(sub,3,1);<br> 这个例子中的意思就是用 add 来替换 sub，add.call(sub,3,1) == add(3,1) ，所以运行结果为：alert(4); // 注意：js 中的函数其实是对象，函数名是对 Function 对象的引用。</p>
-<p>b、<br>Javascript代码<br>   function Animal(){<br>       this.name = “Animal”;<br>       this.showName = function(){<br>           alert(this.name);<br>       }<br>   }    </p>
-<p>   function Cat(){<br>       this.name = “Cat”;<br>   }    </p>
-<p>   var animal = new Animal();<br>   var cat = new Cat();    </p>
-<p>   //通过call或apply方法，将原本属于Animal对象的showName()方法交给对象cat来使用了。<br>   //输入结果为”Cat”<br>   animal.showName.call(cat,”,”);<br>   //animal.showName.apply(cat,[]);<br> call 的意思是把 animal 的方法放到cat上执行，原来cat是没有showName() 方法，现在是把animal 的showName()方法放到 cat上来执行，所以this.name 应该是 Cat</p>
-<p>c、实现继承<br>Javascript代码<br>   function Animal(name){<br>       this.name = name;<br>       this.showName = function(){<br>           alert(this.name);<br>       }<br>   }      </p>
-<p>   function Cat(name){<br>       Animal.call(this, name);<br>   }      </p>
-<p>   var cat = new Cat(“Black Cat”);<br>   cat.showName();<br> Animal.call(this) 的意思就是使用 Animal对象代替this对象，那么 Cat中不就有Animal的所有属性和方法了吗，Cat对象就能够直接调用Animal的方法以及属性了.</p>
-<p>d、多重继承<br>Javascript代码<br>   function Class10()<br>   {<br>       this.showSub = function(a,b)<br>       {<br>           alert(a-b);<br>       }<br>   }  </p>
-<p>   function Class11()<br>   {<br>       this.showAdd = function(a,b)<br>       {<br>           alert(a+b);<br>       }<br>   }  </p>
-<p>   function Class2()<br>   {<br>       Class10.call(this);<br>       Class11.call(this);<br>   }<br> 很简单，使用两个 call 就实现多重继承了<br>当然，js的继承还有其他方法，例如使用原型链，这个不属于本文的范畴，只是在此说明call 的用法。说了call ，当然还有 apply，这两个方法基本上是一个意思，区别在于 call 的第二个参数可以是任意类型，而apply的第二个参数必须是数组，也可以是arguments<br>还有 callee，caller..</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://gxhpersonal.github.io/blog/blog/2016/09/14/关于em rem px/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="郭雪辉">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/blog/images/navitor.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Blog station">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/blog/2016/09/14/关于em rem px/" itemprop="url">关于em rem px</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-09-14T18:07:27+08:00">
-                2016-09-14
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/blog/categories/css/" itemprop="url" rel="index">
-                    <span itemprop="name">css</span>
-                  </a>
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
                 </span>
-
-                
-                
-              
-            </span>
-          
-
-          
+                <a href="/blog/2016/09/14/call()和apply()/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2016/09/14/call()和apply()/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -1589,13 +1545,16 @@ $ git branch -d [branch-name]
       
         
           
-            <h3 id="px-em-rem"><a href="#px-em-rem" class="headerlink" title="px em rem"></a>px em rem</h3><blockquote>
-<p>1.em<br>一般都是 body 的 font-size 为基准，例如：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">body</span> &#123;</div><div class="line">    <span class="attribute">font-size</span>: <span class="number">62.5%</span>;</div><div class="line">    <span class="comment">/*10 ÷ 16 × 100% = 62.5%*/</span></div><div class="line">&#125;</div><div class="line"><span class="selector-tag">h1</span> &#123;</div><div class="line">    <span class="attribute">font-size</span>: <span class="number">2.4em</span>;</div><div class="line">    <span class="comment">/*2.4em × 10 = 24px */</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-</blockquote>
-<p>计算公式：1 ÷ 父元素的font-size × 需要转换的像素值 = em值</p>
-<p>2.rem<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">html</span> &#123;</div><div class="line">    <span class="attribute">font-size</span>: <span class="number">62.5%</span>;</div><div class="line">    <span class="comment">/*10 ÷ 16 × 100% = 62.5%*/</span></div><div class="line">&#125;</div><div class="line"><span class="selector-tag">body</span> &#123;</div><div class="line">    <span class="attribute">font-size</span>: <span class="number">1.4rem</span>;</div><div class="line">    <span class="comment">/*1.4 × 10px = 14px */</span></div><div class="line">&#125;</div><div class="line"><span class="selector-tag">h1</span> &#123;</div><div class="line">    <span class="attribute">font-size</span>: <span class="number">2.4rem</span>;</div><div class="line">    <span class="comment">/*2.4 × 10px = 24px*/</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-
-          
+          call()和apply()
+1、方法定义call方法:语法：call([thisObj[,arg1[, arg2[,   [,.argN]]]]])定义：调用一个对象的一个方法，以另一个对象替换当前对象。说明：call 方法可以用来代替另一个对象调用一个方法。call 方法可将一个函数的对象上下文
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/blog/2016/09/14/call()和apply()/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1709,6 +1668,17 @@ $ git branch -d [branch-name]
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/blog/2016/09/14/关于定位/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2016/09/14/关于定位/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1735,20 +1705,21 @@ $ git branch -d [branch-name]
       
         
           
-            <h3 id="关于弹层问题"><a href="#关于弹层问题" class="headerlink" title="关于弹层问题"></a>关于弹层问题</h3><blockquote>
-<p>如果有两个模块，这两个模块同时需要浮动，并且没法嵌套；</p>
-</blockquote>
-<h3 id="居中"><a href="#居中" class="headerlink" title="居中"></a>居中</h3><blockquote>
-<p>相对定位：<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">position:relative;</div><div class="line">top:50%;</div><div class="line">left:50%;</div><div class="line">transform:translate(-50%,-50%); //如果是图片的话，会造成图片模糊</div></pre></td></tr></table></figure></p>
-</blockquote>
-<p>或者：<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">position:relative;</div><div class="line">left:50%;</div><div class="line">margin-left:自身宽度/2;</div></pre></td></tr></table></figure></p>
-<p>绝对定位：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">position</span><span class="selector-pseudo">:absolute</span>;</div><div class="line"><span class="selector-tag">top</span><span class="selector-pseudo">:0</span>;</div><div class="line"><span class="selector-tag">left</span><span class="selector-pseudo">:0</span>;</div><div class="line"><span class="selector-tag">bottom</span><span class="selector-pseudo">:0</span>;</div><div class="line"><span class="selector-tag">right</span><span class="selector-pseudo">:0</span>;</div><div class="line"><span class="selector-tag">margin</span><span class="selector-pseudo">:auto</span>;</div><div class="line">或者：</div><div class="line">    <span class="selector-tag">position</span>: <span class="selector-tag">absolute</span>;</div><div class="line">    <span class="selector-tag">top</span>: 50%;</div><div class="line">    <span class="selector-tag">left</span>: 50%;</div><div class="line">    <span class="selector-tag">margin-top</span>: 负的元素高度一半;</div><div class="line">    <span class="selector-tag">margin-left</span>: 负的元素宽度一半;</div></pre></td></tr></table></figure></p>
-<h3 id="文字与图片不能垂直居中对齐"><a href="#文字与图片不能垂直居中对齐" class="headerlink" title="文字与图片不能垂直居中对齐"></a>文字与图片不能垂直居中对齐</h3><blockquote>
-<p>给图片添加css样式<br> vertical-align:text-bottom；</p>
-</blockquote>
-<p> vertical-align只适用于行内块元素</p>
+          关于弹层问题
+如果有两个模块，这两个模块同时需要浮动，并且没法嵌套；
 
-          
+居中
+相对定位：1234position:relative;top:50%;left:50%;transform:translate(-50%,-50%); //如果是图片的话，会造成图片模糊
+
+或者：123position:r
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/blog/2016/09/14/关于定位/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1862,6 +1833,17 @@ $ git branch -d [branch-name]
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/blog/2016/09/14/关于表单/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2016/09/14/关于表单/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1888,12 +1870,16 @@ $ git branch -d [branch-name]
       
         
           
-            <h3 id="表单"><a href="#表单" class="headerlink" title="表单"></a>表单</h3><blockquote>
-<p>关于input表单的一些样式和JS问题：<br>input的placeholder属性字体颜色：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">input</span><span class="selector-pseudo">::-webkit-input-placeholder</span> &#123;</div><div class="line">    <span class="attribute">color</span>: <span class="number">#aaa</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-tag">input</span><span class="selector-pseudo">:-moz-placeholder</span> &#123;</div><div class="line">    <span class="attribute">color</span>: <span class="number">#aaa</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-tag">input</span><span class="selector-pseudo">::-moz-placeholder</span> &#123;</div><div class="line">    <span class="attribute">color</span>: <span class="number">#aaa</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-tag">input</span><span class="selector-pseudo">:-ms-input-placeholder</span> &#123;</div><div class="line">    <span class="attribute">color</span>: <span class="number">#aaa</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-</blockquote>
-<p>input的选中状态：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">input</span><span class="selector-pseudo">:focus</span>&#123; <span class="attribute">border</span>:<span class="number">1px</span> solid red &#125;</div></pre></td></tr></table></figure></p>
-
-          
+          表单
+关于input表单的一些样式和JS问题：input的placeholder属性字体颜色：123456789101112input::-webkit-input-placeholder &#123;    color: #aaa;&#125;input:-moz-placeholder &#12
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/blog/2016/09/14/关于表单/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1970,7 +1956,7 @@ $ git branch -d [branch-name]
               alt="郭雪辉" />
           
             <p class="site-author-name" itemprop="name">郭雪辉</p>
-            <p class="site-description motion-element" itemprop="description">水滴石穿</p>
+            <p class="site-description motion-element" itemprop="description">天下事有难易乎？为之，则难者亦易矣；不为，则易者亦难矣。</p>
         </div>
 
         <nav class="site-state motion-element">
@@ -1998,6 +1984,15 @@ $ git branch -d [branch-name]
           
 
           
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/blog/tags/index.html">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
 
         </nav>
 
@@ -2022,6 +2017,12 @@ $ git branch -d [branch-name]
         </div>
 
         
+        
+          <div class="cc-license motion-element" itemprop="license">
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank">
+              <img src="/blog/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+            </a>
+          </div>
         
 
         
@@ -2108,6 +2109,9 @@ $ git branch -d [branch-name]
 
 
 
+  
+  
+
 
 
 
@@ -2133,6 +2137,12 @@ $ git branch -d [branch-name]
 
   
   <script type="text/javascript" src="/blog/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/blog/lib/three/three.min.js"></script>
+
+  
+  <script type="text/javascript" src="/blog/lib/three/three-waves.min.js"></script>
 
 
   
@@ -2165,6 +2175,14 @@ $ git branch -d [branch-name]
 
   
 
+    
+      <script id="dsq-count-scr" src="https://gxhpersonal.disqus.com/count.js" async></script>
+    
+
+    
+
+  
+
 
 
 
@@ -2177,10 +2195,6 @@ $ git branch -d [branch-name]
   
 
 
-
-
-
-  
 
 
 

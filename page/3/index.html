@@ -2,10 +2,8 @@
 
 
 
-  
 
-
-<html class="theme-next mist use-motion" lang="zh-Hans">
+<html class="theme-next mist" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -95,15 +93,15 @@
 
 
 
-<meta name="description" content="水滴石穿">
+<meta name="description" content="天下事有难易乎？为之，则难者亦易矣；不为，则易者亦难矣。">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Blog station">
 <meta property="og:url" content="http://gxhpersonal.github.io/blog/page/3/index.html">
 <meta property="og:site_name" content="Blog station">
-<meta property="og:description" content="水滴石穿">
+<meta property="og:description" content="天下事有难易乎？为之，则难者亦易矣；不为，则易者亦难矣。">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Blog station">
-<meta name="twitter:description" content="水滴石穿">
+<meta name="twitter:description" content="天下事有难易乎？为之，则难者亦易矣；不为，则易者亦难矣。">
 
 
 
@@ -116,7 +114,7 @@
     sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn"}},
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn"}},
     duoshuo: {
       userId: '0',
       author: '博主'
@@ -175,7 +173,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle">水滴石穿</p>
+        <p class="site-subtitle">天下事有难易乎？为之，则难者亦易矣；不为，则易者亦难矣。</p>
       
   </div>
 
@@ -245,12 +243,12 @@
         </li>
       
         
-        <li class="menu-item menu-item-schedule">
-          <a href="/blog/schedule/" rel="section">
+        <li class="menu-item menu-item-photos">
+          <a href="/blog/photos" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
             
-            日程表
+            相册
           </a>
         </li>
       
@@ -374,6 +372,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/blog/2016/09/14/其他css问题/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2016/09/14/其他css问题/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -400,52 +409,15 @@
       
         
           
-            <h3 id="flex布局"><a href="#flex布局" class="headerlink" title="flex布局"></a>flex布局</h3><p><a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool" target="_blank" rel="external">更多参见阮老师blog</a><br>1.意为弹性布局，块元素：display:flex;行内元素：display:inline-flex;<br>2.不同内核浏览器需要加前缀区分，如：display:-webkit-flex; /<em>Safari</em>/<br>3.设为flex布局后，子元素的float,clear,vertical-align属性将失效。<br>4.flex属性：<br>1）flex-direction:row（默认值）：主轴为水平方向，起点在左端。<br>                  row-reverse：主轴为水平方向，起点在右端。<br>                  column：主轴为垂直方向，起点在上沿。<br>                  column-reverse：主轴为垂直方向，起点在下沿<br>2)flex-wrap属性: nowrap（默认）：不换行。<br>                wrap：换行，第一行在上方。<br>                wrap-reverse：换行，第一行在下方。<br>3)flex-flow：属性是flex-direction属性和flex-wrap属性的简写形式，默认值为row nowrap。<br>4)justify-content:flex-start | flex-end | center | space-between | space-around<br>5)align-items: flex-start | flex-end | center | baseline | stretch;</p>
-<h3 id="清除所有a标签在点击时出现的特效"><a href="#清除所有a标签在点击时出现的特效" class="headerlink" title="清除所有a标签在点击时出现的特效"></a>清除所有a标签在点击时出现的特效</h3><blockquote>
-<p>清除所有a标签在点击时出现的特效：a{ -webkit-tap-highlight-color:rgba(255,0,0,0);}</p>
-</blockquote>
-<h3 id="文字与图片不能垂直居中对齐"><a href="#文字与图片不能垂直居中对齐" class="headerlink" title="文字与图片不能垂直居中对齐"></a>文字与图片不能垂直居中对齐</h3><blockquote>
-<p>给图片添加css样式<br>vertical-align:text-bottom；<br>vertical-align只适用于行内块元素</p>
-</blockquote>
-<h3 id="img标签和同级div之间的间隙处理"><a href="#img标签和同级div之间的间隙处理" class="headerlink" title="img标签和同级div之间的间隙处理"></a>img标签和同级div之间的间隙处理</h3><blockquote>
-<p>给img标签设置 vertical-align:top;display:block;</p>
-</blockquote>
-<h3 id="在移动端手机APP中禁止长按来阻止其他手机自带默认事件（如：iPhone的3Dtouch）"><a href="#在移动端手机APP中禁止长按来阻止其他手机自带默认事件（如：iPhone的3Dtouch）" class="headerlink" title="在移动端手机APP中禁止长按来阻止其他手机自带默认事件（如：iPhone的3Dtouch）"></a>在移动端手机APP中禁止长按来阻止其他手机自带默认事件（如：iPhone的3Dtouch）</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">touch-callout: none;</div><div class="line">-webkit-touch-callout: none;</div><div class="line">-webkit-user-select: none;</div><div class="line">user-select: none;</div></pre></td></tr></table></figure>
-<h3 id="文本超出后显示省略号"><a href="#文本超出后显示省略号" class="headerlink" title="文本超出后显示省略号"></a>文本超出后显示省略号</h3><blockquote>
-<p>p{<br>   width:40px;<br>   white-space: nowrap;<br>   text-overflow: ellipsis;<br>   overflow: hidden;<br>}</p>
-</blockquote>
-<p>p{<br>    overflow: hidden;                //超出部分隐藏<br>    text-overflow: ellipsis;         //显示省略号来修饰被剪掉的文本<br>    display: box;<br>    display: -webkit-box;<br>    line-clamp: 3;                     //非规范属性，实现规定文本行数      火狐不支持这个属性<br>    -webkit-line-clamp: 3;<br>    -webkit-box-orient: vertical;    //规定框的子元素应该被水平或垂直排列<br>    -moz-box-orient: vertical;        //支持火狐的写法<br>} </p>
-<h3 id="自定义光标"><a href="#自定义光标" class="headerlink" title="自定义光标"></a>自定义光标</h3><blockquote>
-<p>cursor: url(/路径/cursor.cur),auto;        后缀似乎必须为cur</p>
-</blockquote>
-<h3 id="input标签"><a href="#input标签" class="headerlink" title="input标签"></a>input标签</h3><blockquote>
-<p>IE：不管该行有没有文字，光标高度与font-size一致。</p>
-</blockquote>
-<p>FF：该行有文字时，光标高度与font-size一致。该行无文字时，光标高度与input的height一致。</p>
-<p>Chrome：该行无文字时，光标高度与line-height一致；该行有文字时，光标高度从input顶部到文字底部(这两种情况都是在有设定line-height的时候)，如果没有line-height，则是与font-size一致。</p>
-<p>解决的方案：</p>
-<p>给input的height设定一个较小的高度，然后用padding去填充，基本上可以解决所有浏览器的问题</p>
-<h3 id="文字竖排排列显示方案"><a href="#文字竖排排列显示方案" class="headerlink" title="文字竖排排列显示方案"></a>文字竖排排列显示方案</h3><p>1.writing-mode:lr-tb或writing-mode:tb-rl<br>  参数：<br>    <1>、lr-tb：从左向右，从上往下<br>    <2>、tb-rl：从上往下，从右向左<br>    运行代码发现，IE显示正常，火狐、谷歌浏览器却不支持，所以不建议使用writing-mode属性。<br>2.对文字对象宽度设置只能排下一个文字的宽度距离，让文字一行排不下两个文字使其文字自动换行，就形成了竖立排版需求。<br>3.利用html br换行标签实现文字换行，对每个文字后加上换行br标签让其竖列排版。</2></1></p>
-<h3 id="ios下input样式问题"><a href="#ios下input样式问题" class="headerlink" title="ios下input样式问题"></a>ios下input样式问题</h3><p>1.ios下如果想要禁用input,input设置为readonly仍然会呼起键盘，所以必须设置disabled属性。<br>2.ios下设置为disabled属性，input表单背景颜色会变灰，透明度会降低，所以，必须设置<br>    input:disabled{<br>       opacity:1;<br>       bakcground:#fff;<br>    }</p>
-<h3 id="css3滤镜效果：-webkit-filter"><a href="#css3滤镜效果：-webkit-filter" class="headerlink" title="css3滤镜效果：-webkit-filter"></a>css3滤镜效果：-webkit-filter</h3><p><a href="">http://www.css88.com/html5-demo/-webkit-filter/index.html</a></p>
-<h3 id="字体抗锯齿效果"><a href="#字体抗锯齿效果" class="headerlink" title="字体抗锯齿效果"></a>字体抗锯齿效果</h3><p>Webkit在自己的引擎中支持了这一效果。<br>-webkit-font-smoothing<br>它有三个属性值：<br>none —— 对低像素的文本比较好<br>subpixel-antialiased——默认值<br>antialiased ——抗锯齿很好<br>.icon {</p>
-<p>-webkit-font-smoothing: antialiased;</p>
-<p>-moz-osx-font-smoothing: grayscale;  //Gecko也推出了自己的抗锯齿效果的非标定义</p>
-<p>}</p>
-<h3 id="弹层出现禁用背景body滚动条"><a href="#弹层出现禁用背景body滚动条" class="headerlink" title="弹层出现禁用背景body滚动条"></a>弹层出现禁用背景body滚动条</h3><p>height:100%;overscroll:hidden;<br>touch-action:none;//禁止触发默认的手势操作。<br>pan-x：可以在父级元素(the nearest ancestor)内进行水平移动的手势操作。<br>pan-y：可以在父级元素内进行垂直移动的手势操作。<br>manipulation：允许手势水平/垂直平移或持续的缩放。任何auto属性支持的额外操作都不支持；<br>注：touch-action只支持具有行内块，块级的元素</p>
-<h3 id="CSS控制输入文本大小写"><a href="#CSS控制输入文本大小写" class="headerlink" title="CSS控制输入文本大小写"></a>CSS控制输入文本大小写</h3><blockquote>
-<p>text-transform：none；capitalize；uppercase；lowercase；inherit；<br>none默认。定义带有小写字母和大写字母的标准的文本。<br>capitalize文本中的每个单词以大写字母开头。<br>uppercase定义仅有大写字母。lowercase定义无大写字母，仅有小写字母。<br>inherit规定应该从父元素继承 text-transform 属性的值。</p>
-</blockquote>
-<h3 id="控制input标签的placeholder属性实现获取焦点显示暗文，失去焦点隐藏-其实就是改变placeholder中的文字颜色"><a href="#控制input标签的placeholder属性实现获取焦点显示暗文，失去焦点隐藏-其实就是改变placeholder中的文字颜色" class="headerlink" title="控制input标签的placeholder属性实现获取焦点显示暗文，失去焦点隐藏(其实就是改变placeholder中的文字颜色)"></a>控制input标签的placeholder属性实现获取焦点显示暗文，失去焦点隐藏(其实就是改变placeholder中的文字颜色)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&amp;::-webkit-input-placeholder &#123; color:transparent; &#125;</div><div class="line">&amp;:-moz-placeholder &#123; color:transparent; &#125;</div><div class="line">&amp;::-moz-placeholder &#123; color:transparent; &#125;</div><div class="line">&amp;:-ms-input-placeholder &#123; color:transparent;&#125;</div><div class="line">&amp;:focus::-webkit-input-placeholder &#123; color:#9fb0bf; &#125;</div><div class="line">&amp;:focus:-moz-placeholder &#123; color:#9fb0bf; &#125;</div><div class="line">&amp;:focus::-moz-placeholder &#123; color:#9fb0bf; &#125;</div><div class="line">&amp;:focus:-ms-input-placeholder &#123; color:#9fb0bf; &#125;</div></pre></td></tr></table></figure>
-<h3 id="will-change提高页面滚动、动画等渲染性能css3"><a href="#will-change提高页面滚动、动画等渲染性能css3" class="headerlink" title="will-change提高页面滚动、动画等渲染性能css3"></a>will-change提高页面滚动、动画等渲染性能css3</h3><p>参考张鑫旭blog:<br><a href="">http://www.zhangxinxu.com/wordpress/2015/11/css3-will-change-improve-paint/</a></p>
-<h3 id="支持webkit内核浏览器的滚动条样式自定义"><a href="#支持webkit内核浏览器的滚动条样式自定义" class="headerlink" title="支持webkit内核浏览器的滚动条样式自定义"></a>支持webkit内核浏览器的滚动条样式自定义</h3><blockquote>
-<p>::-webkit-scrollbar{/<em> 1 </em>/} /<em>滚动条垂直方向的宽度与水平方向的高度</em>/ ::-webkit-scrollbar-button{/<em> 2 </em>/} /<em>滚动条按钮</em>/ ::-webkit-scrollbar-track{/<em> 3 </em>/} /<em>滚动条轨道</em>/ ::-webkit-scrollbar-track-piece{/<em> 4 </em>/} /<em>滚动条垂直方向轨道件</em>/ ::-webkit-scrollbar-thumb{/<em> 5 </em>/} /<em>滚动条轨道上的按钮</em>/ ::-webkit-scrollbar-corner{/<em> 6 </em>/} /<em>滚动条轨道上的滚动角</em>/ </p>
-</blockquote>
-<h3 id="ios在fixed布局下出现bug问题"><a href="#ios在fixed布局下出现bug问题" class="headerlink" title="ios在fixed布局下出现bug问题"></a>ios在fixed布局下出现bug问题</h3><p>软键盘唤起后，页面的fixed 元素将失效（即无法浮动，也可以理解为变成了absolute定位），所以当页面超过一屏且滚动时，失效的 fixed 元素就会跟随滚动了。<br>这便是 iOS 上 fixed 元素和输入框的 bug 。其中不仅限于 type=text 的输入框，凡是软键盘（比如时间日期选择、select 选择等等）被唤起，都会遇到同样地问题。<br>解决方法：<br>    将原 body 滚动的区域域移到 main 内部，而 header 和footer 的样式不变。<br>.main{<br>    position: absolute;<br>    top: 50px;<br>    bottom: 34px;<br>    overflow-y: scroll;<br>}<br>.main  .content {<br>    height: 2000px;<br>}</p>
-<p>这样布局可能会是的滚动失去原来的流畅，加以下代码，恢复之前丝滑般的滚动：<br>    -webkit-overflow-scrolling: touch;</p>
-<p>这样的布局在h5是行不通的，所以需要用JS来控制内部滚动元素的高度：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="number">1.</span> 内部滚动</div><div class="line"><span class="keyword">var</span> w = <span class="built_in">window</span>.innerWidth,</div><div class="line">        h = <span class="built_in">window</span>.innerHeight;  <span class="comment">//获取窗口的高度与宽度(不包含工具条与滚动条):</span></div><div class="line">    $(<span class="string">'#js_orderConWrap'</span>).height(h - $(<span class="string">'.cm-header-wrap'</span>).height());  <span class="comment">//内部元素的高度 = 窗口高度 - 头部或底部的高度(如果有)</span></div><div class="line"></div><div class="line"><span class="comment">//既然都在h5了，所以还要考虑APP环境，在APP环境下头部是不会用h5的，所以需要判断h5和APP环境；</span></div><div class="line"></div><div class="line"><span class="number">2.</span>弹层显示，禁止背景滚动</div><div class="line"><span class="comment">//关闭滚动条</span></div><div class="line">        $(<span class="built_in">document</span>).on(<span class="string">'touchmove'</span>,<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</div><div class="line">            <span class="keyword">if</span>($(<span class="string">'.app-popup-container'</span>).css(<span class="string">'display'</span>) === <span class="string">'block'</span>)&#123;</div><div class="line">                e.preventDefault();</div><div class="line">            &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
-
-          
+          flex布局更多参见阮老师blog1.意为弹性布局，块元素：display:flex;行内元素：display:inline-flex;2.不同内核浏览器需要加前缀区分，如：display:-webkit-flex; /Safari/3.设为flex布局后，子元素的float,clear,verti
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/blog/2016/09/14/其他css问题/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -492,7 +464,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://gxhpersonal.github.io/blog/blog/2016/09/14/判断android和ios/">
+    <link itemprop="mainEntityOfPage" href="http://gxhpersonal.github.io/blog/blog/2016/09/14/关于em rem px/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="郭雪辉">
@@ -511,7 +483,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/blog/2016/09/14/判断android和ios/" itemprop="url">判断android和ios</a></h1>
+                <a class="post-title-link" href="/blog/2016/09/14/关于em rem px/" itemprop="url">关于em rem px</a></h1>
         
 
         <div class="post-meta">
@@ -546,8 +518,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/blog/categories/JS/" itemprop="url" rel="index">
-                    <span itemprop="name">JS</span>
+                  <a href="/blog/categories/css/" itemprop="url" rel="index">
+                    <span itemprop="name">css</span>
                   </a>
                 </span>
 
@@ -558,6 +530,17 @@
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/blog/2016/09/14/关于em rem px/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2016/09/14/关于em rem px/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -585,9 +568,16 @@
       
         
           
-            <h3 id="与APP交互"><a href="#与APP交互" class="headerlink" title="与APP交互"></a>与APP交互</h3><p>很多时候APP中会嵌套H5的页面，这个时候与APP的交互就显得尤为重要，一般我们与APP交互会在window对象下构造一个共用函数，并且需要时返回指定约定的值，APP那边会根据约定的值去执行相应的操作，从而达到交互的目的；<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//如：window.nativeBack = function()&#123;return 1&#125;</span></div></pre></td></tr></table></figure></p>
-<h3 id="判断android和ios"><a href="#判断android和ios" class="headerlink" title="判断android和ios"></a>判断android和ios</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> browser = &#123;</div><div class="line">versions: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line"><span class="keyword">var</span> u = navigator.userAgent, app = navigator.appVersion;</div><div class="line"><span class="keyword">return</span> &#123; <span class="comment">//移动终端浏览器版本信息 </span></div><div class="line">ios: !!u.match(<span class="regexp">/\(i[^;]+;( U;)? CPU.+Mac OS X/</span>), <span class="comment">//ios终端 </span></div><div class="line">android: u.indexOf(<span class="string">'Android'</span>) &gt; <span class="number">-1</span> || u.indexOf(<span class="string">'Linux'</span>) &gt; <span class="number">-1</span>, <span class="comment">//android终端或uc浏览器 </span></div><div class="line">iPhone: u.indexOf(<span class="string">'iPhone'</span>) &gt; <span class="number">-1</span>, <span class="comment">//是否为iPhone或者QQHD浏览器 </span></div><div class="line">iPad: u.indexOf(<span class="string">'iPad'</span>) &gt; <span class="number">-1</span>, <span class="comment">//是否iPad </span></div><div class="line">&#125;;</div><div class="line">&#125;(),</div><div class="line">&#125;</div><div class="line"><span class="keyword">if</span> (browser.versions.iPhone || browser.versions.iPad || browser.versions.ios) &#123;</div><div class="line"><span class="comment">//说明是ios系统</span></div><div class="line"><span class="built_in">window</span>.location.href=<span class="string">""</span>;</div><div class="line">&#125;</div><div class="line"><span class="keyword">if</span> (browser.versions.android) &#123;</div><div class="line"><span class="comment">//说明是Android系统</span></div><div class="line"><span class="built_in">window</span>.location.href=<span class="string">""</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-          
+          px em rem
+1.em一般都是 body 的 font-size 为基准，例如：12345678body &#123;    font-size: 62.5%;    /*10 ÷ 16 × 100% = 62.5%*/&#125;h1 &#123;    font-size: 2.4em; 
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/blog/2016/09/14/关于em rem px/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -700,6 +690,17 @@
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/blog/2016/09/14/hexo强力搭建github博客/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2016/09/14/hexo强力搭建github博客/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -847,6 +848,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/blog/2016/09/14/关于angular个人遇到的问题/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2016/09/14/关于angular个人遇到的问题/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -873,47 +885,18 @@
       
         
           
-            <h3 id="关于ng-if"><a href="#关于ng-if" class="headerlink" title="关于ng-if"></a>关于ng-if</h3><blockquote>
-<p>当一个元素需要隐藏和显示时，用ng-if的话，会出现其中包含的元素身上的方法无法正确调用的现象，所以，当元素中有方法时，最好使用 ng-show 和 ng-hide</p>
-</blockquote>
-<p>###动态插入的标签元素带有angular语法不执行解决<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var uploadInfo = &apos;上传成功！&lt;a ng-click=&quot;quitTo(&apos;customer&apos;)&quot;&gt;点击&lt;/a&gt;跳转到客户列表界面&apos;;</div><div class="line">angular.element(&apos;.modal-body&apos;).append(uploadInfo);</div></pre></td></tr></table></figure></p>
-<p>将uploadInfo变量通过$compile进行处理，<br>var ele = $compile(uploadInfo)($scope);<br>angular.element(‘.modal-body’).append(ele);</p>
-<p>###依赖注入<br>AngularJS提供了一种非常简单的解决方法，即将依赖作为一个数组传入，数组的最后一个元素是一个函数，所有的依赖项作为它的参数。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">app.controller(&apos;MainCtrl&apos;, [&apos;$scope&apos;, &apos;$timeout&apos;, function($scope, $timeout)&#123;</div><div class="line">    $timeout(function()&#123;</div><div class="line">        console.log($scope);</div><div class="line">    &#125;, 1000);</div><div class="line">&#125;]);</div></pre></td></tr></table></figure></p>
-<h3 id="获取input焦点"><a href="#获取input焦点" class="headerlink" title="获取input焦点"></a>获取input焦点</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> myApp = angular.module(<span class="string">'myApp'</span>,[]);</div><div class="line">myApp.directive(<span class="string">'setFocus'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line"><span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params">scope, element</span>)</span>&#123;</div><div class="line">element[<span class="number">0</span>].focus();</div><div class="line">&#125;;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-<h3 id="ng-repeat遍历数组"><a href="#ng-repeat遍历数组" class="headerlink" title="ng-repeat遍历数组"></a>ng-repeat遍历数组</h3><blockquote>
-<p>ng-repeat遍历数组时，数组中有2个以上的相同数字，需要在 v in xxx 后面加上 track by $index；<br><a href="http://blog.csdn.net/rangqiwei/article/details/38020667" target="_blank" rel="external">详细解释：</a></p>
-</blockquote>
-<h3 id="ng-repeat遍历对象"><a href="#ng-repeat遍历对象" class="headerlink" title="ng-repeat遍历对象"></a>ng-repeat遍历对象</h3><blockquote>
-<p>ng-repeat=”(key,value) in feesWays”<br>这种方式可以把接口数据对象格式的字段分离成键和值；</p>
-</blockquote>
-<h3 id="输出当前点击的对象属性值"><a href="#输出当前点击的对象属性值" class="headerlink" title="输出当前点击的对象属性值"></a>输出当前点击的对象属性值</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!doctype html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span> <span class="attr">ng-app</span>=<span class="string">"toggleList"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span><span class="css"></span></div><div class="line">		<span class="selector-class">.error</span> &#123;</div><div class="line">			<span class="attribute">background-color</span>: red;</div><div class="line">		&#125;</div><div class="line">		<span class="selector-class">.warning</span> &#123;</div><div class="line">			<span class="attribute">background-color</span>: yellow;</div><div class="line">		&#125;</div><div class="line">	<span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">ng-controller</span>=<span class="string">"test"</span> <span class="attr">class</span>=<span class="string">""</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"javascript:void(0)"</span> <span class="attr">id</span>=<span class="string">"js_link"</span> <span class="attr">ng-click</span>=<span class="string">"showMe($event)"</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">span</span>&gt;</span>点击我<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">		<span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"http://cdn.bootcss.com/angular.js/1.3.20/angular.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"http://cdn.bootcss.com/angular.js/1.3.20/angular-animate.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="javascript"></span></div><div class="line">		<span class="keyword">var</span> app = angular.module(<span class="string">'toggleList'</span>, [<span class="string">'ngAnimate'</span>]);</div><div class="line">		app.controller(<span class="string">"test"</span>, [<span class="string">"$scope"</span>, <span class="function"><span class="keyword">function</span> (<span class="params">$scope</span>) </span>&#123;</div><div class="line">			$scope.showMe = <span class="function"><span class="keyword">function</span>(<span class="params">event</span>)</span>&#123;</div><div class="line">				<span class="built_in">console</span>.log($(event.currentTarget).attr(<span class="string">"id"</span>))</div><div class="line">			&#125;</div><div class="line">		&#125;]);</div><div class="line"></div><div class="line"></div><div class="line">	<span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
-<h3 id="跳转页面"><a href="#跳转页面" class="headerlink" title="跳转页面"></a>跳转页面</h3><blockquote>
-<p>$scope.tiaozhuan = function(number){<br>window.location.href=”/xxx/xxx   (如果想要传ID或什么东西过去)  ?id=” + number;<br>}</p>
-</blockquote>
-<h3 id="倒计时"><a href="#倒计时" class="headerlink" title="倒计时"></a>倒计时</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line">    <span class="comment">//后台会传一个时间戳给你，只需要把这个时间戳转换为倒计时就行</span></div><div class="line">   $scope.daojishi = <span class="function"><span class="keyword">function</span> (<span class="params">activityendtime</span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> time = $scope.time = &#123;&#125;;</div><div class="line">    <span class="keyword">var</span> count = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="comment">//计算剩下毫秒数</span></div><div class="line">        time.t = activityendtime;</div><div class="line">        time.d = <span class="built_in">Math</span>.floor(time.t / <span class="number">1000</span> / <span class="number">60</span> / <span class="number">60</span> / <span class="number">24</span>);</div><div class="line">        time.h = <span class="built_in">Math</span>.floor(time.t / <span class="number">1000</span> / <span class="number">60</span> / <span class="number">60</span> % <span class="number">24</span>);</div><div class="line">        time.m = <span class="built_in">Math</span>.floor(time.t / <span class="number">1000</span> / <span class="number">60</span> % <span class="number">60</span>) &lt; <span class="number">10</span> ? <span class="string">'0'</span> + <span class="built_in">Math</span>.floor(time.t / <span class="number">1000</span> / <span class="number">60</span> % <span class="number">60</span>) : <span class="built_in">Math</span>.floor(time.t / <span class="number">1000</span> / <span class="number">60</span> % <span class="number">60</span>);</div><div class="line">        time.s = <span class="built_in">Math</span>.floor(time.t / <span class="number">1000</span> % <span class="number">60</span>) &lt; <span class="number">10</span> ? <span class="string">'0'</span> + <span class="built_in">Math</span>.floor(time.t / <span class="number">1000</span> % <span class="number">60</span>) : <span class="built_in">Math</span>.floor(time.t / <span class="number">1000</span> % <span class="number">60</span>);</div><div class="line">        <span class="keyword">if</span> (time.t &lt;= <span class="number">0</span>) &#123;</div><div class="line">            $scope.endShow = <span class="literal">true</span>;</div><div class="line">            $scope.overhtml = <span class="string">"活动已结束！"</span>;</div><div class="line">            $scope.endActivity = <span class="literal">true</span>;</div><div class="line">            $scope.timeOver = <span class="literal">true</span>;</div><div class="line">            <span class="keyword">if</span> (time.h &lt; <span class="number">0</span>) &#123;</div><div class="line">                time.h = <span class="string">'0'</span>;</div><div class="line">                time.m = <span class="string">'00'</span>;</div><div class="line">                time.s = <span class="string">'00'</span>;</div><div class="line">            &#125;</div><div class="line">            $(<span class="string">".count-down"</span>).hide();</div><div class="line">        &#125; <span class="keyword">else</span> &#123;</div><div class="line">            activityendtime = (time.t - <span class="number">1000</span>);</div><div class="line">        &#125;</div><div class="line">        $scope.Residualtime = time.d + <span class="string">":"</span> + time.h + <span class="string">":"</span> + time.m + <span class="string">":"</span> + time.s;</div><div class="line">    &#125;;</div><div class="line">    count();</div><div class="line">    <span class="keyword">var</span> stop = $interval(count, <span class="number">1000</span>);</div><div class="line">    $scope.$on(<span class="string">'$destroy'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">        $interval.cancel(stop);</div><div class="line">    &#125;);</div><div class="line">&#125;</div><div class="line">$scope.daojishi（$scope.activityendtime）</div></pre></td></tr></table></figure>
-<h3 id="字符串拼接"><a href="#字符串拼接" class="headerlink" title="字符串拼接"></a>字符串拼接</h3><blockquote>
-<p>angular中需要拼接字符串和变量时，用ng-xx方法，“”中写 字符串 ，就会解析为字符串</p>
-</blockquote>
-<h3 id="angularJS全局API"><a href="#angularJS全局API" class="headerlink" title="angularJS全局API"></a>angularJS全局API</h3><blockquote>
-<p>angular.lowercase()    转换字符串为小写<br>angular.uppercase()    转换字符串为大写<br>angular.isString()    判断给定的对象是否为字符串，如果是返回 true。<br>angular.isNumber()    判断给定的对象是否为数字，如果是返回 true。</p>
-</blockquote>
-<p>###ng-bind-html=””<br>当想要呈现的后台文本中有HTML标签的时候，使用ng-bind-html来代替ng-bind，就能正常的使用想用的HTML标签了。但要注意文本中如果使用到符号的话，注意要转义符号。<br>但要注意文本中如果使用到符号的话,注意要转义符号<br>如: (1)  大于符号（&gt;）   —&gt; &gt;<br>      (2)  小于符号（&lt;）   —&gt; &lt;<br>否则系统报错<br>要使用：$sanitize服务<br>在angular.module中配置sanitize服务：var myApp = angular.module(‘myApp’, [‘ngSanitize’]);</p>
-<script src="../js/angular-sanitize.js"></script>
+          关于ng-if
+当一个元素需要隐藏和显示时，用ng-if的话，会出现其中包含的元素身上的方法无法正确调用的现象，所以，当元素中有方法时，最好使用 ng-show 和 ng-hide
 
-<p>###angular自带遍历方法  angular.forEach<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> objs =[&#123;a:<span class="number">1</span>&#125;,&#123;a:<span class="number">2</span>&#125;];</div><div class="line">angular.forEach(objs, <span class="function"><span class="keyword">function</span>(<span class="params">data,index,array</span>)</span>&#123;</div><div class="line">        <span class="comment">//data等价于array[index]</span></div><div class="line">        <span class="built_in">console</span>.log(data.a+<span class="string">'='</span>+array[index].a);</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
-<h3 id="angularJS懒加载"><a href="#angularJS懒加载" class="headerlink" title="angularJS懒加载"></a>angularJS懒加载</h3><p>引入  angular-img-lazy-load.min.js</p>
-<p>src-lazy=”“</p>
-<p>var hzcApp = angular.module(“hzc_app”, [‘img-lazy-load’]);</p>
-<blockquote>
-<p>下面这个包含在controller中<br>hzcApp.constant(‘imgLazyLoadConf’, {<br>                tolerance: 50,<br>                detectElement: true<br>      })</p>
-</blockquote>
-<h3 id="directive"><a href="#directive" class="headerlink" title="directive"></a>directive</h3><p>2 . 在AngularJS中，操作DOM一般在指令中完成，事件监听机制是在对于已经静态生成的dom绑定事件，而如果在指令中动态生成了DOM节点，动态生成的节点不会被JS事件监听<br>angular.module(‘myapp’,[])<br>.directive(‘myText’,function($compile){<br>    var template:’<div ng-click="hello()">Hi everyone</div>‘,<br>    return{<br>        restrict:’A’,<br>        link:function(scope,ele,attr){<br>             ele.on(“click”, function() {<br>                scope.$apply(function() {<br>                    var content = $compile(template)(scope);<br>                    element.append(content);<br>               })<br>            });<br>        }<br>    }<br>}</p>
-<h3 id="timeout-apply"><a href="#timeout-apply" class="headerlink" title="$timeout $apply"></a>$timeout $apply</h3><p>$timeout会帮你调用$apply()，让你不需要手动地调用它<br>$apply会吧我们的代码wrapped到了$scope.$apply()中，它会自动触发$rootScope.$digest()，从而让watchers被触发用以更新view</p>
-<h3 id="ng-click方法函数中的this指向问题"><a href="#ng-click方法函数中的this指向问题" class="headerlink" title="ng-click方法函数中的this指向问题"></a>ng-click方法函数中的this指向问题</h3><blockquote>
-<p>this指向当前controller中的$scope<br>比如：this.value = $scope.value;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">ng-click中的this的特性在ng-repeat中非常好用。</div><div class="line">比如用ng-repeat遍历出一个列表：</div><div class="line">&lt;div ng-click=&quot;change()&quot; ng-repeat=&quot;item in items&quot;&gt;&#123;&#123;item.value&#125;&#125;&lt;/div&gt;</div><div class="line">然后你想给他们绑定一个统一的函数change()方法，点击之后只会把自己的值改变，此时this就是指向当前的子scope：</div><div class="line">$scope.change = function()&#123;</div><div class="line">    this.item.value = &apos;new value&apos;;</div><div class="line">    //由于是ng-repeat出来的，所以这里this指向的scope是上面那个案例中$scope的子集。</div><div class="line">    //即this.$parent === $scope;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-</blockquote>
-<h3 id="angular-cope-复制数组或对象"><a href="#angular-cope-复制数组或对象" class="headerlink" title="angular.cope()复制数组或对象"></a>angular.cope()复制数组或对象</h3>
-          
+###动态插入的标签元素带有angular语法不执行解决12var uploadInfo = &apos;上传成功！
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/blog/2016/09/14/关于angular个人遇到的问题/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -990,7 +973,7 @@
               alt="郭雪辉" />
           
             <p class="site-author-name" itemprop="name">郭雪辉</p>
-            <p class="site-description motion-element" itemprop="description">水滴石穿</p>
+            <p class="site-description motion-element" itemprop="description">天下事有难易乎？为之，则难者亦易矣；不为，则易者亦难矣。</p>
         </div>
 
         <nav class="site-state motion-element">
@@ -1018,6 +1001,15 @@
           
 
           
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/blog/tags/index.html">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
 
         </nav>
 
@@ -1042,6 +1034,12 @@
         </div>
 
         
+        
+          <div class="cc-license motion-element" itemprop="license">
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank">
+              <img src="/blog/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+            </a>
+          </div>
         
 
         
@@ -1128,6 +1126,9 @@
 
 
 
+  
+  
+
 
 
 
@@ -1153,6 +1154,12 @@
 
   
   <script type="text/javascript" src="/blog/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/blog/lib/three/three.min.js"></script>
+
+  
+  <script type="text/javascript" src="/blog/lib/three/three-waves.min.js"></script>
 
 
   
@@ -1185,6 +1192,14 @@
 
   
 
+    
+      <script id="dsq-count-scr" src="https://gxhpersonal.disqus.com/count.js" async></script>
+    
+
+    
+
+  
+
 
 
 
@@ -1197,10 +1212,6 @@
   
 
 
-
-
-
-  
 
 
 
