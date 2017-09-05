@@ -4,6 +4,24 @@
 
     
   <url>
+    <loc>http://gxhpersonal.github.io/blog/blog/2017/02/06/ES6/</loc>
+    <lastmod>2017-09-05T02:31:08.971Z</lastmod>
+    <data>
+        <display>
+        <title>ES6</title>
+        <pubTime>2017-02-06T01:34:53.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="JS" url="http://gxhpersonal.github.io/blog/blog/categories/JS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://gxhpersonal.github.io/blog/blog/2017/02/22/vue%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</loc>
     <lastmod>2017-09-04T02:41:13.805Z</lastmod>
     <data>
@@ -33,24 +51,6 @@
            
              
               <breadCrumb title="git" url="http://gxhpersonal.github.io/blog/blog/categories/git/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://gxhpersonal.github.io/blog/blog/2017/02/06/ES6/</loc>
-    <lastmod>2017-08-30T08:08:04.665Z</lastmod>
-    <data>
-        <display>
-        <title>ES6</title>
-        <pubTime>2017-02-06T01:34:53.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="JS" url="http://gxhpersonal.github.io/blog/blog/categories/JS/"/>
           
         </display>
     </data>
